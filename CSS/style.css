@@ -1,0 +1,31 @@
+/* Global changes */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navbar */
+
+.menu{
+    width: 100%;
+    height: 5em;
+    background-color: #6ABB5C;
+    overflow: hidden;
+}
+.menu img{
+    float: left;
+    width: 15%;
+    margin-top: -4.8%;
+    opacity: 0.8;
+}
+.menu a, .menu ul {
+    float: right;
+    display: inline block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.main{
+    background-color: white;
+}
+
