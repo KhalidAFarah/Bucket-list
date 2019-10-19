@@ -1,31 +1,48 @@
 /* Global changes */
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial;
 }
 
 /* navbar */
-
-.menu{
+.menu {
     width: 100%;
-    height: 5em;
+    height: 10em;
     background-color: #6ABB5C;
     overflow: hidden;
-}
-.menu img{
-    float: left;
-    width: 15%;
-    margin-top: -4.8%;
-    opacity: 0.8;
-}
-.menu a, .menu ul {
-    float: right;
-    display: inline block;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-}
-.main{
-    background-color: white;
+    top: 0%;
 }
 
+.menu img {
+    float: left;
+    width: auto;
+    opacity: 0.8;
+}
+
+.menu ul {
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 4%;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.menu a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    border: 5px solid black;
+}
+
+.logo {
+    height: 100%;
+}
+
+.main {
+    
+}
