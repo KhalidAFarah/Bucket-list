@@ -37,6 +37,7 @@
     text-decoration: none;
     list-style-type: none;
     border: 5px solid black;
+    border-radius: 10px;
 }
 
 .logo {
