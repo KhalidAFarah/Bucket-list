@@ -12,7 +12,9 @@ section {
 }
 
 /* navbar */
+
 .menu {
+    position: fixed;
     width: 100%;
     background-color: #6ABB5C;
     overflow: hidden;
@@ -72,6 +74,7 @@ section {
     width: 100%;
     text-align: center;
     align-content: center;
+    margin-top: 5%;
 }
 
 h1 {
