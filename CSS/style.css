@@ -22,7 +22,7 @@ section{
 
 .Logo{
     float: left;
-    width: 23%;
+    width: 11%;
     background-color: white;
     opacity: 0.8;
 }
@@ -39,17 +39,17 @@ section{
 
 .menu li {
     display: inline-block;
-    margin-left: 5%;
-    margin-top: 2.5%;
+    margin-left: 3%;
+    margin-top: -1%;
     text-align: center;
-    width: 15%;
+    width: 10%;
 }
 
 .menu li a {
-    padding:  15%;
+    padding: 8%;
     border: 5px solid white;
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 26px;
     color: white;
     text-decoration: none;
     list-style-type: none;
