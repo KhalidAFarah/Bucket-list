@@ -41,21 +41,22 @@ section {
 
 .menu li {
     display: inline-block;
-    margin-left: 3%;
     margin-top: -1%;
-    text-align: center;
-    width: 16%;
+    width: 20%;
 }
 
 .menu li a {
     padding: 8%;
+    padding-left: 25%;
+    padding-right: 25%;
     border: 5px solid white;
     border-radius: 10px;
     font-size: 26px;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    list-style-type: none;
+    width: 80%;
+   
 }
 
 .menu li a:hover {
@@ -78,11 +79,21 @@ section {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 p {
     font-size: 1.5em;
+}
+.downloadLinks{
+    width: 25%;
+    display: block;
+    margin-left: 60%;
+    padding: 2%;
+   
+}
+.download{
+    padding: 5% 0% 0% 0%;
 }
 
 /* footer */
@@ -95,4 +106,19 @@ footer {
     text-align: center;
     bottom: 0%;
     border-top: 5px solid darkgreen;
+}
+
+@media(max-width: 1000px){
+    .logo{
+        width: 25%;
+    }
+    .main{
+        margin-top: 13%;
+    }
+    .menu ul{
+        width: 83%;
+        padding-left: 26%;
+        padding-top: 5.5%;
+    }
+    
 }
