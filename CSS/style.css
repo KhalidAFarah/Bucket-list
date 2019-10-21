@@ -4,7 +4,8 @@
     margin: 0%;
     font-family: Arial;
 }
-section{
+
+section {
     width: 80%;
     margin-left: 5%;
     padding: 5%;
@@ -16,25 +17,24 @@ section{
     background-color: #6ABB5C;
     overflow: hidden;
     top: 0%;
-    
+    border-bottom: 5px solid darkgreen;
 }
 
-
-.Logo{
+.logo {
     float: left;
-    width: 11%;
+    width: 15%;
     background-color: white;
     opacity: 0.8;
 }
+
 .logoImg {
     width: 100%;
 }
 
 .menu ul {
-   
     width: 80%;
     padding-left: 25%;
-    padding-top: 2.5%;
+    padding-top: 3.5%;
 }
 
 .menu li {
@@ -42,7 +42,7 @@ section{
     margin-left: 3%;
     margin-top: -1%;
     text-align: center;
-    width: 10%;
+    width: 16%;
 }
 
 .menu li a {
@@ -50,23 +50,46 @@ section{
     border: 5px solid white;
     border-radius: 10px;
     font-size: 26px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
     list-style-type: none;
 }
-.menu li a:hover{ 
+
+.menu li a:hover {
     background-color: white;
-    color: #6ABB5C;
+    color: darkgreen;
+    border: 5px solid darkgreen;
 }
 
-
-.active a{
-    background-color: white;
-    color: #6ABB5C;
+.menu .active {
+    background-color: darkgreen;
+    color: white;
 }
 
+/* main */
 .main {
     width: 100%;
     text-align: center;
-    align-content: center; 
+    align-content: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #6ABB5C;
+    color: white;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0%;
+    border-top: 5px solid darkgreen;
 }
