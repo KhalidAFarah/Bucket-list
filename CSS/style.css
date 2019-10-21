@@ -4,6 +4,11 @@
     margin: 0%;
     font-family: Arial;
 }
+section{
+    width: 80%;
+    margin-left: 5%;
+    padding: 5%;
+}
 
 /* navbar */
 .menu {
@@ -61,7 +66,6 @@
 }
 
 .main {
-    padding-top: 2%;
     width: 100%;
     text-align: center;
     align-content: center; 
