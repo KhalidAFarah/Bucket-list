@@ -10,6 +10,7 @@ section {
     margin-left: 5%;
     padding: 5%;
     box-shadow: -9px 10px 23px 2px rgba(0,0,0,0.46);
+    margin: 0 auto;
 }
 
 /* navbar */
@@ -117,14 +118,13 @@ p {
 }
 .phoneDownload{
     margin-right: 40%;
-    margin-top: -29%;
+    margin-top: -23%;
     width: 18%;
 }
 .Stores{
     margin-top: 5%;
-}
-.download{
-    padding: 5% 0% 0% 0%;
+    margin-left: 20%;
+   
 }
 
 /* footer */
@@ -177,6 +177,8 @@ footer {
     width: 100px;
     height: auto;
 }
+
+/*Medie querry*/
 
 @media(max-width: 1000px){
     .logo{
