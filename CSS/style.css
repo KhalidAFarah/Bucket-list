@@ -129,12 +129,12 @@ p {
 footer {
     width: 100%;
     background-color: #6ABB5C;
-    color: white;
+    color: black;
     overflow: hidden;
-    font-weight: bold;
     text-align: center;
     bottom: 0%;
     border-top: 5px solid darkgreen;
+    padding-bottom: 2%;
 }
 
 @media(max-width: 1000px){
