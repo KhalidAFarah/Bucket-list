@@ -10,6 +10,7 @@ section {
     margin-left: 5%;
     padding: 5%;
     box-shadow: -9px 10px 23px 2px rgba(0,0,0,0.46);
+    margin: 0 auto;
 }
 
 /* navbar */
@@ -138,21 +139,7 @@ footer {
     padding-bottom: 2%;
 }
 
-@media(max-width: 1000px){
-    .logo{
-        width: 25%;
-    }
-    .main{
-        margin-top: 13%;
-    }
-    .menu ul{
-        width: 83%;
-        padding-left: 26%;
-        padding-top: 5.5%;
-    }
-    
-}
-
+/* Sponsor */
 .coop{
     width: 140px;
     height: auto;
@@ -189,4 +176,19 @@ footer {
 .facebook{
     width: 100px;
     height: auto;
+}
+
+@media(max-width: 1000px){
+    .logo{
+        width: 25%;
+    }
+    .main{
+        margin-top: 13%;
+    }
+    .menu ul{
+        width: 83%;
+        padding-left: 26%;
+        padding-top: 5.5%;
+    }
+    
 }
