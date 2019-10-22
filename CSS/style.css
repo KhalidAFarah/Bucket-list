@@ -2,7 +2,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Helvetica;
+    font-family: Arial;
 }
 
 section {
@@ -150,4 +150,42 @@ footer {
         padding-top: 5.5%;
     }
     
+}
+
+.coop{
+    width: 140px;
+    height: auto;
+    padding-bottom: 2%;
+}
+
+.narvesen{
+    width: 180px;
+    height: auto;
+}
+
+.circlek{
+    width: 180px;
+    height: auto;
+    margin-right: 1%;
+}
+
+.oslobysykkel{
+    width: 130px;
+    height: auto;
+}
+
+.tusenfryd{
+    width: 130px;
+    height: auto;
+}
+
+.zalando{
+    width: 150px;
+    height: auto;
+    margin-right: 1%;
+}
+
+.facebook{
+    width: 100px;
+    height: auto;
 }
