@@ -2,7 +2,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Arial;
+    font-family: Helvetica;
 }
 
 section {
@@ -20,6 +20,7 @@ section {
     overflow: hidden;
     top: 0%;
     border-bottom: 5px solid darkgreen;
+    z-index: 3;
 }
 
 .logo {
@@ -71,6 +72,26 @@ section {
 }
 
 /* main */
+.indexImg {
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.HomeTitle {
+    padding-top: 1%;
+    padding: absolute;
+    margin-top: -50px;
+    color: yellow;
+    text-shadow: 5px 5px black;
+    width: 90%;
+    margin-top: -15%;
+    margin-left: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
 .main {
     width: 100%;
     text-align: center;
