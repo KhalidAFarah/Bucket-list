@@ -109,9 +109,17 @@ p {
 .downloadLinks{
     width: 25%;
     display: block;
-    margin-left: 60%;
-    padding: 2%;
-   
+    margin-left: 50%;
+    margin-top: 1%;
+    padding: 2%;  
+}
+.phoneDownload{
+    margin-right: 40%;
+    margin-top: -29%;
+    width: 18%;
+}
+.Stores{
+    margin-top: 5%;
 }
 .download{
     padding: 5% 0% 0% 0%;
