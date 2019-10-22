@@ -178,6 +178,8 @@ footer {
     height: auto;
 }
 
+/*Medie querry*/
+
 @media(max-width: 1000px){
     .logo{
         width: 25%;
