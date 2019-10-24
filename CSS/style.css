@@ -33,8 +33,8 @@ section {
 .logo {
     float: left;
     width: 15%;
-    background-color: white;
-    opacity: 0.8;
+    background-color: black;
+    
 }
 
 .logoImg {
@@ -65,18 +65,20 @@ section {
     color: white;
     text-decoration: none;
     width: 80%;
+    background-color: black;
+    width: 50px;
    
 }
 
 .menu li a:hover {
     background-color: white;
-    color: darkgreen;
-    border: 5px solid darkgreen;
+    color: black;
+    border: 5px solid black;
 }
 
 .menu .active {
-    background-color: darkgreen;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /* main */
@@ -86,17 +88,20 @@ section {
    
     padding-bottom: 2%;
 }
+.backgroundImage{
+     opacity: 0.8;
+}
 
 .HomeTitle {
     padding-top: 1%;
     padding: absolute;
     margin-top: -50px;
-    color: yellow;
-    text-shadow: 5px 5px black;
+    color: black;
+    opacity: 8;
     width: 90%;
     margin-top: -15%;
     margin-left: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     text-align: center;
 }
 
