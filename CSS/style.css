@@ -4,14 +4,14 @@
     margin: 0%;
     font-family: Arial;
 }
-body{
-    
-}
+
+body {}
+
 section {
     width: 80%;
     margin-left: 5%;
     padding: 4%;
-    box-shadow: -9px 10px 23px 2px rgba(0,0,0,0.46);
+    box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
     margin-top: 10%;
     background-color: white;
@@ -29,7 +29,8 @@ section {
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
-.dropDown{
+
+.dropDown {
     display: none;
 }
 
@@ -37,7 +38,7 @@ section {
     float: left;
     width: 15%;
     background-color: white;
-    
+    padding-left: 1%;
 }
 
 .logoImg {
@@ -47,7 +48,7 @@ section {
 .menu ul {
     width: 80%;
     padding-left: 20%;
-    padding-top: 3.5%;
+    padding-top: 4%;
 }
 
 .menu li {
@@ -69,7 +70,7 @@ section {
     text-decoration: none;
     width: 80%;
     background-color: black;
-   
+
 }
 
 .menu li a:hover {
@@ -88,11 +89,12 @@ section {
 .indexImg {
     width: 100%;
     height: auto;
-   
+
     padding-bottom: 2%;
 }
-.backgroundImage{
-     opacity: 0.8;
+
+.backgroundImage {
+    opacity: 0.8;
 }
 
 .HomeTitle {
@@ -104,7 +106,7 @@ section {
     width: 90%;
     margin-top: -15%;
     margin-left: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     text-align: center;
 }
 
@@ -123,22 +125,25 @@ h1 {
 p {
     font-size: 1.5em;
 }
-.downloadLinks{
+
+.downloadLinks {
     width: 25%;
     display: block;
     margin-left: 50%;
     margin-top: 1%;
-    padding: 2%;  
+    padding: 2%;
 }
-.phoneDownload{
+
+.phoneDownload {
     margin-right: 40%;
     margin-top: -23%;
     width: 18%;
 }
-.Stores{
+
+.Stores {
     margin-top: 5%;
     margin-left: 20%;
-   
+
 }
 
 /* footer */
@@ -156,14 +161,14 @@ footer {
 
 /* Sponsor */
 
-.coop{
+.coop {
     width: 160px;
     height: auto;
     padding-top: 10%;
     padding-bottom: 12.5%;
 }
 
-.coopdiv{
+.coopdiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -173,13 +178,13 @@ footer {
 
 }
 
-.narvesen{
+.narvesen {
     width: 170px;
     height: auto;
     padding-bottom: 5%;
 }
 
-.narvesendiv{
+.narvesendiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -187,29 +192,29 @@ footer {
     margin-right: 3%;
 }
 
-.circlek{
+.circlek {
     width: 150px;
     height: auto;
     padding-top: 7%;
     padding-bottom: 4.5%;
 }
 
-.circlekdiv{
+.circlekdiv {
     width: 30%;
     height: auto;
     border: solid;
     float: left;
 }
 
-.oslobysykkel{
+.oslobysykkel {
     width: 100px;
     height: auto;
     padding-bottom: 5%;
     padding-top: 5%;
-    
+
 }
 
-.oslobysykkeldiv{
+.oslobysykkeldiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -219,14 +224,14 @@ footer {
 
 }
 
-.tusenfryd{
+.tusenfryd {
     width: 110px;
     height: auto;
     padding-top: 3%;
     padding-bottom: 3.5%;
 }
 
-.tusenfryddiv{
+.tusenfryddiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -236,14 +241,14 @@ footer {
     margin-left: 1.3%;
 }
 
-.zalando{
+.zalando {
     width: 130px;
     height: auto;
     margin-right: 1%;
     padding-bottom: 3.5%;
 }
 
-.zalandodiv{
+.zalandodiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -252,14 +257,14 @@ footer {
     margin-right: 3%;
 }
 
-.facebook{
+.facebook {
     width: 80px;
     height: auto;
     margin-top: 3.5%;
     padding-bottom: 5%;
 }
 
-.facebookdiv{
+.facebookdiv {
     width: 30%;
     height: auto;
     border: solid;
@@ -268,91 +273,105 @@ footer {
     margin-top: 3.5%;
 }
 
-.sectionSponsor{
+.sectionSponsor {
     display: inline-block;
 }
 
-/*Medie querry*/
-@media(max-width: 1300px){
+/*Media query*/
+@media(max-width: 1300px) {
     .menu li a {
         padding: 8%;
         padding-left: 23%;
         padding-right: 23%;
-        font-size: 23px;  
+        font-size: 23px;
     }
-    .menu ul{
+
+    .menu ul {
         width: 87%;
         margin-left: -2%;
     }
 }
 
-@media(max-width: 1000px){
-    .logo{
+@media(max-width: 1000px) {
+    .logo {
         width: 20%;
     }
-    .main{
+
+    .main {
         margin-top: 13%;
     }
-    .menu ul{
+
+    .menu ul {
         width: 80%;
         padding-left: 23%;
         padding-top: 5.5%;
     }
+
     .menu li a {
         padding: 8%;
         padding-left: 18%;
         padding-right: 18%;
-        font-size: 20px;  
+        font-size: 20px;
     }
 }
-@media(max-width: 700px){
-    .logo{
+
+@media(max-width: 700px) {
+    .logo {
         width: 20%;
     }
-    .main{
+
+    .main {
         margin-top: 13%;
     }
-    .menu ul{
+
+    .menu ul {
         width: 78%;
         padding-left: 23%;
         padding-top: 5.5%
     }
+
     .menu li a {
         padding: 8%;
         padding-left: 18%;
         padding-right: 18%;
-        font-size: 15px;  
+        font-size: 15px;
     }
 }
-@media(max-width: 600px){
-    .logo{
+
+@media(max-width: 600px) {
+    .logo {
         width: 20%;
     }
-    .main{
+
+    .main {
         margin-top: 13%;
     }
-    .menu ul{
+
+    .menu ul {
         width: 82%;
         padding-left: 23%;
         padding-top: 5.5%
     }
+
     .menu li a {
         padding: 8%;
         padding-left: 15%;
         padding-right: 15%;
-        font-size: 13px;  
+        font-size: 13px;
     }
 }
 
 /*Mobile layout*/
-@media(max-width: 500px){
-    .menuContent{
+@media(max-width: 500px) {
+    .menuContent {
         display: none;
     }
-    .logo{
+
+    .logo {
         width: 50%;
     }
-    .dropDownMenu{
+
+    .dropDownMenu {
         display: block;
     }
 }
