@@ -273,6 +273,34 @@ footer {
 }
 
 /*Media query*/
+@media(min-width: 1526px) {
+    .facebookdiv {
+        margin-left: 3%;
+    }
+
+    .tusenfryddiv {
+        margin-left: 2%;
+    }
+
+    .oslobysykkeldiv {
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+}
+
+@media(max-width: 1525px) {
+    .facebookdiv {
+        margin-right: 35%;
+    }
+
+    .oslobysykkeldiv,
+    .tusenfryddiv,
+    .zalandodiv {
+        margin-top: 2%;
+    }
+}
+
 @media(max-width: 1300px) {
     .menu li a {
         padding: 8%;
