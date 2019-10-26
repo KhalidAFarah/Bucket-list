@@ -70,7 +70,6 @@ section {
     text-decoration: none;
     width: 80%;
     background-color: black;
-
 }
 
 .menu li a:hover {
@@ -143,7 +142,6 @@ p {
 .Stores {
     margin-top: 5%;
     margin-left: 20%;
-
 }
 
 /* footer */
@@ -162,10 +160,10 @@ footer {
 /* Sponsor */
 
 .coop {
-    width: 160px;
+    width: 140px;
     height: auto;
     padding-top: 10%;
-    padding-bottom: 12.5%;
+    padding-bottom: 8%;
 }
 
 .coopdiv {
@@ -175,13 +173,13 @@ footer {
     float: left;
     margin-right: 3%;
     margin-left: 1.3%;
-
 }
 
 .narvesen {
     width: 170px;
     height: auto;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
+    padding-top: 1%;
 }
 
 .narvesendiv {
@@ -211,7 +209,6 @@ footer {
     height: auto;
     padding-bottom: 5%;
     padding-top: 5%;
-
 }
 
 .oslobysykkeldiv {
@@ -219,9 +216,8 @@ footer {
     height: auto;
     border: solid;
     float: left;
-    margin-right: 3%;
-    margin-top: 3.5%;
-
+    margin-top: 3%;
+    margin-left: 1%;
 }
 
 .tusenfryd {
@@ -237,8 +233,8 @@ footer {
     border: solid;
     float: left;
     margin-top: 3.5%;
-    margin-right: 3%;
-    margin-left: 1.3%;
+    margin-right: 0.5%;
+    margin-left: 3%;
 }
 
 .zalando {
@@ -254,7 +250,7 @@ footer {
     border: solid;
     float: left;
     margin-top: 3.5%;
-    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .facebook {
@@ -269,8 +265,8 @@ footer {
     height: auto;
     border: solid;
     float: left;
-    margin-left: 0%;
-    margin-top: 3.5%;
+    margin-left: 35%;
+    margin-top: 2.5%;
 }
 
 .sectionSponsor {
