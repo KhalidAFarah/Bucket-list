@@ -183,13 +183,13 @@ footer {
     height: auto;
     border: solid black 5px;
     border-radius: 5px;
-   
     margin-bottom: 1%;
-
 }
 .sponsorDivTekst{
-   
+    width: 96%;
+    padding: 2%;    
 }
+
 
 
 
