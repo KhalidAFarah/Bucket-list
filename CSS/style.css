@@ -34,13 +34,15 @@ section {
 .dropDown {
     display: none;
 }
-.dropDownMenu{
+
+.dropDownMenu {
     width: 15%;
     margin-left: 75%;
     margin-top: 6%;
     padding-bottom: 8%;
 }
-.dropDownMenuImg{
+
+.dropDownMenuImg {
     width: 100%;
 }
 
@@ -128,7 +130,7 @@ section {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 p {
@@ -136,21 +138,21 @@ p {
 }
 
 .downloadLinks {
-    width: 25%;
+    width: 35%;
     display: block;
     margin-left: 50%;
-    margin-top: 1%;
+    margin-top: 2%;
     padding: 2%;
 }
 
 .phoneDownload {
     margin-right: 40%;
-    margin-top: -23%;
-    width: 18%;
+    margin-top: -35%;
+    width: 25%;
 }
 
 .Stores {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 20%;
 }
 
@@ -174,7 +176,7 @@ footer {
     height: auto;
     padding-top: 3%;
     padding-bottom: 2%;
-    
+
     align-content: center;
 }
 
@@ -183,24 +185,29 @@ footer {
     height: auto;
     border: solid black 5px;
     border-radius: 5px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     margin-bottom: 1%;
 }
+<<<<<<< HEAD
 .sponsorDivTekst{
     width: 96%;
     padding: 2%;    
 }
+=======
+
+.sponsorDivTekst {}
+>>>>>>> master
 
 
 
 
 /*Media query*/
-@media(min-width: 1526px) {
- 
-}
+@media(min-width: 1526px) {}
 
-@media(max-width: 1525px) {
-  
-}
+@media(max-width: 1525px) {}
 
 @media(max-width: 1300px) {
     .menu li a {
@@ -295,7 +302,8 @@ footer {
         width: 50%;
     }
 
-    .dropDown, .dropDownMenuImg {
+    .dropDown,
+    .dropDownMenuImg {
         display: block;
     }
 }
