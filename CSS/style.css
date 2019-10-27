@@ -3,17 +3,18 @@
     padding: 0%;
     margin: 0%;
     font-family: Arial;
+    line-height: 200%;
 }
-body{
-    
-}
+
+body {}
+
 section {
     width: 80%;
     margin-left: 5%;
     padding: 4%;
-    box-shadow: -9px 10px 23px 2px rgba(0,0,0,0.46);
+    box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 11%;
     background-color: white;
     border-radius: 25px;
 }
@@ -23,18 +24,31 @@ section {
 .menu {
     position: fixed;
     width: 100%;
-    background-color: #6ABB5C;
+    background-color: white;
     overflow: hidden;
     top: 0%;
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
 
+.dropDown {
+    display: none;
+}
+.dropDownMenu{
+    width: 15%;
+    margin-left: 75%;
+    margin-top: 6%;
+    padding-bottom: 8%;
+}
+.dropDownMenuImg{
+    width: 100%;
+}
+
 .logo {
     float: left;
     width: 15%;
-    background-color: black;
-    
+    background-color: white;
+    padding-left: 0%;
 }
 
 .logoImg {
@@ -44,30 +58,28 @@ section {
 .menu ul {
     width: 80%;
     padding-left: 20%;
-    padding-top: 3.5%;
+    padding-top: 4%;
 }
 
 .menu li {
     display: inline-block;
     margin-top: -1%;
     width: 20%;
-    padding-right: 4%;
+    padding-right: 2%;
 }
 
 .menu li a {
     padding: 8%;
     padding-left: 25%;
     padding-right: 25%;
-    border: 5px solid white;
+    border: 5px solid #6ABB5C;
     border-radius: 10px;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
     text-decoration: none;
     width: 80%;
     background-color: black;
-    width: 50px;
-   
 }
 
 .menu li a:hover {
@@ -77,19 +89,21 @@ section {
 }
 
 .menu .active {
-    background-color: white;
+    background-color: #6ABB5C;
     color: black;
+    border: solid black 5px;
 }
 
 /* main */
 .indexImg {
     width: 100%;
     height: auto;
-   
+
     padding-bottom: 2%;
 }
-.backgroundImage{
-     opacity: 0.8;
+
+.backgroundImage {
+    opacity: 0.8;
 }
 
 .HomeTitle {
@@ -101,7 +115,7 @@ section {
     width: 90%;
     margin-top: -15%;
     margin-left: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     text-align: center;
 }
 
@@ -120,22 +134,24 @@ h1 {
 p {
     font-size: 1.5em;
 }
-.downloadLinks{
+
+.downloadLinks {
     width: 25%;
     display: block;
     margin-left: 50%;
     margin-top: 1%;
-    padding: 2%;  
+    padding: 2%;
 }
-.phoneDownload{
+
+.phoneDownload {
     margin-right: 40%;
     margin-top: -23%;
     width: 18%;
 }
-.Stores{
+
+.Stores {
     margin-top: 5%;
     margin-left: 20%;
-   
 }
 
 /* footer */
@@ -152,57 +168,134 @@ footer {
 }
 
 /* Sponsor */
-.coop{
-    width: 140px;
+
+.sponsorImg {
+    width: 15%;
     height: auto;
+    padding-top: 3%;
     padding-bottom: 2%;
+    
+    align-content: center;
 }
 
-.narvesen{
-    width: 180px;
+.sponsorDiv {
+    width: 100%;
     height: auto;
+    border: solid black 5px;
+    border-radius: 5px;
+   
+    margin-bottom: 1%;
+
+}
+.sponsorDivTekst{
+   
 }
 
-.circlek{
-    width: 180px;
-    height: auto;
-    margin-right: 1%;
+
+
+/*Media query*/
+@media(min-width: 1526px) {
+ 
 }
 
-.oslobysykkel{
-    width: 130px;
-    height: auto;
+@media(max-width: 1525px) {
+  
 }
 
-.tusenfryd{
-    width: 130px;
-    height: auto;
-}
-
-.zalando{
-    width: 150px;
-    height: auto;
-    margin-right: 1%;
-}
-
-.facebook{
-    width: 100px;
-    height: auto;
-}
-
-/*Medie querry*/
-
-@media(max-width: 1000px){
-    .logo{
-        width: 25%;
+@media(max-width: 1300px) {
+    .menu li a {
+        padding: 8%;
+        padding-left: 23%;
+        padding-right: 23%;
+        font-size: 23px;
     }
-    .main{
+
+    .menu ul {
+        width: 87%;
+        margin-left: -2%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .logo {
+        width: 20%;
+    }
+
+    .main {
         margin-top: 13%;
     }
-    .menu ul{
-        width: 83%;
-        padding-left: 26%;
+
+    .menu ul {
+        width: 80%;
+        padding-left: 23%;
         padding-top: 5.5%;
     }
-    
+
+    .menu li a {
+        padding: 8%;
+        padding-left: 18%;
+        padding-right: 18%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .logo {
+        width: 20%;
+    }
+
+    .main {
+        margin-top: 13%;
+    }
+
+    .menu ul {
+        width: 78%;
+        padding-left: 23%;
+        padding-top: 5.5%
+    }
+
+    .menu li a {
+        padding: 8%;
+        padding-left: 18%;
+        padding-right: 18%;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .logo {
+        width: 20%;
+    }
+
+    .main {
+        margin-top: 13%;
+    }
+
+    .menu ul {
+        width: 82%;
+        padding-left: 23%;
+        padding-top: 5.5%
+    }
+
+    .menu li a {
+        padding: 8%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 13px;
+    }
+}
+
+/*Mobile layout*/
+@media(max-width: 500px) {
+    .menuContent {
+        display: none;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .dropDown, .dropDownMenuImg {
+        display: block;
+    }
 }
