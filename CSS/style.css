@@ -176,7 +176,6 @@ footer {
     height: auto;
     padding-top: 3%;
     padding-bottom: 2%;
-
     align-content: center;
 }
 
@@ -185,21 +184,15 @@ footer {
     height: auto;
     border: solid black 5px;
     border-radius: 5px;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     margin-bottom: 1%;
 }
-<<<<<<< HEAD
+
 .sponsorDivTekst{
     width: 96%;
     padding: 2%;    
 }
-=======
 
-.sponsorDivTekst {}
->>>>>>> master
+
 
 
 
