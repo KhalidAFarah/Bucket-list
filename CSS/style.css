@@ -185,10 +185,6 @@ footer {
     width: device-width;
 }
 /*Media query*/
-@media(min-width: 1526px) {}
-
-@media(max-width: 1525px) {}
-
 @media(max-width: 1300px) {
     .menuContent li a {
         padding: 8%;
