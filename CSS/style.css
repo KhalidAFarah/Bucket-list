@@ -25,27 +25,11 @@ section {
     position: fixed;
     width: 100%;
     background-color: white;
-    overflow: hidden;
+
     top: 0%;
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
-
-.dropDown {
-    display: none;
-}
-
-.dropDownMenu {
-    width: 15%;
-    margin-left: 75%;
-    margin-top: 6%;
-    padding-bottom: 8%;
-}
-
-.dropDownMenuImg {
-    width: 100%;
-}
-
 .logo {
     float: left;
     width: 15%;
@@ -53,11 +37,16 @@ section {
     padding-left: 0%;
 }
 
+ .dropDown {
+    display: none;
+    position: absolute;
+}
+
 .logoImg {
     width: 100%;
 }
 
-.menu ul {
+.menuContent ul {
     width: 80%;
     padding-left: 20%;
     padding-top: 4%;
@@ -70,7 +59,7 @@ section {
     padding-right: 2%;
 }
 
-.menu li a {
+.menuContent li a {
     padding: 8%;
     padding-left: 25%;
     padding-right: 25%;
@@ -84,7 +73,7 @@ section {
     background-color: black;
 }
 
-.menu li a:hover {
+.menuContent li a:hover {
     background-color: white;
     color: black;
     border: 5px solid black;
@@ -159,7 +148,7 @@ p {
 /* footer */
 footer {
     width: 100%;
-    background-color: #6ABB5C;
+    background-color: white;
     color: black;
     overflow: hidden;
     text-align: center;
@@ -192,25 +181,19 @@ footer {
     padding: 2%;    
 }
 
-
-
-
-
-
+@-ms-viewport{
+    width: device-width;
+}
 /*Media query*/
-@media(min-width: 1526px) {}
-
-@media(max-width: 1525px) {}
-
 @media(max-width: 1300px) {
-    .menu li a {
+    .menuContent li a {
         padding: 8%;
         padding-left: 23%;
         padding-right: 23%;
         font-size: 23px;
     }
 
-    .menu ul {
+    .menuContent ul {
         width: 87%;
         margin-left: -2%;
     }
@@ -225,13 +208,13 @@ footer {
         margin-top: 13%;
     }
 
-    .menu ul {
+    .menuContent ul {
         width: 80%;
         padding-left: 23%;
         padding-top: 5.5%;
     }
 
-    .menu li a {
+    .menuContent li a {
         padding: 8%;
         padding-left: 18%;
         padding-right: 18%;
@@ -248,13 +231,13 @@ footer {
         margin-top: 13%;
     }
 
-    .menu ul {
+    .menuContent ul {
         width: 78%;
         padding-left: 23%;
         padding-top: 5.5%
     }
 
-    .menu li a {
+    .menuContent li a {
         padding: 8%;
         padding-left: 18%;
         padding-right: 18%;
@@ -271,13 +254,13 @@ footer {
         margin-top: 13%;
     }
 
-    .menu ul {
+    .menuContent ul {
         width: 82%;
         padding-left: 23%;
         padding-top: 5.5%
     }
 
-    .menu li a {
+    .menuContent li a {
         padding: 8%;
         padding-left: 15%;
         padding-right: 15%;
@@ -287,8 +270,62 @@ footer {
 
 /*Mobile layout*/
 @media(max-width: 500px) {
+    
     .menuContent {
         display: none;
+        
+    }
+    .dropDownMenu {
+        width: 15%;
+        margin-left: 75%;
+        margin-top: 6%;
+        padding-bottom: 9%;
+    }
+
+    .dropDownMenuImg {
+        width: 100%;
+    }
+    .dropDownContent li{
+         width: 100%;
+        margin: 10% auto;        
+    }
+    .dropDownContent ul{
+        margin-top: -5%;
+        padding: 0%;
+        width: 100%;
+        border-bottom: 5px solid darkgreen;
+        padding-bottom: 9%;
+        
+    }
+    .dropDownContent li a{
+        position: absolute;
+        width: 15%;
+        font-size: 20px;
+        margin-left:15%;
+        text-align: center;
+        
+        border: 5px solid #6ABB5C;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        
+        padding: 3% 25%;
+      
+    }
+    .dropDownContent{
+        display: none;        
+        width: 100%;
+        position: absolute;
+        left: 0;        
+    }
+
+    .HomeTitle{
+        font-size: 40%;
+        margin-top: -40%;
+    }
+    .main {
+        margin-top: 33%;
     }
 
     .logo {
@@ -296,7 +333,15 @@ footer {
     }
 
     .dropDown,
-    .dropDownMenuImg {
+    .dropDownMenu {
         display: block;
+    }
+    
+    .dropDownMenu:hover .dropDownContent{
+        display: block;
+        background-color: white;
+        overflow: visible;
+        z-index: 3;
+       
     }
 }
