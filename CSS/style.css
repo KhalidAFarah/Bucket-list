@@ -14,7 +14,7 @@ header {
 }
 
 section {
-    width: 60%;
+    width: 80%;
     margin-left: 5%;
     padding: 4%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
@@ -29,7 +29,7 @@ section {
 .menu {
     position: fixed;
     width: 100%;
-    height: 20%;
+   
     background-color: white;
     top: 0%;
     border-bottom: 5px solid darkgreen;
@@ -38,12 +38,7 @@ section {
 
 .logo {
     float: left;
-<<<<<<< HEAD
-    width: 11%;
-=======
-    width: 12%;
-    height: 20%;
->>>>>>> master
+    width: 14%;
     background-color: white;
     padding-left: 2%;
 }
@@ -60,12 +55,7 @@ section {
 .menuContent ul {
     width: 80%;
     padding-left: 20%;
-<<<<<<< HEAD
-    padding-top: 4%;
-    margin-top: -1%;
-=======
-    padding-top: 3%;
->>>>>>> master
+    padding-top: 5%;
 }
 
 .menu li {
@@ -76,20 +66,12 @@ section {
 }
 
 .menuContent li a {
-<<<<<<< HEAD
-    padding: 4%;
-=======
     padding: 10%;
->>>>>>> master
     padding-left: 15%;
     padding-right: 15%;
     border: 5px solid #6ABB5C;
     border-radius: 10px;
-<<<<<<< HEAD
-    font-size: 25px;
-=======
     font-size: 30px;
->>>>>>> master
     font-weight: bold;
     color: white;
     text-decoration: none;
