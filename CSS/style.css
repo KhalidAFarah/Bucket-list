@@ -8,7 +8,7 @@
 
 body {}
 
-header{
+header {
     font-size: 12px;
     padding: 5%;
 }
@@ -29,20 +29,22 @@ section {
 .menu {
     position: fixed;
     width: 100%;
+    height: 20%;
     background-color: white;
-
     top: 0%;
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
+
 .logo {
     float: left;
-    width: 15%;
+    width: 12%;
+    height: 20%;
     background-color: white;
-    padding-left: 0%;
+    padding-left: 2%;
 }
 
- .dropDown {
+.dropDown {
     display: none;
     position: absolute;
 }
@@ -54,7 +56,7 @@ section {
 .menuContent ul {
     width: 80%;
     padding-left: 20%;
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 .menu li {
@@ -65,12 +67,12 @@ section {
 }
 
 .menuContent li a {
-    padding: 8%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     border: 5px solid #6ABB5C;
     border-radius: 10px;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -182,65 +184,74 @@ footer {
     margin-bottom: 1%;
 }
 
-.sponsorDivTekst{
+.sponsorDivTekst {
     width: 96%;
-    padding: 2%;    
+    padding: 2%;
 }
 
-@-ms-viewport{
+@-ms-viewport {
     width: device-width;
 }
+
 /*Media query*/
 @media(max-width: 1300px) {
     .menuContent li a {
-        padding: 8%;
-        padding-left: 23%;
-        padding-right: 23%;
-        font-size: 23px;
+        padding: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 25px;
     }
 
     .menuContent ul {
-        width: 87%;
+        width: 90%;
         margin-left: -2%;
+    }
+    
+    .menu {
+        height: 15%;
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .logo {
-        width: 20%;
+        width: 12%;
     }
 
     .main {
-        margin-top: 13%;
+        margin-top: 8%;
+    }
+    
+    .menu {
+        height: 15%;
     }
 
     .menuContent ul {
         width: 80%;
         padding-left: 23%;
-        padding-top: 5.5%;
+        padding-top: 5 %;
     }
 
     .menuContent li a {
-        padding: 8%;
+        padding: 10%;
         padding-left: 18%;
         padding-right: 18%;
         font-size: 20px;
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 945px) {
     .logo {
-        width: 20%;
+        width: 15%;
     }
 
     .main {
-        margin-top: 13%;
+        margin-top: 8%;
     }
 
     .menuContent ul {
         width: 78%;
         padding-left: 23%;
-        padding-top: 5.5%
+        padding-top: 3%
     }
 
     .menuContent li a {
@@ -276,11 +287,12 @@ footer {
 
 /*Mobile layout*/
 @media(max-width: 500px) {
-    
+
     .menuContent {
         display: none;
-        
+
     }
+
     .dropDownMenu {
         width: 15%;
         margin-left: 75%;
@@ -291,45 +303,50 @@ footer {
     .dropDownMenuImg {
         width: 100%;
     }
-    .dropDownContent li{
-         width: 100%;
-        margin: 10% auto;        
+
+    .dropDownContent li {
+        width: 100%;
+        margin: 10% auto;
     }
-    .dropDownContent ul{
+
+    .dropDownContent ul {
         margin-top: -5%;
         padding: 0%;
         width: 100%;
         border-bottom: 5px solid darkgreen;
         padding-bottom: 9%;
-        
+
     }
-    .dropDownContent li a{
+
+    .dropDownContent li a {
         position: absolute;
-        width: 15%;
+        width: 20%;
         font-size: 20px;
-        margin-left:15%;
+        margin-left: 15%;
         text-align: center;
-        
+
         border: 5px solid #6ABB5C;
         border-radius: 10px;
         background-color: black;
         color: white;
         text-decoration: none;
-        
+
         padding: 3% 25%;
-      
-    }
-    .dropDownContent{
-        display: none;        
-        width: 100%;
-        position: absolute;
-        left: 0;        
+
     }
 
-    .HomeTitle{
+    .dropDownContent {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .HomeTitle {
         font-size: 40%;
         margin-top: -40%;
     }
+
     .main {
         margin-top: 33%;
     }
@@ -342,12 +359,12 @@ footer {
     .dropDownMenu {
         display: block;
     }
-    
-    .dropDownMenu:hover .dropDownContent{
+
+    .dropDownMenu:hover .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
         z-index: 3;
-       
+
     }
 }
