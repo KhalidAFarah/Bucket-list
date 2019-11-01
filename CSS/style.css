@@ -166,11 +166,11 @@ footer {
 }
 
 /* Sponsor */
-.coopdiv{
-    width: 30%;
-    height: 250px;
-
+    height: 15em;
+    width: 31%;
+.Sponsordiv{
     float: left;
+    margin-left: 2.3%;
 }
 
 .narvesendiv{
