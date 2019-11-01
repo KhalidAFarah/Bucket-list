@@ -166,93 +166,19 @@ footer {
 }
 
 /* Sponsor */
-.coopdiv{
+.Sponsordiv{
     width: 30%;
-    height: 250px;
-
+    height: 15em;
     float: left;
+    margin-left: 2%;
+}
+.middleSponsor{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
-.narvesendiv{
-    width: 30%;
-    height: 250px;
-
-    float: left;
-    margin-left: 4%;
-}
-
-.circlekdiv{
-    width: 30%;
-    height: 250px;
-
-    float: left;
-    margin-left: 4%;
-}
-
-.oslobysykkeldiv{
-    width: 30%;
-    height: 280px;
-
-    float: left;
-    margin-top: 3%;
-}
-
-.tusenfryddiv{
-    width: 30%;
-    height: 280px;
-
-    float: left;
-    margin-left: 4%;
-    margin-top: 3%;
-}
-
-.zalandodiv{
-    width: 30%;
-    height: 280px;
-
-    float: left;
-    margin-left: 4%;
-    margin-top: 3%;
-}
-
-.facebookdiv{
-    width: 60%;
-    height: 350px;
-    float: left;
-    margin-left: 18%;
-    margin-top: 3%;
-}
-
-.sponsorImg {
-    width: 50%;
-    height: auto;
-    padding-bottom: 2%;
-    align-content: center;
-    margin-top: 3%;
-}
-
-.sponsorImg2 {
-    width: 30%;
-    height: auto;
-    padding-bottom: 2%;
-    align-content: center;
-    margin-top: 3%;
-}
-
-.facebookpng{
-    width: 13%;
-    height: auto;
-}
-
-.tusenfrydpng{
-    width: 30%;
-    height: auto;
-    padding-bottom: 2%;
-    align-content: center;
-
-}
-
-.sponsorDivTekst {
+.sponsorDivText {
     width: 96%;
     padding: 2%;
     font-size: 13px;
