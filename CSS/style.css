@@ -183,7 +183,7 @@ footer {
 /*Media query*/
 @media(max-width: 1250px) {
      .menuContent li a {
-       font-size: 22px;
+       font-size: 20px;
     }
 }
 
@@ -191,6 +191,7 @@ footer {
     .menuContent li a {
         font-size: 18px;
     }
+    
 }
 @media(max-width: 945px) {
     .logo{
@@ -231,13 +232,20 @@ footer {
         padding-right: 20%;
         font-size: 13px;
     }
+    header{
+        font-size: 13px;
+    }
 }
 @media(max-width: 650px){
-     .menuContent li a {
+    .menuContent li a {
          font-size: 10px;
     }
 }
-
+@media(max-width: 550px){
+    menuContent li{
+        padding-right: 5%;
+    }
+}
 /*Mobile layout*/
 @media(max-width: 500px) {
     .menuContent {
@@ -323,5 +331,13 @@ footer {
         background-color: white;
         overflow: visible;
         z-index: 3;
+    }
+    @media(max-width: 300px){
+        .dropDownContent li a{
+            font-size: 13px;
+        }
+        header{
+            font-size: 5px;
+        }
     }
 }
