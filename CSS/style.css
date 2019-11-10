@@ -51,29 +51,31 @@ section {
 }
 
 .menuContent ul {
-    width: 70%;
-    padding-left: 12%;
-    padding-top: 5%;
-    margin-top: -3%;
+    width: 100%;
+    padding-top: 2%;
 }
 
 .menu li {
     display: inline-block;
     width: 15%;
-    padding-right: 2%;
+}
+
+.menu .active {
+    background-color: #6ABB5C;
+    color: black;
+    border: solid black 5px;
 }
 
 .menuContent li a {
     padding: 3%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     border: 5px solid #6ABB5C;
     border-radius: 10px;
     font-size: 25px;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    width: 80%;
     background-color: black;
 }
 
@@ -82,18 +84,25 @@ section {
     color: black;
     border: 5px solid black;
 }
-.Language{
-    float: right;
+
+.language {
+    float: left;
     font-size: 25px;
-    margin-right: 3.5%;
-    width: 15%;
-}
-.language li a{
-    padding-right: 3%;
+    width: 50%;
+    font-weight: bold;
 }
 
-.menu .active {
-    background-color: #6ABB5C;
+.language li {
+    padding: 2%;
+}
+
+.language li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.language .active2 {
+    background-color: darkorange;
     color: black;
     border: solid black 5px;
 }
