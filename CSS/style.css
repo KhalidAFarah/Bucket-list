@@ -51,7 +51,7 @@ section {
 }
 
 .menuContent ul {
-    width: 80%;
+    width: 70%;
     padding-left: 12%;
     padding-top: 5%;
     margin-top: -3%;
@@ -81,6 +81,15 @@ section {
     background-color: white;
     color: black;
     border: 5px solid black;
+}
+.Language{
+    float: right;
+    font-size: 25px;
+    margin-right: 3.5%;
+    width: 15%;
+}
+.language li a{
+    padding-right: 3%;
 }
 
 .menu .active {
