@@ -2,7 +2,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Arial;
+    font-family: Helvetica;
     line-height: 150%;
 }
 
@@ -15,7 +15,7 @@ section {
     width: 70%;
     margin-left: 5%;
     padding: 5%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
     margin-top: 7%;
@@ -182,32 +182,37 @@ footer {
 
 /*Media query*/
 @media(max-width: 1250px) {
-     .menuContent li a {
-       font-size: 20px;
+    .menuContent li a {
+        font-size: 20px;
     }
 }
-@media(max-width: 1160px){
-     .SponsorDiv{
+
+@media(max-width: 1160px) {
+    .SponsorDiv {
         width: 45%;
     }
 }
+
 @media(max-width: 1100px) {
     .menuContent li a {
         font-size: 18px;
     }
 }
+
 @media(max-width: 945px) {
-    .logo{
+    .logo {
         width: 12%;
     }
+
     .menuContent ul {
         margin-top: -2%
     }
 
-    .menuContent li a { 
+    .menuContent li a {
         font-size: 13px;
     }
-    .main{
+
+    .main {
         margin-top: 3%;
     }
 }
@@ -235,38 +240,45 @@ footer {
         padding-right: 20%;
         font-size: 13px;
     }
-    header{
+
+    header {
         font-size: 13px;
     }
-    p{
+
+    p {
         font-size: 15px;
     }
 }
-@media(max-width: 650px){
+
+@media(max-width: 650px) {
     .menuContent li a {
-         font-size: 10px;
+        font-size: 10px;
     }
 }
-@media(max-width: 522px){
-    .menuContent li{
+
+@media(max-width: 522px) {
+    .menuContent li {
         width: 22%;
         padding-right: 2%;
     }
 }
+
 /*Mobile layout*/
 @media(max-width: 500px) {
     .menuContent {
         display: none;
     }
-    .SponsorDiv{
+
+    .SponsorDiv {
         display: inline-block;
         float: none;
         width: 100%;
         position: relative;
         font-size: 5px;
-        
+
     }
-    p{
+
+    p {
         padding-top: 3%;
         font-size: 18px;
     }
@@ -340,11 +352,13 @@ footer {
         overflow: visible;
         z-index: 3;
     }
-    @media(max-width: 300px){
-        .dropDownContent li a{
+
+    @media(max-width: 300px) {
+        .dropDownContent li a {
             font-size: 13px;
         }
-        header{
+
+        header {
             font-size: 5px;
         }
     }
