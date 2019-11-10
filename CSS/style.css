@@ -6,26 +6,25 @@
     line-height: 150%;
 }
 
-body {}
-
 header {
-    font-size: 12px;
-    padding: 4%;
+    font-size: 12;
+    padding: 2%;
 }
 
 section {
     width: 70%;
     margin-left: 5%;
-    padding: 4%;
+    padding: 5%;
+    padding-bottom: 8%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
     margin-top: 7%;
     background-color: white;
     border-radius: 25px;
+    max-height: 100%;
 }
 
 /* navbar */
-
 .menu {
     position: fixed;
     width: 100%;
@@ -39,7 +38,7 @@ section {
     float: left;
     width: 10%;
     background-color: white;
-    padding-left: 2%;
+    padding-left: 3%;
 }
 
 .dropDown {
@@ -94,7 +93,6 @@ section {
 .indexImg {
     width: 100%;
     height: auto;
-
     padding-bottom: 2%;
 }
 
@@ -125,11 +123,11 @@ section {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .downloadLinks {
@@ -155,7 +153,6 @@ p {
 footer {
     width: 100%;
     background-color: white;
-    color: black;
     overflow: hidden;
     text-align: center;
     bottom: 0%;
@@ -167,8 +164,8 @@ footer {
 /* Sponsor */
 .SponsorDiv {
     width: 31%;
-    height: 13em;
-    float: left;
+    display: inline-block;
+    float: none;
     margin-left: 2%;
     margin-bottom: 5%;
 }
@@ -184,102 +181,86 @@ footer {
 }
 
 /*Media query*/
-@media(max-width: 1300px) {
-    .menuContent li a {
-
-        font-size: 25px;
+@media(max-width: 1250px) {
+     .menuContent li a {
+       font-size: 20px;
     }
-
-    .menuContent ul {
-        width: 90%;
-        margin-left: -8%;
-    }
-
-    .logo {
-        width: 12%;
-    }
-
-
 }
 
 @media(max-width: 1100px) {
+    .menuContent li a {
+        font-size: 18px;
+    }
+    
+}
+@media(max-width: 945px) {
+    .logo{
+        width: 12%;
+    }
+    .menuContent ul {
+        margin-top: -2%
+    }
+
+    .menuContent li a { 
+        font-size: 13px;
+    }
+    .main{
+        margin-top: 3%;
+    }
+}
+
+@media(max-width: 800px) {
     .logo {
         width: 14%;
-        margin-top: 1%;
+        padding-top: 2%;
+        padding-left: 0%;
     }
 
     .main {
-        margin-top: 8%;
-    }
-
-    .menu {}
-
-    .menuContent ul {
-        width: 80%;
-        padding-left: 23%;
-        margin-top: -2%;
-    }
-
-    .menuContent li a {
-        padding: 10%;
-        padding-left: 18%;
-        padding-right: 18%;
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 945px) {
-    .logo {
-        width: 15%;
-    }
-
-    .main {
-        margin-top: 8%;
+        margin-top: 6%;
     }
 
     .menuContent ul {
-        width: 78%;
-        padding-left: 23%;
-        padding-top: 3%
-    }
-
-    .menuContent li a {
-        padding: 8%;
-        padding-left: 18%;
-        padding-right: 18%;
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 600px) {
-    .logo {
-        width: 20%;
-    }
-
-    .main {
-        margin-top: 13%;
-    }
-
-    .menuContent ul {
-        width: 82%;
-        padding-left: 23%;
+        width: 85%;
+        padding-left: 15%;
         padding-top: 5.5%
     }
 
     .menuContent li a {
-        padding: 8%;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding: 6%;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 13px;
+    }
+    header{
         font-size: 13px;
     }
 }
-
+@media(max-width: 650px){
+    .menuContent li a {
+         font-size: 10px;
+    }
+}
+@media(max-width: 550px){
+    menuContent li{
+        padding-right: 5%;
+    }
+}
 /*Mobile layout*/
 @media(max-width: 500px) {
-
     .menuContent {
         display: none;
-
+    }
+    .SponsorDiv{
+        display: inline-block;
+        float: none;
+        width: 100%;
+        position: relative;
+        font-size: 5px;
+        
+    }
+    header{
+        font-size: 10px;
     }
 
     .dropDownMenu {
@@ -304,24 +285,20 @@ footer {
         width: 100%;
         border-bottom: 5px solid darkgreen;
         padding-bottom: 9%;
-
     }
 
     .dropDownContent li a {
         position: absolute;
-        width: 20%;
-        font-size: 20px;
-        margin-left: 15%;
+        width: 30%;
+        font-size: 22px;
+        margin-left: 10%;
         text-align: center;
-
         border: 5px solid #6ABB5C;
         border-radius: 10px;
         background-color: black;
         color: white;
         text-decoration: none;
-
         padding: 3% 25%;
-
     }
 
     .dropDownContent {
@@ -337,11 +314,11 @@ footer {
     }
 
     .main {
-        margin-top: 33%;
+        margin-top: 25%;
     }
 
     .logo {
-        width: 50%;
+        width: 40%;
     }
 
     .dropDown,
@@ -354,6 +331,13 @@ footer {
         background-color: white;
         overflow: visible;
         z-index: 3;
-
+    }
+    @media(max-width: 300px){
+        .dropDownContent li a{
+            font-size: 13px;
+        }
+        header{
+            font-size: 5px;
+        }
     }
 }
