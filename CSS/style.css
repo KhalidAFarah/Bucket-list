@@ -238,15 +238,19 @@ footer {
     header{
         font-size: 13px;
     }
+    p{
+        font-size: 15px;
+    }
 }
 @media(max-width: 650px){
     .menuContent li a {
          font-size: 10px;
     }
 }
-@media(max-width: 550px){
-    menuContent li{
-        padding-right: 5%;
+@media(max-width: 522px){
+    .menuContent li{
+        width: 22%;
+        padding-right: 2%;
     }
 }
 /*Mobile layout*/
@@ -262,8 +266,9 @@ footer {
         font-size: 5px;
         
     }
-    header{
-        font-size: 10px;
+    p{
+        padding-top: 3%;
+        font-size: 18px;
     }
 
     .dropDownMenu {
