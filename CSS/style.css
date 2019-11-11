@@ -5,6 +5,9 @@
     font-family: Helvetica;
     line-height: 150%;
 }
+:focus{
+outline-color: hotpink;
+}
 
 header {
     font-size: 12;
@@ -51,8 +54,8 @@ section {
 }
 
 .menuContent ul {
-    width: 100%;
-    padding-top: 2%;
+    width: 93%;
+    padding-top: 1.5%;
 }
 
 .menu li {
@@ -90,6 +93,8 @@ section {
     font-size: 25px;
     width: 50%;
     font-weight: bold;
+    margin-left: 80%;
+    margin-top: -5.7%;
 }
 
 .language li {
@@ -199,8 +204,8 @@ footer {
 }
 
 /*Media query*/
-@media(max-width: 1250px) {
-    .menuContent li a {
+@media(max-width: 1260px) {
+    .menuContent li a, language li a {
         font-size: 20px;
     }
 }
@@ -217,72 +222,73 @@ footer {
     }
 }
 
-@media(max-width: 945px) {
+@media(max-width: 1030px) {
     .logo {
         width: 12%;
     }
-
-    .menuContent ul {
-        margin-top: -2%
-    }
-
-    .menuContent li a {
+    .menuContent li a, language li a{
         font-size: 13px;
     }
-
-    .main {
-        margin-top: 3%;
+    .menuContent li{
+        width: 13%;
+        padding-right: 1%;
+    }
+    .language li{
+        padding-right: 6%;
+    }
+    .menuContent ul{
+        margin-top: 1%;
+    }
+    .language{
+        margin-top: -8%;
     }
 }
-
-@media(max-width: 800px) {
-    .logo {
-        width: 14%;
-        padding-top: 2%;
-        padding-left: 0%;
+@media(max-width: 790px){
+    .menuContent li{
+        width: 13%;
     }
-
-    .main {
-        margin-top: 6%;
+    .menuContent li a, language li a{
+        font-size: 11px;
     }
-
-    .menuContent ul {
-        width: 85%;
-        padding-left: 15%;
-        padding-top: 5.5%
+    .language li{
+        padding-right: 6%;
     }
-
-    .menuContent li a {
-        padding: 6%;
-        padding-left: 20%;
-        padding-right: 20%;
-        font-size: 13px;
+    .language{
+        margin-left: 80%;
+        
     }
-
-    header {
-        font-size: 13px;
-    }
-
-    p {
-        font-size: 15px;
-    }
+    
 }
-
-@media(max-width: 650px) {
-    .menuContent li a {
+@media(max-width: 690px){
+     .logo {
+        width: 15%;
+    }
+    .menuContent li a, language li a{
         font-size: 10px;
     }
-}
-
-@media(max-width: 522px) {
-    .menuContent li {
-        width: 22%;
-        padding-right: 2%;
+     .menuContent li{
+        width: 12%;
     }
+     .language li{
+        padding-right: 4%;
+        
+    }
+    .menuContent{
+        margin-top: 6%;
+        margin-right: 40%;
+        width: 76%;
+    }
+    .menuContent li{
+        width: 20%;
+    }
+    .language{
+        margin-left: 120%;
+    }
+    
 }
 
 /*Mobile layout*/
-@media(max-width: 500px) {
+@media(max-width: 700px) {
     .menuContent {
         display: none;
     }
@@ -366,6 +372,13 @@ footer {
     }
 
     .dropDownMenu:hover .dropDownContent {
+        display: block;
+        background-color: white;
+        overflow: visible;
+        z-index: 3;
+    }
+    
+     .dropDownMenu:focus .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
