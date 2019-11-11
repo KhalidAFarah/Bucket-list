@@ -6,7 +6,7 @@
     line-height: 150%;
 }
 :focus{
-outline-color: hotpink;
+    outline-color: red;
 }
 
 header {
@@ -56,36 +56,36 @@ section {
 .menuContent ul {
     width: 93%;
     padding-top: 1.5%;
+    margin-left: 38%;
 }
 
 .menu li {
     display: inline-block;
-    width: 15%;
+    width: 8%;
+    padding-right: 1%;
 }
 
 .menu .active {
-    background-color: #6ABB5C;
     color: black;
-    border: solid black 5px;
+    background-color: white;
+    border-bottom: solid black;
 }
 
 .menuContent li a {
     padding: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
-    border: 5px solid #6ABB5C;
+    padding-left: 5;
+    padding-right: 5;
     border-radius: 10px;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
-    background-color: black;
 }
 
 .menuContent li a:hover {
     background-color: white;
     color: black;
-    border: 5px solid black;
+    border-bottom: solid black;
 }
 
 .language {
@@ -93,17 +93,16 @@ section {
     font-size: 25px;
     width: 50%;
     font-weight: bold;
-    margin-left: 80%;
+    margin-left: 64%;
     margin-top: -5.7%;
 }
 
 .language li {
-    padding: 2%;
+    padding: 3%;
 }
 
 .language li a:hover {
-    background-color: white;
-    color: black;
+    border: solid black;
 }
 
 .language .active2 {
