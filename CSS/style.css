@@ -2,8 +2,11 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Arial;
+    font-family: Helvetica;
     line-height: 150%;
+}
+:focus{
+    outline-color: red;
 }
 
 header {
@@ -15,7 +18,7 @@ section {
     width: 70%;
     margin-left: 5%;
     padding: 5%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
     margin-top: 7%;
@@ -23,6 +26,7 @@ section {
     border-radius: 25px;
     max-height: 100%;
 }
+
 
 /* navbar */
 .menu {
@@ -36,9 +40,9 @@ section {
 
 .logo {
     float: left;
-    width: 10%;
+    width: 9%;
     background-color: white;
-    padding-left: 3%;
+    padding-left: 1%;
 }
 
 .dropDown {
@@ -51,42 +55,70 @@ section {
 }
 
 .menuContent ul {
-    width: 80%;
-    padding-left: 20%;
-    padding-top: 5%;
-    margin-top: -3%;
+    width: 60%;
+    padding-top: 2%;
+    margin-left: 20%;
 }
 
 .menu li {
     display: inline-block;
-    width: 20%;
-    padding-right: 4%;
+    width: 8%;
+    padding-right: 1%;
+}
+.menuContent li{
+    width: 18%;
+}
+
+.menu .active {
+    color: black;
+    background-color: white;
+    border: solid black 2px;
 }
 
 .menuContent li a {
     padding: 3%;
-    padding-left: 20%;
-    padding-right: 20%;
-    border: 5px solid #6ABB5C;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
-    width: 80%;
-    background-color: black;
 }
 
 .menuContent li a:hover {
     background-color: white;
     color: black;
-    border: 5px solid black;
+    border: solid black 2px;
 }
 
-.menu .active {
-    background-color: #6ABB5C;
+.language {
+    float: left;
+    font-size: 25px;
+    width: 20%;
+    font-weight: bold;
+    margin-left: 70%;
+    margin-top: -2%;
+}
+.language ul{
+    width: 100%;
+    margin: 0%;
+}
+
+.language li {
+    padding: 0% 12% 0% 3%;
+}
+
+.language li a:hover {
+    border: solid black 4px;
+    padding: 3% 5%;
+}
+
+.language .active2 {
+    background-color: darkorange;
+    padding: 3% 5%;
     color: black;
-    border: solid black 5px;
+    border: solid black 4px;
 }
 
 /* main */
@@ -115,15 +147,16 @@ section {
 
 .main {
     width: 100%;
-    text-align: center;
+    text-align: left;
     align-content: center;
     background-color: aliceblue;
     padding-top: 0.5%;
     padding-bottom: 2%;
 }
 
-h1 {
+h1 { /* Gloabl */
     font-size: 3em;
+    text-align: center
 }
 
 p {
@@ -138,15 +171,15 @@ p {
     padding: 2%;
 }
 
-.phoneDownload {
+.phonePrototype {
     margin-right: 40%;
-    margin-top: -35%;
     width: 25%;
 }
 
 .Stores {
-    margin-top: 10%;
+    margin-top: -43%;
     margin-left: 20%;
+    padding-bottom: 15%;
 }
 
 /* footer */
@@ -165,6 +198,7 @@ footer {
 .SponsorDiv {
     width: 31%;
     display: inline-block;
+    text-align: center;
     float: none;
     margin-left: 2%;
     margin-bottom: 5%;
@@ -174,6 +208,7 @@ footer {
     width: 96%;
     padding: 2%;
     font-size: 13px;
+    text-align: left;
 }
 
 @-ms-viewport {
@@ -181,9 +216,15 @@ footer {
 }
 
 /*Media query*/
-@media(max-width: 1250px) {
-     .menuContent li a {
-       font-size: 20px;
+@media(max-width: 1260px) {
+    .menuContent li a, language li a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1160px) {
+    .SponsorDiv {
+        width: 45%;
     }
 }
 
@@ -191,76 +232,91 @@ footer {
     .menuContent li a {
         font-size: 18px;
     }
-    
 }
-@media(max-width: 945px) {
-    .logo{
+
+@media(max-width: 1030px) {
+    .logo {
         width: 12%;
     }
-    .menuContent ul {
-        margin-top: -2%
-    }
-
-    .menuContent li a { 
+    .menuContent li a, language li a{
         font-size: 13px;
     }
-    .main{
-        margin-top: 3%;
+    .menuContent li{
+        width: 13%;
+        padding-right: 1%;
+    }
+    .language li{
+        padding-right: 6%;
+    }
+    .menuContent ul{
+        margin-top: 1%;
+    }
+    .language{
+        margin-top: -8%;
     }
 }
-
-@media(max-width: 800px) {
-    .logo {
-        width: 14%;
-        padding-top: 2%;
-        padding-left: 0%;
+@media(max-width: 790px){
+    .menuContent li{
+        width: 13%;
     }
-
-    .main {
+    .menuContent li a, language li a{
+        font-size: 11px;
+    }
+    .language li{
+        padding-right: 6%;
+    }
+    .language{
+        margin-left: 80%;
+        
+    }
+    
+}
+@media(max-width: 690px){
+     .logo {
+        width: 15%;
+    }
+    .menuContent li a, language li a{
+        font-size: 10px;
+    }
+     .menuContent li{
+        width: 12%;
+    }
+     .language li{
+        padding-right: 4%;
+        
+    }
+    .menuContent{
         margin-top: 6%;
+        margin-right: 40%;
+        width: 76%;
     }
+    .menuContent li{
+        width: 20%;
+    }
+    .language{
+        margin-left: 120%;
+    }
+    
+}
 
-    .menuContent ul {
-        width: 85%;
-        padding-left: 15%;
-        padding-top: 5.5%
-    }
-
-    .menuContent li a {
-        padding: 6%;
-        padding-left: 20%;
-        padding-right: 20%;
-        font-size: 13px;
-    }
-    header{
-        font-size: 13px;
-    }
-}
-@media(max-width: 650px){
-    .menuContent li a {
-         font-size: 10px;
-    }
-}
-@media(max-width: 550px){
-    menuContent li{
-        padding-right: 5%;
-    }
-}
 /*Mobile layout*/
-@media(max-width: 500px) {
+@media(max-width: 700px) {
     .menuContent {
         display: none;
     }
-    .SponsorDiv{
+
+    .SponsorDiv {
         display: inline-block;
         float: none;
         width: 100%;
         position: relative;
         font-size: 5px;
-        
+
     }
-    header{
-        font-size: 10px;
+
+    p {
+        padding-top: 3%;
+        font-size: 18px;
     }
 
     .dropDownMenu {
@@ -319,6 +375,7 @@ footer {
 
     .logo {
         width: 40%;
+        padding-left: 5%;
     }
 
     .dropDown,
@@ -332,11 +389,20 @@ footer {
         overflow: visible;
         z-index: 3;
     }
-    @media(max-width: 300px){
-        .dropDownContent li a{
+    
+     .dropDownMenu:focus .dropDownContent {
+        display: block;
+        background-color: white;
+        overflow: visible;
+        z-index: 3;
+    }
+
+    @media(max-width: 300px) {
+        .dropDownContent li a {
             font-size: 13px;
         }
-        header{
+
+        header {
             font-size: 5px;
         }
     }
