@@ -27,6 +27,7 @@ section {
     max-height: 100%;
 }
 
+
 /* navbar */
 .menu {
     position: fixed;
@@ -54,9 +55,9 @@ section {
 }
 
 .menuContent ul {
-    width: 93%;
-    padding-top: 1.5%;
-    margin-left: 38%;
+    width: 60%;
+    padding-top: 2%;
+    margin-left: 20%;
 }
 
 .menu li {
@@ -64,19 +65,22 @@ section {
     width: 8%;
     padding-right: 1%;
 }
+.menuContent li{
+    width: 18%;
+}
 
 .menu .active {
     color: black;
     background-color: white;
-    border-bottom: solid black;
+    border: solid black 2px;
 }
 
 .menuContent li a {
     padding: 3%;
-    padding-left: 5;
-    padding-right: 5;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -85,30 +89,36 @@ section {
 .menuContent li a:hover {
     background-color: white;
     color: black;
-    border-bottom: solid black;
+    border: solid black 2px;
 }
 
 .language {
     float: left;
     font-size: 25px;
-    width: 50%;
+    width: 20%;
     font-weight: bold;
-    margin-left: 64%;
-    margin-top: -5.7%;
+    margin-left: 70%;
+    margin-top: -2%;
+}
+.language ul{
+    width: 100%;
+    margin: 0%;
 }
 
 .language li {
-    padding: 3%;
+    padding: 0% 12% 0% 3%;
 }
 
 .language li a:hover {
-    border: solid black;
+    border: solid black 4px;
+    padding: 3% 5%;
 }
 
 .language .active2 {
     background-color: darkorange;
+    padding: 3% 5%;
     color: black;
-    border: solid black 5px;
+    border: solid black 4px;
 }
 
 /* main */
@@ -137,15 +147,16 @@ section {
 
 .main {
     width: 100%;
-    text-align: center;
+    text-align: left;
     align-content: center;
     background-color: aliceblue;
     padding-top: 0.5%;
     padding-bottom: 2%;
 }
 
-h1 {
+h1 { /* Gloabl */
     font-size: 3em;
+    text-align: center
 }
 
 p {
