@@ -11,7 +11,7 @@
 }
 
 header {
-    font-size: 12;
+    font-size: 12px;
     padding: 2%;
 }
 
@@ -158,14 +158,13 @@ section {
 }
 
 h1 {
-    /* Gloabl */
+    /* Global */
     font-size: 3em;
     text-align: center
 }
 
 h2 {
     font-size: 2em;
-    text-align: center;
 }
 
 p {
