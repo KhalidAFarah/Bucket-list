@@ -5,7 +5,8 @@
     font-family: Helvetica;
     line-height: 150%;
 }
-:focus{
+
+:focus {
     outline-color: red;
 }
 
@@ -65,7 +66,8 @@ section {
     width: 8%;
     padding-right: 1%;
 }
-.menuContent li{
+
+.menuContent li {
     width: 18%;
 }
 
@@ -100,7 +102,8 @@ section {
     margin-left: 70%;
     margin-top: -2%;
 }
-.language ul{
+
+.language ul {
     width: 100%;
     margin: 0%;
 }
@@ -154,7 +157,8 @@ section {
     padding-bottom: 2%;
 }
 
-h1 { /* Gloabl */
+h1 {
+    /* Gloabl */
     font-size: 3em;
     text-align: center
 }
@@ -217,7 +221,9 @@ footer {
 
 /*Media query*/
 @media(max-width: 1260px) {
-    .menuContent li a, language li a {
+
+    .menuContent li a,
+    language li a {
         font-size: 20px;
     }
 }
@@ -238,65 +244,84 @@ footer {
     .logo {
         width: 12%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 13px;
     }
-    .menuContent li{
+
+    .menuContent li {
         width: 13%;
         padding-right: 1%;
     }
-    .language li{
+
+    .language li {
         padding-right: 6%;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: 1%;
     }
-    .language{
+
+    .language {
         margin-top: -8%;
     }
 }
-@media(max-width: 790px){
-    .menuContent li{
+
+@media(max-width: 790px) {
+    .menuContent li {
         width: 13%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 11px;
     }
-    .language li{
+
+    .language li {
         padding-right: 6%;
     }
-    .language{
+
+    .language {
         margin-left: 80%;
-        
+
     }
-    
+
 }
-@media(max-width: 690px){
-     .logo {
+
+@media(max-width: 690px) {
+    .logo {
         width: 15%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 10px;
     }
-     .menuContent li{
+
+    .menuContent li {
         width: 12%;
     }
-     .language li{
+
+    .language li {
         padding-right: 4%;
-        
+
     }
-    .menuContent{
+
+    .menuContent {
         margin-top: 6%;
         margin-right: 40%;
         width: 76%;
     }
-    .menuContent li{
+
+    .menuContent li {
         width: 20%;
     }
-    .language{
+
+    .language {
         margin-left: 120%;
     }
-    
+
 }
 
 /*Mobile layout*/
@@ -389,8 +414,8 @@ footer {
         overflow: visible;
         z-index: 3;
     }
-    
-     .dropDownMenu:focus .dropDownContent {
+
+    .dropDownMenu:focus .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
