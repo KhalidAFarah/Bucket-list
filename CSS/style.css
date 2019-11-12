@@ -90,7 +90,6 @@ section {
     background-color: white;
     color: black;
     border: solid black 2px;
-    border-bottom: solid darkorange;
 }
 
 .language {
@@ -199,6 +198,7 @@ footer {
 .SponsorDiv {
     width: 31%;
     display: inline-block;
+    text-align: center;
     float: none;
     margin-left: 2%;
     margin-bottom: 5%;
@@ -208,6 +208,7 @@ footer {
     width: 96%;
     padding: 2%;
     font-size: 13px;
+    text-align: left;
 }
 
 @-ms-viewport {
