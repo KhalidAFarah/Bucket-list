@@ -181,9 +181,14 @@ p {
     width: 25%;
 }
 
+.homeImg {
+    width: 60%;
+    height: 50%;
+}
+
 .Stores {
-    margin-top: -43%;
-    margin-left: 20%;
+    margin-top: -35%;
+    margin-left: 40%;
     padding-bottom: 15%;
 }
 
