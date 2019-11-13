@@ -41,7 +41,8 @@ section {
 
 .logo {
     float: left;
-    width: 9%;
+    width: 13%;
+    margin-top: 0.5%;
     background-color: white;
     padding-left: 1%;
 }
@@ -57,17 +58,12 @@ section {
 
 .menuContent ul {
     width: 60%;
-    padding-top: 2%;
+    padding-top: 1.2%;
     margin-left: 20%;
 }
 
-.menu li {
-    display: inline-block;
-    width: 8%;
-    padding-right: 1%;
-}
-
 .menuContent li {
+    display: inline-block;
     width: 18%;
 }
 
@@ -86,6 +82,7 @@ section {
     font-weight: bold;
     color: black;
     text-decoration: none;
+    line-height: 0%;
 }
 
 .menuContent li a:hover {
@@ -99,8 +96,8 @@ section {
     font-size: 25px;
     width: 20%;
     font-weight: bold;
-    margin-left: 70%;
-    margin-top: -2%;
+    margin-left: 80%;
+    margin-top: -3.6%;
 }
 
 .language ul {
@@ -407,8 +404,10 @@ footer {
     }
 
     .logo {
-        width: 40%;
-        padding-left: 5%;
+        width: 59%;
+        padding-left: 2%;
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
 
     .dropDown,
