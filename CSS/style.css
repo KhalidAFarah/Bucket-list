@@ -5,12 +5,13 @@
     font-family: Helvetica;
     line-height: 150%;
 }
-:focus{
+
+:focus {
     outline-color: red;
 }
 
 header {
-    font-size: 12;
+    font-size: 12px;
     padding: 2%;
 }
 
@@ -65,7 +66,8 @@ section {
     width: 8%;
     padding-right: 1%;
 }
-.menuContent li{
+
+.menuContent li {
     width: 18%;
 }
 
@@ -100,7 +102,8 @@ section {
     margin-left: 70%;
     margin-top: -2%;
 }
-.language ul{
+
+.language ul {
     width: 100%;
     margin: 0%;
 }
@@ -154,9 +157,14 @@ section {
     padding-bottom: 2%;
 }
 
-h1 { /* Gloabl */
+h1 {
+    /* Global */
     font-size: 3em;
     text-align: center
+}
+
+h2 {
+    font-size: 2em;
 }
 
 p {
@@ -217,7 +225,9 @@ footer {
 
 /*Media query*/
 @media(max-width: 1260px) {
-    .menuContent li a, language li a {
+
+    .menuContent li a,
+    language li a {
         font-size: 20px;
     }
 }
@@ -238,65 +248,84 @@ footer {
     .logo {
         width: 12%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 13px;
     }
-    .menuContent li{
+
+    .menuContent li {
         width: 13%;
         padding-right: 1%;
     }
-    .language li{
+
+    .language li {
         padding-right: 6%;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: 1%;
     }
-    .language{
+
+    .language {
         margin-top: -8%;
     }
 }
-@media(max-width: 790px){
-    .menuContent li{
+
+@media(max-width: 790px) {
+    .menuContent li {
         width: 13%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 11px;
     }
-    .language li{
+
+    .language li {
         padding-right: 6%;
     }
-    .language{
+
+    .language {
         margin-left: 80%;
-        
+
     }
-    
+
 }
-@media(max-width: 690px){
-     .logo {
+
+@media(max-width: 690px) {
+    .logo {
         width: 15%;
     }
-    .menuContent li a, language li a{
+
+    .menuContent li a,
+    language li a {
         font-size: 10px;
     }
-     .menuContent li{
+
+    .menuContent li {
         width: 12%;
     }
-     .language li{
+
+    .language li {
         padding-right: 4%;
-        
+
     }
-    .menuContent{
+
+    .menuContent {
         margin-top: 6%;
         margin-right: 40%;
         width: 76%;
     }
-    .menuContent li{
+
+    .menuContent li {
         width: 20%;
     }
-    .language{
+
+    .language {
         margin-left: 120%;
     }
-    
+
 }
 
 /*Mobile layout*/
@@ -330,40 +359,39 @@ footer {
         width: 100%;
     }
 
-    .dropDownContent li {
-        width: 100%;
-        margin: 10% auto;
-    }
-
-    .dropDownContent ul {
-        margin-top: -5%;
-        padding: 0%;
-        width: 100%;
-        border-bottom: 5px solid darkgreen;
-        padding-bottom: 9%;
-    }
-
-    .dropDownContent li a {
-        position: absolute;
-        width: 30%;
-        font-size: 22px;
-        margin-left: 10%;
+    .dropDownContent a {
+       /* width: 100%;
+        margin: 10% auto;*/
+        font-size: 23px;
+        display: block;
         text-align: center;
-        border: 5px solid #6ABB5C;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
         text-decoration: none;
-        padding: 3% 25%;
+        color: black;
+        padding: 1% 3%;
+        width: 20%;
+        margin-left: 35%;
+        margin-bottom: 2%;
     }
-
+    .dropDownContent .active{
+        border-style: none;
+        border-bottom: solid black 3px;
+    }
+    .dropDownLanguage a{
+        border: solid black 4px;
+        padding: 1% 10%;
+        margin-left: 28%;
+    }
+    .dropDownLanguage .active2{
+        background-color: orange;
+    }
     .dropDownContent {
         display: none;
         width: 100%;
         position: absolute;
         left: 0;
+        border-bottom: solid darkgreen 5px;
     }
-
+   
     .HomeTitle {
         font-size: 40%;
         margin-top: -40%;
@@ -389,8 +417,8 @@ footer {
         overflow: visible;
         z-index: 3;
     }
-    
-     .dropDownMenu:focus .dropDownContent {
+
+    .dropDownMenu:focus .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
