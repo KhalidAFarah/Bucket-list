@@ -190,6 +190,11 @@ p {
     padding-bottom: 15%;
 }
 
+.statProblem {
+    width: 100%;
+    height: auto;
+}
+
 /* footer */
 footer {
     width: 100%;
