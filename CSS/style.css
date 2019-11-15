@@ -352,6 +352,16 @@ footer {
     .language {
         margin-left: 120%;
     }
+    .homeText{
+        width: 100%;
+    }
+    video{
+        margin-top: 5%;
+        width: 100%;
+    }
+    header{
+        text-align: center;
+    }
 
 }
 
@@ -409,10 +419,14 @@ footer {
         border: solid black 4px;
         padding: 1% 10%;
         margin-left: 28%;
+        margin-top: 2%;
     }
 
     .dropDownLanguage .active2 {
         background-color: orange;
+    }
+    .dropDownLanguage{
+        border-top: solid black 5px;
     }
 
     .dropDownContent {
