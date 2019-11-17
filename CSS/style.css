@@ -495,12 +495,14 @@ footer {
         display: block;
     }
 
-    .dropDownMenu:hover .dropDownContent {
+    .dropDownMenu .dropDownButton:checked ~ .dropDownContent{
         display: block;
         background-color: white;
         overflow: visible;
         z-index: 3;
+        
     }
+    
 
     .dropDownMenu:focus .dropDownContent {
         display: block;
