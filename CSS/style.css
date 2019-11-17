@@ -307,7 +307,9 @@ footer {
 }
 
 @media(max-width: 790px) {
-    
+    .sideTitles{
+        font-size: 1.7em;
+    }
     .homeText{
         width: 100%;
     }
@@ -385,6 +387,9 @@ footer {
 
 /*Mobile layout*/
 @media(max-width: 500px) {
+    .sideTitles{
+        font-size: 1.2em
+    }
     .menuContent {
         display: none;
     }
