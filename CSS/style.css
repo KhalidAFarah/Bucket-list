@@ -536,7 +536,7 @@ footer {
     }
     
 
-    .dropDownMenu:focus .dropDownContent {
+    .dropDownMenu:hover .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
