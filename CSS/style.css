@@ -45,7 +45,10 @@ aside {
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
-
+.homeInfo{
+    display: inline-block;
+    padding-bottom: 10%;
+}
 .logo {
     float: left;
     width: 13%;
@@ -279,6 +282,9 @@ footer {
     .logo {
         width: 12%;
     }
+    .homeImg{
+        height: 30em;
+    }
 
     .menuContent li a,
     language li a {
@@ -307,6 +313,9 @@ footer {
 }
 
 @media(max-width: 790px) {
+    .homeImg{
+        height: 24em;
+    }
     .sideTitles{
         font-size: 1.7em;
     }
@@ -387,6 +396,9 @@ footer {
 
 /*Mobile layout*/
 @media(max-width: 500px) {
+    .homeImg{
+        height: 20em;
+    }
     .sideTitles{
         font-size: 1.2em
     }
