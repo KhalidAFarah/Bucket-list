@@ -355,9 +355,9 @@ footer {
 
     }
     .SponsorDiv{
-        width: 40%;
+        width: 45%;
         margin-right: 0%;
-        margin-left: 6%;
+        margin-left: 3%;
     }
     .lastSponsor{
         margin-left: 20%;
@@ -388,7 +388,9 @@ footer {
     .menuContent {
         display: none;
     }
-
+    .lastSponsor{
+        margin: 0;
+    }
     .SponsorDiv {
         display: inline-block;
         float: none;
