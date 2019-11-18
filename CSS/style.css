@@ -55,13 +55,16 @@ aside {
     display: inline-block;
     padding-bottom: 10%;
 }
-.prototypeSites ul li{
+
+.prototypeSites ul li {
     display: inline-block;
 }
-.prototypeSites{
+
+.prototypeSites {
     font-size: 20px;
     margin-left: 20%;
 }
+
 .logo {
     float: left;
     width: 13%;
@@ -74,11 +77,13 @@ aside {
     display: none;
     position: absolute;
 }
-.prototypeBox{
+
+.prototypeBox {
     width: 100%;
    display: inline-block;
     margin-top: 10%;
 }
+
 .logoImg {
     width: 100%;
 }
@@ -352,9 +357,10 @@ footer {
 
     .phonePrototype {}
 }
-@media(max-width: 900px){
-    aside{
-      padding-top: 0%;  
+
+@media(max-width: 900px) {
+    aside {
+        padding-top: 0%;
     }
 }
 
