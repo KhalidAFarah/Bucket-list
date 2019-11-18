@@ -263,6 +263,10 @@ video {
     text-align: center;
 }
 
+.aboutUsPics {
+    width: 25%;
+}
+
 /* footer */
 footer {
     width: 100%;
