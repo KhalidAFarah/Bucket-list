@@ -49,13 +49,16 @@ aside {
     display: inline-block;
     padding-bottom: 10%;
 }
-.prototypeSites ul li{
+
+.prototypeSites ul li {
     display: inline-block;
 }
-.prototypeSites{
+
+.prototypeSites {
     font-size: 20px;
     margin-left: 20%;
 }
+
 .logo {
     float: left;
     width: 13%;
@@ -68,11 +71,13 @@ aside {
     display: none;
     position: absolute;
 }
-.prototypeBox{
+
+.prototypeBox {
     width: 100%;
-   
+
     margin-top: 10%;
 }
+
 .logoImg {
     width: 100%;
 }
@@ -205,7 +210,7 @@ video {
 }
 
 .phonePrototype {
-    width:25%;
+    width: 25%;
 }
 
 .indexImg {
@@ -342,9 +347,10 @@ footer {
 
     .phonePrototype {}
 }
-@media(max-width: 900px){
-    aside{
-      padding-top: 0%;  
+
+@media(max-width: 900px) {
+    aside {
+        padding-top: 0%;
     }
 }
 
