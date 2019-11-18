@@ -71,7 +71,7 @@ aside {
 .prototypeBox{
     width: 100%;
    
-    margin-top: 2%;
+    margin-top: 10%;
 }
 .logoImg {
     width: 100%;
@@ -330,15 +330,15 @@ footer {
 
     .phonePrototype {}
 }
+@media(max-width: 900px){
+    aside{
+      padding-top: 0%;  
+    }
+}
 
 @media(max-width: 800px) {
     aside {
         font-size: 13px;
-        margin-top: -50%;
-    }
-
-    .phonePrototype {
-        margin-top: 2%;
     }
 }
 
@@ -430,11 +430,6 @@ footer {
 
     aside {
         font-size: 10px;
-        margin-top: -50%;
-    }
-
-    .phonePrototype {
-        margin-top: 2%;
     }
 
 }
