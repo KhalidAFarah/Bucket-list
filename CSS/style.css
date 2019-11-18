@@ -14,6 +14,12 @@ header {
     font-size: 12px;
     padding: 2%;
 }
+.sideImg{
+    display: inline-block;
+    width: 20%;
+    margin-left: 10%;
+        
+}
 
 section {
     width: 70%;
@@ -29,8 +35,8 @@ section {
 }
 
 aside {
+    display: inline-block;
     width: 70%;
-    padding-top: 10%;
     float: left;
 }
 
@@ -70,7 +76,7 @@ aside {
 }
 .prototypeBox{
     width: 100%;
-   
+   display: inline-block;
     margin-top: 10%;
 }
 .logoImg {
@@ -205,7 +211,7 @@ video {
 }
 
 .phonePrototype {
-    width:25%;
+    width:100%;
 }
 
 .indexImg {
@@ -461,8 +467,11 @@ footer {
     }
 
     .phonePrototype {
+        margin-left: 50%;
+        display: block;
+    }
+    .sideImg{
         width: 40%;
-        margin-left: 30%;
     }
 
     aside {
@@ -471,6 +480,7 @@ footer {
         margin-left: 0%;
         text-align: center;
         padding-bottom: 0%;
+        display: block;
     }
 
     p {
