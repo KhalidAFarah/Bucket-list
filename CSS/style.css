@@ -235,6 +235,18 @@ video {
     height: auto;
 }
 
+.prototypeSites {
+    margin-left: 45%;
+}
+
+.prototypeSites .active {
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 5%;
+    background-color: darkorange;
+    text-decoration: none;
+}
+
 /* Sponsor */
 .SponsorDiv {
     width: 31%;
@@ -250,6 +262,10 @@ video {
     padding: 2%;
     font-size: 13px;
     text-align: center;
+}
+
+.aboutUsPics {
+    width: 25%;
 }
 
 /* footer */
