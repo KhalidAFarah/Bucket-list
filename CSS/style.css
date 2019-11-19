@@ -612,14 +612,6 @@ footer {
 
     }
 
-
-    .dropDownMenu:focus .dropDownContent {
-        display: block;
-        background-color: white;
-        overflow: visible;
-        z-index: 3;
-    }
-
     @media(max-width: 300px) {
         .dropDownContent li a {
             font-size: 13px;
