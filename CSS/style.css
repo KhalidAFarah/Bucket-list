@@ -481,6 +481,9 @@ footer {
     .homeImg {
         height: 20em;
     }
+    .Names{
+        font-size: 1.5em;
+    }
      .prototypeSites ul li a, prototypeSites{
         font-size: 12px;
         margin-left: -25%;
@@ -542,8 +545,7 @@ footer {
     }
 
     .dropDownContent a {
-        /* width: 100%;
-        margin: 10% auto;*/
+       
         font-size: 23px;
         display: block;
         text-align: center;
