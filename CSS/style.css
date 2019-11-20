@@ -2,49 +2,86 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Arial;
+    font-family: Helvetica;
     line-height: 150%;
 }
 
-body {}
+:focus {
+    outline-color: red;
+}
 
-header{
+header {
     font-size: 12px;
-    padding: 5%;
+    padding: 2%;
+}
+.sideImg{
+    display: inline-block;
+    width: 20%;
+    margin-left: 10%;
+        
 }
 
 section {
-    width: 80%;
+    width: 70%;
     margin-left: 5%;
-    padding: 4%;
+    padding: 5%;
+    padding-bottom: 5%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
     margin: 0 auto;
-    margin-top: 9.5%;
+    margin-top: 5%;
     background-color: white;
     border-radius: 25px;
+    max-height: 100%;
 }
 
-/* navbar */
+aside {
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
 
+
+/* navbar */
 .menu {
     position: fixed;
     width: 100%;
     background-color: white;
-
     top: 0%;
     border-bottom: 5px solid darkgreen;
     z-index: 3;
 }
-.logo {
-    float: left;
-    width: 15%;
-    background-color: white;
-    padding-left: 0%;
+
+.homeInfo {
+    display: inline-block;
+    padding-bottom: 10%;
 }
 
- .dropDown {
+.prototypeSites ul li {
+    display: inline-block;
+}
+
+.prototypeSites {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.logo {
+    float: left;
+    width: 13%;
+    margin-top: 0.5%;
+    background-color: white;
+    padding-left: 1%;
+}
+
+.dropDown {
     display: none;
     position: absolute;
+}
+
+.prototypeBox {
+    width: 100%;
+   display: inline-block;
+    margin-top: 10%;
 }
 
 .logoImg {
@@ -52,52 +89,72 @@ section {
 }
 
 .menuContent ul {
-    width: 80%;
-    padding-left: 20%;
-    padding-top: 4%;
+    width: 60%;
+    padding-top: 1.2%;
+    margin-left: 20%;
 }
 
-.menu li {
+.menuContent li {
     display: inline-block;
-    margin-top: -1%;
-    width: 20%;
-    padding-right: 2%;
+    width: 18%;
+}
+
+.menu .active {
+    color: white;
+    background-color: black;
+    border: solid black 2px;
 }
 
 .menuContent li a {
-    padding: 8%;
-    padding-left: 25%;
-    padding-right: 25%;
-    border: 5px solid #6ABB5C;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 10px;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
-    width: 80%;
-    background-color: black;
+    line-height: 0%;
 }
 
 .menuContent li a:hover {
     background-color: white;
     color: black;
-    border: 5px solid black;
+    border: solid black 2px;
 }
 
-.menu .active {
-    background-color: #6ABB5C;
+.language {
+    float: left;
+    font-size: 25px;
+    width: 20%;
+    font-weight: bold;
+    margin-left: 77%;
+    margin-top: -3.3%;
+    border-left: solid;
+}
+
+.language ul {
+    width: 100%;
+    margin: 0% 0% 0% 12%;
+}
+
+.language li {
+    padding: 0% 12% 0% 3%;
+}
+
+.language li a:hover {
+    border: solid black 4px;
+    padding: 3% 5%;
+}
+
+.language .active2 {
+    background-color: darkorange;
+    padding: 3% 5%;
     color: black;
-    border: solid black 5px;
+    border: solid black 4px;
 }
 
 /* main */
-.indexImg {
-    width: 100%;
-    height: auto;
-
-    padding-bottom: 2%;
-}
-
 .backgroundImage {
     opacity: 0.8;
 }
@@ -117,19 +174,37 @@ section {
 
 .main {
     width: 100%;
-    text-align: center;
+    text-align: left;
     align-content: center;
     background-color: aliceblue;
-    padding-top: 2%;
+    padding-top: 0.5%;
     padding-bottom: 2%;
 }
 
 h1 {
-    font-size: 4em;
+    /* Global */
+    font-size: 3em;
+    text-align: center
+}
+
+h2 {
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+.homeText {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    float: right;
 }
 
 .downloadLinks {
@@ -140,15 +215,73 @@ p {
     padding: 2%;
 }
 
-.phoneDownload {
-    margin-right: 40%;
-    margin-top: -35%;
-    width: 25%;
+.phonePrototype {
+    width:100%;
+}
+
+.indexImg {
+    width: 100%;
+    height: 10%;
+}
+
+.homeImg {
+    width: 100%;
+    height: 40em;
 }
 
 .Stores {
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: -35%;
+    margin-left: 40%;
+    padding-bottom: 15%;
+}
+
+.statProblem {
+    width: 100%;
+    height: auto;
+}
+
+.prototypeSites {
+    width: 100%;
+}
+.prototypeSites ul li a{
+    border: solid black 3px;
+    border-radius: 15px;
+}
+.prototypeSites li{
+    margin-left: 5%;
+    width: 25%;
+}
+.prototypeSites ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 3% 15%;
+}
+.prototypeSites .active {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: darkorange;
+    text-decoration: none;
+}
+
+/* Sponsor */
+.SponsorDiv {
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    float: none;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.sponsorDivText {
+    width: 96%;
+    padding: 2%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.aboutUsPics {
+    width: 25%;
 }
 
 #sponsor-section {
@@ -159,7 +292,6 @@ box-shadow: none;
 footer {
     width: 100%;
     background-color: white;
-    color: black;
     overflow: hidden;
     text-align: center;
     bottom: 0%;
@@ -168,123 +300,243 @@ footer {
     margin-top: 0%;
 }
 
-/* Sponsor */
-
-.sponsorImg {
-    width: 15%;
-    height: auto;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    align-content: center;
-}
-
-.sponsorDiv {
-    width: 100%;
-    height: auto;
-    border: solid black 5px;
-    border-radius: 5px;
-    margin-bottom: 1%;
-}
-
-.sponsorDivTekst{
-    width: 96%;
-    padding: 2%;    
-}
-
-@-ms-viewport{
+@-ms-viewport {
     width: device-width;
 }
+
 /*Media query*/
-@media(max-width: 1300px) {
-    .menuContent li a {
-        padding: 8%;
-        padding-left: 23%;
-        padding-right: 23%;
-        font-size: 23px;
-    }
+@media(max-width: 1260px) {
 
-    .menuContent ul {
-        width: 87%;
-        margin-left: -2%;
-    }
-}
-
-@media(max-width: 1000px) {
-    .logo {
-        width: 20%;
-    }
-
-    .main {
-        margin-top: 13%;
-    }
-
-    .menuContent ul {
-        width: 80%;
-        padding-left: 23%;
-        padding-top: 5.5%;
-    }
-
-    .menuContent li a {
-        padding: 8%;
-        padding-left: 18%;
-        padding-right: 18%;
+    .menuContent li a,
+    language li a {
         font-size: 20px;
     }
+
+    .SponsorDiv {
+        width: 25%;
+        margin-right: 5%;
+    }
 }
 
-@media(max-width: 700px) {
-    .logo {
-        width: 20%;
-    }
+@media(max-width: 1160px) {}
 
-    .main {
-        margin-top: 13%;
-    }
-
-    .menuContent ul {
-        width: 78%;
-        padding-left: 23%;
-        padding-top: 5.5%
-    }
-
+@media(max-width: 1100px) {
     .menuContent li a {
-        padding: 8%;
-        padding-left: 18%;
-        padding-right: 18%;
+        font-size: 18px;
+    }
+
+    .homeText {
         font-size: 15px;
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 1030px) {
     .logo {
-        width: 20%;
+        width: 12%;
     }
 
-    .main {
-        margin-top: 13%;
+    .homeImg {
+        height: 30em;
+    }
+
+    .menuContent li a,
+    language li a {
+        font-size: 13px;
+    }
+
+    .menuContent li {
+        width: 13%;
+        padding-right: 1%;
+    }
+
+    .language li {
+        padding-right: 6%;
     }
 
     .menuContent ul {
-        width: 82%;
-        padding-left: 23%;
-        padding-top: 5.5%
+        margin-top: 1%;
     }
 
-    .menuContent li a {
-        padding: 8%;
-        padding-left: 15%;
-        padding-right: 15%;
+    .language {
+        margin-top: -8%;
+    }
+
+    .SponsorDiv p {
+        font-size: 18px;
+    }
+
+    aside {
+        font-size: 13px;
+
+    }
+
+    .phonePrototype {}
+}
+
+@media(max-width: 900px) {
+    aside {
+        padding-top: 0%;
+    }
+}
+
+@media(max-width: 800px) {
+    aside {
         font-size: 13px;
     }
 }
 
+@media(max-width: 790px) {
+    .homeImg {
+        height: 24em;
+    }
+
+    .sideTitles {
+        font-size: 1.7em;
+    }
+
+    .homeText {
+        width: 100%;
+    }
+
+    video {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .menuContent li {
+        width: 13%;
+    }
+
+    .menuContent li a,
+    language li a {
+        font-size: 11px;
+    }
+
+    .language li {
+        padding-right: 6%;
+    }
+
+    .language {
+        margin-left: 80%;
+
+    }
+
+}
+
+@media(max-width: 690px) {
+    .logo {
+        width: 15%;
+    }
+
+    .menuContent li a,
+    language li a {
+        font-size: 10px;
+    }
+
+    .menuContent li {
+        width: 12%;
+    }
+
+    .language li {
+        padding-right: 4%;
+
+    }
+
+    .SponsorDiv {
+        width: 45%;
+        margin-right: 0%;
+        margin-left: 3%;
+    }
+
+    .lastSponsor {
+        margin-left: 20%;
+        width: 50%;
+    }
+
+    .menuContent {
+        margin-top: 6%;
+        margin-right: 40%;
+        width: 76%;
+    }
+
+    .menuContent li {
+        width: 20%;
+    }
+
+    .language {
+        margin-left: 120%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    aside {
+        font-size: 10px;
+    }
+    .prototypeSites ul li a{
+        font-size: 15px;
+    }
+
+}
+
 /*Mobile layout*/
 @media(max-width: 500px) {
-    
+    .homeImg {
+        height: 20em;
+    }
+    .Names{
+        font-size: 1.5em;
+    }
+     .prototypeSites ul li a, prototypeSites{
+        font-size: 12px;
+        margin-left: -25%;
+    }
+    .prototypeSites li{
+        width: 40%;
+    }
+    .sideTitles {
+        font-size: 1.2em
+    }
+
     .menuContent {
         display: none;
-        
     }
+
+    .lastSponsor {
+        margin: 0;
+    }
+
+    .SponsorDiv {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        position: relative;
+        font-size: 5px;
+    }
+
+    .phonePrototype {
+        margin-left: 50%;
+        display: block;
+    }
+    .sideImg{
+        width: 40%;
+    }
+
+    aside {
+        margin-top: 1%;
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+        padding-bottom: 0%;
+        display: block;
+    }
+
+    p {
+        padding-top: 3%;
+        font-size: 18px;
+    }
+
     .dropDownMenu {
         width: 15%;
         margin-left: 75%;
@@ -295,63 +547,84 @@ footer {
     .dropDownMenuImg {
         width: 100%;
     }
-    .dropDownContent li{
-         width: 100%;
-        margin: 10% auto;        
-    }
-    .dropDownContent ul{
-        margin-top: -5%;
-        padding: 0%;
-        width: 100%;
-        border-bottom: 5px solid darkgreen;
-        padding-bottom: 9%;
-        
-    }
-    .dropDownContent li a{
-        position: absolute;
-        width: 15%;
-        font-size: 20px;
-        margin-left:15%;
+
+    .dropDownContent a {
+       
+        font-size: 23px;
+        display: block;
         text-align: center;
-        
-        border: 5px solid #6ABB5C;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
         text-decoration: none;
-        
-        padding: 3% 25%;
-      
-    }
-    .dropDownContent{
-        display: none;        
-        width: 100%;
-        position: absolute;
-        left: 0;        
+        color: black;
+        padding: 1% 3%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 2%;
     }
 
-    .HomeTitle{
+    .dropDownContent .active {
+        border-style: none;
+        border-bottom: solid black 3px;
+    }
+
+    .dropDownLanguage a {
+        border: solid black 4px;
+        padding: 1% 10%;
+        margin-left: 18%;
+        margin-top: 2%;
+    }
+
+    .dropDownLanguage .active2 {
+        background-color: orange;
+    }
+
+    .dropDownLanguage {
+        border-top: solid black 5px;
+    }
+
+    .dropDownContent {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border-bottom: solid darkgreen 5px;
+    }
+
+    .HomeTitle {
         font-size: 40%;
         margin-top: -40%;
     }
+
     .main {
-        margin-top: 33%;
+        margin-top: 25%;
     }
 
     .logo {
-        width: 50%;
+        width: 59%;
+        padding-left: 2%;
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
 
     .dropDown,
     .dropDownMenu {
         display: block;
     }
-    
-    .dropDownMenu:hover .dropDownContent{
+
+    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
         z-index: 3;
-       
+
+    }
+
+    @media(max-width: 300px) {
+        .dropDownContent li a {
+            font-size: 13px;
+        }
+
+        header {
+            font-size: 5px;
+        }
     }
 }
