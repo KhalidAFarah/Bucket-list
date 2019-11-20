@@ -55,13 +55,16 @@ aside {
     display: inline-block;
     padding-bottom: 10%;
 }
-.prototypeSites ul li{
+
+.prototypeSites ul li {
     display: inline-block;
 }
-.prototypeSites{
+
+.prototypeSites {
     font-size: 20px;
     margin-left: 20%;
 }
+
 .logo {
     float: left;
     width: 13%;
@@ -74,11 +77,13 @@ aside {
     display: none;
     position: absolute;
 }
-.prototypeBox{
+
+.prototypeBox {
     width: 100%;
    display: inline-block;
     margin-top: 10%;
 }
+
 .logoImg {
     width: 100%;
 }
@@ -135,6 +140,7 @@ aside {
 
 .language li {
     padding: 0% 12% 0% 3%;
+    width: 33%
 }
 
 .language li a:hover {
@@ -236,13 +242,24 @@ video {
 }
 
 .prototypeSites {
-    margin-left: 45%;
+    width: 100%;
 }
-
+.prototypeSites ul li a{
+    border: solid black 3px;
+    border-radius: 15px;
+}
+.prototypeSites li{
+    margin-left: 5%;
+    width: 25%;
+}
+.prototypeSites ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 3% 15%;
+}
 .prototypeSites .active {
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 5%;
+    border: 3px solid black;
+    border-radius: 15px;
     background-color: darkorange;
     text-decoration: none;
 }
@@ -352,9 +369,10 @@ footer {
 
     .phonePrototype {}
 }
-@media(max-width: 900px){
-    aside{
-      padding-top: 0%;  
+
+@media(max-width: 900px) {
+    aside {
+        padding-top: 0%;
     }
 }
 
@@ -453,6 +471,9 @@ footer {
     aside {
         font-size: 10px;
     }
+    .prototypeSites ul li a{
+        font-size: 15px;
+    }
 
 }
 
@@ -461,7 +482,16 @@ footer {
     .homeImg {
         height: 20em;
     }
-
+    .Names{
+        font-size: 1.5em;
+    }
+     .prototypeSites ul li a, prototypeSites{
+        font-size: 12px;
+        margin-left: -25%;
+    }
+    .prototypeSites li{
+        width: 40%;
+    }
     .sideTitles {
         font-size: 1.2em
     }
@@ -516,8 +546,7 @@ footer {
     }
 
     .dropDownContent a {
-        /* width: 100%;
-        margin: 10% auto;*/
+       
         font-size: 23px;
         display: block;
         text-align: center;
@@ -578,20 +607,12 @@ footer {
         display: block;
     }
 
-    .dropDownMenu .dropDownButton:checked ~ .dropDownContent {
+    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
         display: block;
         background-color: white;
         overflow: visible;
         z-index: 3;
 
-    }
-
-
-    .dropDownMenu:hover .dropDownContent {
-        display: block;
-        background-color: white;
-        overflow: visible;
-        z-index: 3;
     }
 
     @media(max-width: 300px) {
