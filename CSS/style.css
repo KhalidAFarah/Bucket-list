@@ -309,6 +309,17 @@ footer {
     width: device-width;
 }
 
+/*prototype*/
+.Machine{
+    width: 25%;
+}
+.prototypeBoxMachine{
+    display: inline-block;
+}
+.sideImgMachine{
+    width: 25%;
+}
+
 /*Media query*/
 @media(max-width: 1260px) {
 
@@ -374,8 +385,6 @@ footer {
         font-size: 13px;
 
     }
-
-    .phonePrototype {}
 }
 
 @media(max-width: 900px) {
