@@ -7,6 +7,7 @@
     <title>Solution - Green Routine</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="shortcut icon" href="../Pictures/favicon.png" type="image/png">
+    <script type="text/javascript" src="../Javascript/final.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
             <div class="dropDownMenu">
                 <input type="checkbox" style="display: none;" id="dropDownbtn" class="dropDownbtn">
                 <label for="dropDownbtn"><img tabindex="0" src="../Pictures/MenuGreen.png" class="dropDownMenuImg" alt="Dropdown Menu Image"></label>
-                
+
                 <div class="dropDownContent">
 
                     <a tabindex="0" href="../HTML/index.html">Home</a>
@@ -47,8 +48,8 @@
 
 
                     <div class="dropDownLanguage">
-                        <a class="active2">English</a>
-                        <a>Norsk</a>
+                        <a href="solution.html" class="active2">English</a>
+                        <a href="NOsolution.html">Norsk</a>
                     </div>
                 </div>
             </div>
@@ -56,48 +57,66 @@
     </nav>
 
     <main class="main">
-        <section style="padding-top: 1%;" tabindex="0">
+        <section tabindex="0">
+            
+            <div class="sectionBox" style="display: none;">
+                <img value="app" class="imageTag">
+                <p class="imageText"></p>
+                <a onclick="back()" class="back"></a>
+                <a onclick="next()" class="next"></a>
+            </div>
+            
+    <!--
             <header>
                 <h1>Solution</h1>
             </header>
-            <p>GreenRoutine is both an app and machine that works towards giving people a purpose as to why they should recycle. Our idea works in a simple way, the more you recycle into the machines, the more points you get. The points can later be used in the app toward getting discounts and prizes. GreenRoutine is the solution towards making more and more people be actively engaged in recycling garbage.</p>
+            <p>To answer this problem, we introduce our solution, <b>GreenRoutine</b>. GreenRoutine is both an app and machine that works towards giving people a purpose as to why they should recycle. Our solution works like this: When you recycle into the machines, you will get points. These points can later be used in the app towards getting discounts and prizes. GreenRoutine is the solution towards making more and more people be actively engaged in recycling garbage.</p>
             <br>
             <h2 class="sideTitles">How does the app work?</h2>
-            <p>When you first login to the app, you get a menu that has your own QR-code which is used to start the machine, in other words, the app and the machine are linked. The app has an overview of the points list and the number of points you have collected from recycling. You have a statistic of how much of the different types of junk you've thrown weekly, and level challenges so you can level up and earn more points. In addition, you have a coupon category where you can see what kind of offers you get, depending on the time.</p>
+            <p>When you first log in to the app, you get a menu that has your own QR–code which is used to start the machine, in other words, the app and the machine are linked. The app has an overview of the points list and the number of points you have collected from recycling. You have a statistic of how much of the different types of junk you've thrown weekly, and level challenges so you can level up and earn more points. In addition, you have a coupon category where you can see what kind of offers you get, depending on the time.</p>
             <br>
             <h2 class="sideTitles">How does the machine work?</h2>
-            <p>Once the QR-code on the app is scanned on the screen of the machine, the machine will then open the door where the user can recycle his garbage. The garbage to be thrown should be thrown into bags: blue plastic waste bags, green food waste bags and other colored bags for waste. The machine has a color sensor that looks at the color of the bag to be recycled by the user. The machine is also connected to three different garbage cans, each of which represents the three options to which the garbage can be recycled. The fact that the machine has a color sensor enables the machine to recycle the garbage bag to the correct waste well depending on which color bag is recycled by the user. When the user recycles his garbage, the machine takes it easy and checks what color the bag has, and then send it down into the machine where the weight is measured in grams. The weighting results in a certain amount of points that can be used on coupons etc.</p>
+            <p>A hatch will open once you hold the QR-code on your mobile screen toward our machine’s main display. This is the opening where you are going to send your garbage to recycle. The machine only accepts garbage inside of closed recycling bags: Blue bags for plastics, green ones for food waste and other colored bags for residual waste. These bags can be found for free at your local grocery store. Remember to double knots your bags! The machine has a color sensor that distinguishes between each bag by their respective colors. In addition, a section inside of our main tube weighs the garbage bags. These two processes happen simultaneously. Further along, our main tube branches out to three smaller tube. Each are connected to a waste container based on which sort of garbage you wanted recycled. Our machine registers the weight of your bags in grams which results in an amount of points that can be used on coupons and discounts. </p>
             <br>
-            <p>When the user scans the QR-code on the screen of the machine it will verbally and with text tell that the QR-code is either valid or not. The screen will also either show a red color or a green color indicating whenever the QR-code was valid. is scanned on the screen of the machine, the machine will then open the door where the user can recycle his garbage.</p>
+            <p>When you’ve scanned your personal QR-code, you will notice that the display on our machine will verbally and textually tell you whether your QR-code is valid or not. The screen will also show you a red or green color indicating this validity.</p>
             <br>
-            <p>The screen on the machine also gives instructions with both animations with verbal explanation and text on how and what the user can recycle. The verbal explanation can be turned off if the user chooses to. The animation length runs for about 1min and repeats the process until 5min have passed then the machine will automatically shut down and close the hatched. The user can also choose to close the machine manually by scanning their QR-code again.</p>
+            <p>We want every one of our users to have an easy encounter with our recycling machines. Therefore, our display provides instructions in the form of animations, by verbal explanation or with text on how you can recycle. These instructions can be turned off if you want to. Our animation runs for about a minute. After five minutes has passed, the machine will automatically close the hatch. You can also choose to close the hatch manually by scanning your QR-code on the main display again. </p>
             <br>
             <h2 class="sideTitles">Why use GreenRoutine:</h2>
             <p>Our two-way solution is providing a personalized, flexible and fun way to make recycling a part of your daily routine. With our solution, you will gain the power to turn dirt and garbage into gold. We are firm believers that every action count. By using our app, your actions will have immediate positive repercussions on your local community. We are creating a movement – an eco-culture revolved around making the life of your municipality flourish. Become an eco-citizen today by implementing Green Routine in your everyday life.</p>
             <br>
             <h2 class="sideTitles">For users that have disabilities:</h2>
-                <ul>Poorly sighted:</ul>
-                    <li>Larger fonts on the app and the text on the machines screen. Also, the machine has an animation that shows what and how a person can recycle into the machine. This will be explained verbally and with subtitles.</li>
+            <ul>Poorly sighted:</ul>
+            <li>Larger fonts on the app and the text on the machines screen. Also, the machine has an animation that shows what and how a person can recycle into the machine. This will be explained verbally and with subtitles.</li>
             <br>
-                <ul>Deaf People:</ul>
-                    <li>The animation on the screen of the machine will both be verbally explained and with subtitles. This will assist people who are deaf to be able to follow the text on the screen so that they understand how recycle.</li>
+            <ul>Deaf People:</ul>
+            <li>The animation on the screen of the machine will both be verbally explained and with subtitles. This will assist people who are deaf to be able to follow the text on the screen so that they understand how recycle.</li>
             <br>
-                <ul>Reduced motoric ability:</ul>
-                    <li>Verbal navigation on the animation and on the app.</li>
+            <ul>Reduced motoric ability:</ul>
+            <li>Verbal navigation on the animation and on the app.</li>
             <br>
-                <ul>Blindness:</ul>
-                    <li>Can use sound with the help of the verbal explanation on both the app and on the animation on the machines screen.</li>
+            <ul>Blindness:</ul>
+            <li>Can use sound with the help of the verbal explanation on both the app and on the animation on the machines screen.</li>
             <br>
-                <ul>Blind and deaf Braille:</ul>
-                    <li>Potentially a later developed function.</li>
+            <ul>Blind and deaf Braille:</ul>
+            <li>Potentially a later developed function.</li>
             <br>
-                <ul>A monolingual human being:</ul>
-                    <li>A person who only knows Norwegian or English can choose one of the languages to use on both the machine and app.</li>
+            <ul>A monolingual human being:</ul>
+            <li>A person who only knows Norwegian or English can choose one of the languages to use on both the machine and app.</li>
             <br>
-                <ul>Color blindness:</ul>
-                    <li>We primarily use the colors green, blue and white in our solution. We have chosen these colors to match people that are green/red colorblind.</li>
+            <ul>Color blindness:</ul>
+            <li>We primarily use the colors green, blue and white in our solution. We have chosen these colors to match people that are green/red colorblind.</li>
+            <br><br>
+            <img class="statProblem" src="../Pictures/relevancySolutionEnglish.png" tabindex="0" title="How relevant is this problem today?" alt="Statistic">
+            <p tabindex="0">Through an anonymous survey, we asked a total of 119 people: «How relevant is this problem today?». Most of the people we asked to complete the survey is of the younger generation, primarily of the age range 18-20. Of these people, a total of 58.8% told us that this is a very relevant problem today. We also had a total of 30.3% seeing this problem as «mostly relevant». This give us a good indication that the majority of the younger generation in Oslo believes that this is an important problem that needs a suitable solution.</p>
+            <br><br><br>
+            <p>Contact us for tips on how to better your user experience. <b>Send us an e-mail </b><a tabindex="0" id="mail" href="mailto:s345873@oslomet.no">HERE.</a></p>
+
+-->
+
         </section>
     </main>
+
 
     <footer>
         <br>
