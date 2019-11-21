@@ -2,11 +2,11 @@ var i = 0;
 
 var imageTag = document.getElementsByClassName("slideShow");
 var imageTekst = document.getElementsByClassName("slideShowText");
-var section = document.getElementsByTagName("section");
+var sectionBox = document.getElementsByClassName("sectionBox");
 
 //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
 
-section.style.display = "none";
+sectionBox.style.display = "none";
 imageTag.style.display = "block";
 imageTekst.style.display = "block";
 var interval;
