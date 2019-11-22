@@ -266,6 +266,19 @@ video {
     background-color: darkorange;
     text-decoration: none;
 }
+/*SlideShow*/
+.imageTag{
+    width: 25%;
+   
+}
+.textBelow{
+    width: 100%;
+}
+.imageTekst{
+    float: left;
+    width: 70%;    
+}
+
 
 /* Sponsor */
 .SponsorDiv {

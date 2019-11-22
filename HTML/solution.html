@@ -7,7 +7,8 @@
     <title>Solution - Green Routine</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="shortcut icon" href="../Pictures/favicon.png" type="image/png">
-    <script type="text/javascript" src="../Javascript/final.js"></script>
+    <!--<script src="../Javascript/final.js"></script>-->
+    
 </head>
 
 <body>
@@ -55,18 +56,12 @@
             </div>
         </div>
     </nav>
+    <style></style>
 
     <main class="main">
-        <section tabindex="0">
+        <section>
             
-            <div class="sectionBox" style="display: none;">
-                <img value="app" class="imageTag">
-                <p class="imageText"></p>
-                <a onclick="back()" class="back"></a>
-                <a onclick="next()" class="next"></a>
-            </div>
-            
-    <!--
+    
             <header>
                 <h1>Solution</h1>
             </header>
@@ -75,12 +70,32 @@
             <h2 class="sideTitles">How does the app work?</h2>
             <p>When you first log in to the app, you get a menu that has your own QR–code which is used to start the machine, in other words, the app and the machine are linked. The app has an overview of the points list and the number of points you have collected from recycling. You have a statistic of how much of the different types of junk you've thrown weekly, and level challenges so you can level up and earn more points. In addition, you have a coupon category where you can see what kind of offers you get, depending on the time.</p>
             <br>
+            <div class="textBelow">
+                <div class="SlideShowBox" style="display: none;">
+                    <img class="imageTag" value="app">
+                    <p class="imageTekst"></p>
+                    <a onclick="next(true)"><span class="Next">&#10095</span></a>
+                    <a onclick="back(true)"><span class="Back">&#10094</span></a>
+                </div>
+                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="app.html">HERE</a></p>
+            </div>
+            <br>
             <h2 class="sideTitles">How does the machine work?</h2>
             <p>A hatch will open once you hold the QR-code on your mobile screen toward our machine’s main display. This is the opening where you are going to send your garbage to recycle. The machine only accepts garbage inside of closed recycling bags: Blue bags for plastics, green ones for food waste and other colored bags for residual waste. These bags can be found for free at your local grocery store. Remember to double knots your bags! The machine has a color sensor that distinguishes between each bag by their respective colors. In addition, a section inside of our main tube weighs the garbage bags. These two processes happen simultaneously. Further along, our main tube branches out to three smaller tube. Each are connected to a waste container based on which sort of garbage you wanted recycled. Our machine registers the weight of your bags in grams which results in an amount of points that can be used on coupons and discounts. </p>
             <br>
             <p>When you’ve scanned your personal QR-code, you will notice that the display on our machine will verbally and textually tell you whether your QR-code is valid or not. The screen will also show you a red or green color indicating this validity.</p>
             <br>
             <p>We want every one of our users to have an easy encounter with our recycling machines. Therefore, our display provides instructions in the form of animations, by verbal explanation or with text on how you can recycle. These instructions can be turned off if you want to. Our animation runs for about a minute. After five minutes has passed, the machine will automatically close the hatch. You can also choose to close the hatch manually by scanning your QR-code on the main display again. </p>
+            <br>
+            <div class="textBelow">
+                <div class="SlideShowBox" style="display: none;">
+                    <img class="imageTag" value="Machine">
+                    <p class="imageTekst"></p>
+                    <a onclick="next(false)"><span class="Next">&#10095</span></a>
+                    <a onclick="back(false)"><span class="Back">&#10094</span></a>
+                </div>
+                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="machine.html">HERE</a></p>
+            </div>
             <br>
             <h2 class="sideTitles">Why use GreenRoutine:</h2>
             <p>Our two-way solution is providing a personalized, flexible and fun way to make recycling a part of your daily routine. With our solution, you will gain the power to turn dirt and garbage into gold. We are firm believers that every action count. By using our app, your actions will have immediate positive repercussions on your local community. We are creating a movement – an eco-culture revolved around making the life of your municipality flourish. Become an eco-citizen today by implementing Green Routine in your everyday life.</p>
@@ -112,10 +127,127 @@
             <br><br><br>
             <p>Contact us for tips on how to better your user experience. <b>Send us an e-mail </b><a tabindex="0" id="mail" href="mailto:s345873@oslomet.no">HERE.</a></p>
 
--->
+
 
         </section>
     </main>
+    
+    <script>//due to issues and complications we had to turn off the pathing to final.js because several elements
+    
+            var teller1 = 0;
+        var teller2 = 0;
+
+        var imageTag = document.getElementsByClassName('imageTag');
+        var imageTekst = document.getElementsByClassName('imageTekst');
+        var SlideShowBox = document.getElementsByClassName('SlideShowBox');
+        var paragrafBelow = document.getElementsByClassName("paragrafBelow")
+
+
+        function NewAppPictures() {
+
+            var images = [{
+                Image: "../Pictures/appHome.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            }, {
+
+                Image:"../Pictures/appCoupons.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            }]; //app pictures
+            
+            if (teller1 >= images.length) { //makes the slideshow continuous
+                teller1 = 0;
+            }if(teller1 < 0){
+                teller1 = images.length-1;
+            }
+
+            imageTag[0].src = images[teller1].Image;
+            imageTag[0].tabIndex = "0";
+            imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
+            imageTag[0].title = images[teller1].Title;
+            imageTekst[0].innerHTML = images[teller1].info;
+            
+
+            teller1 += 1;
+        }
+
+        function NewMachinePictures() {
+
+            var images = [{
+                Image: "../Pictures/appCoupons.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten"
+            }, {
+
+                Image: "../Pictures/appHome.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten"
+            }]; //machine pictures
+            
+            if (teller2 >= images.length) { //makes the slideshow continuous
+                teller2 = 0;
+            }if(teller2 < 0){
+                teller2 = images.length-1;
+            }
+            
+
+            imageTag[1].src = (images[teller2].Image);
+            imageTag[1].tabIndex = "0";
+            imageTag[1].alt = images[teller2].altTekst; //alt er kanskje     skrevet feil
+            imageTag[1].title = images[teller2].Title;
+            imageTekst[1].innerHTML = images[teller2].info;
+
+            teller2 += 1;
+        }
+
+
+        //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
+        paragrafBelow[0].style.display = "none";
+        paragrafBelow[1].style.display = "none";
+        SlideShowBox[0].style.display = "block";        
+        SlideShowBox[1].style.display = "block";
+
+        var interval1;
+        var interval2;
+ 
+            NewAppPictures();
+            interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            NewMachinePictures();
+            interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+
+
+        function back(boolean) {
+            if (boolean) {
+                teller1 -= 2;
+                clearInterval(interval1);
+                NewAppPictures();
+                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            } else{
+                teller2 -= 2;
+                clearInterval(interval2);
+                NewMachinePictures();
+                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+
+            }
+        }
+
+        function next(boolean) {
+            if (boolean) {
+                clearInterval(interval1);
+                NewAppPictures();
+                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            }else {
+                clearInterval(interval2);
+                NewMachinePictures();
+                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+            }
+        }
+    </script>
 
 
     <footer>
@@ -127,6 +259,8 @@
         <p tabindex="0">Norway</p>
         <p tabindex="0">Tel.: +47 67 23 50 00</p>
     </footer>
+    
+    
 
 
 </body>
