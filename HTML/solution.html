@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="shortcut icon" href="../Pictures/favicon.png" type="image/png">
     <!--<script src="../Javascript/final.js"></script>-->
-
+    
 </head>
 
 <body>
@@ -60,8 +60,8 @@
 
     <main class="main">
         <section>
-
-
+            
+    
             <header>
                 <h1 tabindex="0">Solution</h1>
             </header>
@@ -77,7 +77,7 @@
                     <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
                         </div>
                 </div>
-                <p class="paragrafBelow">text som forklarer hvor man finner app skisser <a href="app.html">HERE</a></p>
+                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="app.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">How does the machine work?</h2>
@@ -94,7 +94,7 @@
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                         </div>
                 </div>
-                <p class="paragrafBelow">text som forklarer hvor man finner app skisser <a href="machine.html">HERE</a></p>
+                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="machine.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">Why use GreenRoutine:</h2>
@@ -131,11 +131,10 @@
 
         </section>
     </main>
-
-    <script>
-        //due to issues and complications we had to turn off the pathing to final.js because several elements
-
-        var teller1 = 0;
+    
+    <script>//due to issues and complications we had to turn off the pathing to final.js because several elements
+    
+            var teller1 = 0;
         var teller2 = 0;
 
         var imageTag = document.getElementsByClassName('imageTag');
@@ -153,17 +152,16 @@
                 Title: "hover teksten",
             }, {
 
-                Image: "../Pictures/appCoupons.PNG",
+                Image:"../Pictures/appCoupons.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten",
             }]; //app pictures
-
+            
             if (teller1 >= images.length) { //makes the slideshow continuous
                 teller1 = 0;
-            }
-            if (teller1 < 0) {
-                teller1 = images.length - 1;
+            }if(teller1 < 0){
+                teller1 = images.length-1;
             }
 
             imageTag[0].src = images[teller1].Image;
@@ -171,8 +169,8 @@
             imageText[0].tabIndex = "0";
             imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
             imageTag[0].title = images[teller1].Title;
-            imageTekst[0].innerHTML = images[teller1].info;
-
+            imageText[0].innerHTML = images[teller1].info;
+            
 
             teller1 += 1;
         }
@@ -191,14 +189,13 @@
                 altTekst: "les navnet",
                 Title: "hover teksten"
             }]; //machine pictures
-
+            
             if (teller2 >= images.length) { //makes the slideshow continuous
                 teller2 = 0;
+            }if(teller2 < 0){
+                teller2 = images.length-1;
             }
-            if (teller2 < 0) {
-                teller2 = images.length - 1;
-            }
-
+            
 
             imageTag[1].src = (images[teller2].Image);
             imageTag[1].tabIndex = "0";
@@ -214,16 +211,16 @@
         //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
         paragrafBelow[0].style.display = "none";
         paragrafBelow[1].style.display = "none";
-        SlideShowBox[0].style.display = "block";
+        SlideShowBox[0].style.display = "block";        
         SlideShowBox[1].style.display = "block";
 
         var interval1;
         var interval2;
-
-        NewAppPictures();
-        interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-        NewMachinePictures();
-        interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+ 
+            NewAppPictures();
+            interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            NewMachinePictures();
+            interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
 
 
         function back(boolean) {
@@ -232,7 +229,7 @@
                 clearInterval(interval1);
                 NewAppPictures();
                 interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-            } else {
+            } else{
                 teller2 -= 2;
                 clearInterval(interval2);
                 NewMachinePictures();
@@ -246,7 +243,7 @@
                 clearInterval(interval1);
                 NewAppPictures();
                 interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-            } else {
+            }else {
                 clearInterval(interval2);
                 NewMachinePictures();
                 interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
@@ -264,8 +261,8 @@
         <p tabindex="0">Norway</p>
         <p tabindex="0">Tel.: +47 67 23 50 00</p>
     </footer>
-
-
+    
+    
 
 
 </body>
