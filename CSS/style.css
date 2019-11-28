@@ -57,7 +57,7 @@ aside {
 
 .homeInfo {
     display: inline-block;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .prototypeSites ul li {
@@ -371,6 +371,8 @@ footer {
     .homeImg{
         height: 35em;
     }
+    
+    
 }
 @media(max-width: 1260px) {
 
