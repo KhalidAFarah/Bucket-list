@@ -329,13 +329,14 @@ video {
 /* footer */
 footer {
     width: 100%;
-    background-color: orange;
+    background-color: darkgreen;
     overflow: hidden;
     text-align: center;
     bottom: 0%;
-    border-top: 5px solid black;
+    border-top: 5px solid white;
     padding-bottom: 2%;
     margin-top: 0%;
+    color: white;
 }
 
 @-ms-viewport {
