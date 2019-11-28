@@ -205,6 +205,7 @@ video {
     width: 50%;
     height: auto;
     float: right;
+    padding: 2%;
 }
 
 .downloadLinks {
