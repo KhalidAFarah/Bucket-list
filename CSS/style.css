@@ -325,6 +325,26 @@ video {
     transform: rotate(90deg);
 }
 
+.TrashPic {
+    width: 25%; 
+    height: auto;
+    float: right;
+    margin-left: 3%;
+    margin-top: -5%;
+}
+
+.TrashPicNO {
+    width: 25%; 
+    height: auto;
+    float: right;
+    margin-left: 3%;
+    margin-top: -3%;
+}
+
+.TrashPic2 {
+    width: 25%;  
+}
+
 /* footer */
 footer {
     width: 100%;
