@@ -353,6 +353,10 @@ footer {
 .sideImgMachine{
     width: 25%;
 }
+.slideMachine{
+    width: 60%;
+    margin-left: -30%;
+}
 
 /*Media query*/
 @media(max-width: 1260px) {

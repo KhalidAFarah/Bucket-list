@@ -89,7 +89,7 @@
             <br>
             <div class="textBelow">
                 <div class="SlideShowBox" style="display: none;">
-                    <img class="imageTag" value="Machine">
+                    <img class="imageTag slideMachine" value="Machine">
                     <p class="imageTekst"></p>
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                         </div>
@@ -144,18 +144,65 @@
 
 
         function NewAppPictures() {
-
+        
+            var HomeText1 = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            
+            var HomeText2 ="At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            
+            var points = "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage.<br><br>The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.";
+            
+            var Challenges = "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance.<br><br>Above there are buttons which let the users navigate through statistics and the challenges-page.";
+            
+            var Statistics = "The users have an overview of their average score. The score amount is dependent on how you recycle within the three categories food waste, non-recyclable waste and plastic packaging.<br><br>The users can navigate to the page by clicking on the button “Statistics” on the challenge page. The button named “Back” will lead you back to the home page.";
+            
+            var Coupons = "On this page, the user has access to coupons through different categories such as food and drinks for instance. The coupons can be used right away with the QR or be saved for later by buying the coupon with the points you have collected.";
+            
+            var YourCoupons = "The coupons you have already bought can be shown by clicking on the category “Your coupons”. The category shows all the advance purchases the users have chosen to save for later.";
+            
+            var Map = "Our integrated map function can be accessed through the main menu. This page will show you where your nearest Green Routine machine is located.<br><br>This function was implemented due to the responses on our public survey."
+            
+            
             var images = [{
                 Image: "../Pictures/appHome.PNG",
-                info: "tekst som skal forklare bildet",
+                info: HomeText1,
                 altTekst: "les navnet",
-                Title: "hover teksten",
-            }, {
+                Title: "Homepage of the app Green Routine",
+            },{
+                Image: "../Pictures/appHome.PNG",
+                info: HomeText2,
+                altTekst: "les navnet",
+                Title: "More info on the homepage of the app",
+            },{
 
-                Image:"../Pictures/appCoupons.PNG",
-                info: "tekst som skal forklare bildet",
+                Image:"../Pictures/appPoints.PNG",
+                info: points,
                 altTekst: "les navnet",
-                Title: "hover teksten",
+                Title: "A page for points, showing the highscore list",
+            },{
+                Image: "../Pictures/appChallenges.PNG",
+                info: Challenges,
+                altTekst: "les navnet",
+                Title: "A page with rank-up challenges, and current task",
+            },{
+                Image: "../Pictures/appStatistics.PNG",
+                info: Statistics,
+                altTekst: "les navnet",
+                Title: "Statistics page with the average per week recycled waste",
+            },{
+                Image: "../Pictures/appCoupons.PNG",
+                info: Coupons,
+                altTekst: "les navnet",
+                Title: "A page with coupons selectable through the categories",
+            },{
+                Image: "../Pictures/appMyCoupons.PNG",
+                info: YourCoupons,
+                altTekst: "les navnet",
+                Title: "Through the categori tab you can choose and see your bought coupons",
+            },{
+                Image: "../Pictures/appMap.PNG",
+                info: Map,
+                altTekst: "les navnet",
+                Title: "A map of the nearest machines",
             }]; //app pictures
             
             if (teller1 >= images.length) { //makes the slideshow continuous
@@ -176,18 +223,36 @@
         }
 
         function NewMachinePictures() {
+            
+            var first = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            
+            var first2 = "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            
+            var second = "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage.<br><br>The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.";
+            
+            var third = "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance.<br><br>Above there are buttons which let the users navigate through statistics and the challenges-page.";
 
             var images = [{
-                Image: "../Pictures/appCoupons.PNG",
-                info: "tekst som skal forklare bildet",
+                Image: "../Pictures/Machine3.PNG",
+                info: first,
                 altTekst: "les navnet",
-                Title: "hover teksten"
-            }, {
+                Title: "Image of what user will see of the machine",
+            },{
+                Image: "../Pictures/Machine3.PNG",
+                info: first2,
+                altTekst: "les navnet",
+                Title: "Image of what user will see of the machine"
+            },{
 
-                Image: "../Pictures/appHome.PNG",
-                info: "tekst som skal forklare bildet",
+                Image: "../Pictures/Machine2.PNG",
+                info: second,
                 altTekst: "les navnet",
-                Title: "hover teksten"
+                Title: "Image of the color sensor and the weight plate on the inside of the machine",
+            },{
+                Image: "../Pictures/Machine1.PNG",
+                info: third,
+                altTekst: "les navnet",
+                Title: "An image of where waste ends and recycled",
             }]; //machine pictures
             
             if (teller2 >= images.length) { //makes the slideshow continuous
