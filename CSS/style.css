@@ -57,7 +57,7 @@ aside {
 
 .homeInfo {
     display: inline-block;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
 }
 
 .prototypeSites ul li {
@@ -86,6 +86,9 @@ aside {
     width: 100%;
     display: inline-block;
     margin-top: 2%;
+}
+.dropDownLanguage{
+    display: none;
 }
 
 .logoImg {
@@ -384,6 +387,8 @@ footer {
     .homeImg{
         height: 35em;
     }
+    
+    
 }
 @media(max-width: 1260px) {
 
@@ -477,6 +482,10 @@ footer {
 }
 
 @media(max-width: 800px) {
+    .dropDownLanguage{
+    display: block;
+    }
+    
     aside {
         font-size: 13px;
     }
@@ -488,7 +497,7 @@ footer {
     }
     .dropDownMenu {
         width: 15%;
-        margin-left: 90%;
+        margin-left: 50%;
         margin-top: 0%;
         padding-bottom: 9%;
     }
@@ -498,7 +507,6 @@ footer {
     }
 
     .dropDownContent a {
-
         font-size: 23px;
         display: block;
         text-align: center;
@@ -516,18 +524,21 @@ footer {
     }
 
     .dropDownLanguage a {
-        border: solid black 4px;
-        padding: 1% 10%;
-        margin-left: 18%;
+        border: solid black 5px;
+        border-radius: 5%;
+        padding: 1%;
+        margin-left: 15%;
         margin-top: 2%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .dropDownLanguage {
+        margin-left: 75%;
     }
 
     .dropDownLanguage .active2 {
         background-color: orange;
-    }
-
-    .dropDownLanguage {
-        border-top: solid black 5px;
     }
 
     .dropDownContent {
