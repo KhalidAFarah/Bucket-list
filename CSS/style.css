@@ -87,7 +87,8 @@ aside {
     display: inline-block;
     margin-top: 2%;
 }
-.dropDownLanguage{
+
+.dropDownLanguage {
     display: none;
 }
 
@@ -100,12 +101,14 @@ aside {
     padding-top: 1.35%;
     margin-left: 20%;
 }
-.line{
-    padding: 0.5%  0%;
+
+.line {
+    padding: 0.5% 0%;
     width: 1%;
     border: solid black;
     margin-right: 4%;
 }
+
 .menuContent li {
     display: inline-block;
     width: 15%;
@@ -270,33 +273,41 @@ video {
     background-color: darkorange;
     text-decoration: none;
 }
-.MachineImg{
+
+.MachineImg {
     width: 60%;
 }
-.MachineText{
+
+.MachineText {
     width: 100%;
 }
+
 /*SlideShow*/
-.imageTag{
+.imageTag {
     width: 25%;
-   
+
 }
-.textBelow{
+
+.textBelow {
     width: 100%;
     padding: 1%;
     border-bottom: solid black 3px;
     border-top: solid black 3px;
 }
-.imageText{
+
+.imageText {
     float: left;
-    width: 70%;    
+    width: 70%;
 }
-.choices{
+
+.choices {
     width: 100%;
     margin-left: 5%;
     margin-bottom: 1%;
 }
-.Next, .Back{
+
+.Next,
+.Back {
     font-size: 30px;
     padding: 1% 20%;
     cursor: pointer;
@@ -329,7 +340,7 @@ video {
 }
 
 .TrashPic {
-    width: 25%; 
+    width: 25%;
     height: auto;
     float: right;
     margin-left: 3%;
@@ -337,7 +348,7 @@ video {
 }
 
 .TrashPicNO {
-    width: 25%; 
+    width: 25%;
     height: auto;
     float: right;
     margin-left: 3%;
@@ -345,7 +356,7 @@ video {
 }
 
 .TrashPic2 {
-    width: 25%;  
+    width: 25%;
 }
 
 /* footer */
@@ -366,37 +377,53 @@ footer {
 }
 
 /*prototype*/
-.Machine{
+.Machine {
     width: 25%;
 }
-.prototypeBoxMachine{
+
+.prototypeBoxMachine {
     display: inline-block;
 }
-.sideImgMachine{
+
+.sideImgMachine {
     width: 25%;
 }
-.slideMachine{
+
+.slideMachine {
     width: 50%;
 }
-.slideMachineText{
+
+.slideMachineText {
     width: 50%;
 }
 
 /*Media query*/
-@media(max-width: 1400px){
-    .homeImg{
+@media(max-width: 3000px) {
+    video {
+        margin-top: -5%;
+    }
+
+    .textBelow {
+        margin-top: 2%;
+    }
+}
+
+@media(max-width: 1400px) {
+    .homeImg {
         height: 35em;
     }
-    
-    
+
+
 }
+
 @media(max-width: 1260px) {
 
-    .menuContent li a{
+    .menuContent li a {
         font-size: 20px;
     }
+
     .menuContent ul {
-        margin-top: -0.2%;  
+        margin-top: -0.2%;
     }
 
     .SponsorDiv {
@@ -411,9 +438,11 @@ footer {
     .menuContent li a {
         font-size: 18px;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: -0.5%;
-    } 
+    }
+
     .homeText {
         font-size: 15px;
     }
@@ -431,16 +460,19 @@ footer {
     .menuContent li a {
         font-size: 15px;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: 0%;
     }
 
     .menuContent li {
         width: 14%;
     }
-    .menuContent li a{
+
+    .menuContent li a {
         font-size: 20px;
     }
+
     .SponsorDiv p {
         font-size: 18px;
     }
@@ -455,25 +487,30 @@ footer {
     aside {
         padding-top: 0%;
     }
-    .MachineImg{
+
+    .MachineImg {
         width: 70%;
     }
-    .menuContent li a{
+
+    .menuContent li a {
         font-size: 18px;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: -0.2%;
     }
-    
-    .imageTag{
+
+    .imageTag {
         width: 60%;
         margin-left: 20%;
     }
-    .slideMachine{
+
+    .slideMachine {
         width: 100%;
         margin-left: 0%;
     }
-    .imageText{
+
+    .imageText {
         width: 100%;
         font-size: 15px;
         float: none;
@@ -482,19 +519,22 @@ footer {
 }
 
 @media(max-width: 800px) {
-    .dropDownLanguage{
-    display: block;
+    .dropDownLanguage {
+        display: block;
     }
-    
+
     aside {
         font-size: 13px;
     }
+
     .menuContent {
         display: none;
     }
-    .logo{
+
+    .logo {
         width: 20%;
     }
+
     .dropDownMenu {
         width: 15%;
         margin-left: 50%;
@@ -532,7 +572,7 @@ footer {
         text-decoration: none;
         color: black;
     }
-    
+
     .dropDownLanguage {
         margin-left: 75%;
     }
@@ -549,6 +589,7 @@ footer {
         border-bottom: solid darkgreen 5px;
         padding-top: 2%;
     }
+
     .dropDown,
     .dropDownMenu {
         display: block;
@@ -560,7 +601,7 @@ footer {
         overflow: visible;
         z-index: 3;
 
-    }  
+    }
 
 }
 
@@ -589,7 +630,7 @@ footer {
         width: 20%;
     }
 
-    .menuContent li a{
+    .menuContent li a {
         font-size: 13px;
     }
 
@@ -609,8 +650,9 @@ footer {
     }
 
     .menuContent ul {
-       margin-top: -0.4%;
+        margin-top: -0.4%;
     }
+
     header {
         text-align: center;
     }
@@ -622,7 +664,8 @@ footer {
     .prototypeSites ul li a {
         font-size: 15px;
     }
-    .MachineImg{
+
+    .MachineImg {
         width: 85%;
     }
 
@@ -652,7 +695,7 @@ footer {
         font-size: 1.2em;
     }
 
-    
+
 
     .lastSponsor {
         margin: 0;
@@ -683,26 +726,32 @@ footer {
         padding-bottom: 0%;
         display: block;
     }
-    .MachineImg{
+
+    .MachineImg {
         margin-left: -60%;
         width: 110%;
     }
+
     p {
         padding-top: 3%;
         font-size: 18px;
     }
-    .imageTag{
+
+    .imageTag {
         width: 60%;
-        margin-left: 20%;                
+        margin-left: 20%;
     }
-    .slideMachine{
+
+    .slideMachine {
         width: 100%;
         margin-left: 0%;
     }
-    .imageText, .slideMachineText{
+
+    .imageText,
+    .slideMachineText {
         width: 100%;
         font-size: 15px;
-        
+
     }
 
     .dropDownMenu {
@@ -771,8 +820,8 @@ footer {
         padding-left: 2%;
         margin-top: 5%;
         padding-bottom: 5%;
-    }   
-    
+    }
+
 }
 
 @media(max-width: 300px) {
