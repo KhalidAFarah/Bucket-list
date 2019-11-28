@@ -283,7 +283,7 @@ video {
     border-bottom: solid black 3px;
     border-top: solid black 3px;
 }
-.imageTekst{
+.imageText{
     float: left;
     width: 70%;    
 }
@@ -354,8 +354,10 @@ footer {
     width: 25%;
 }
 .slideMachine{
-    width: 60%;
-    margin-left: -30%;
+    width: 50%;
+}
+.slideMachineText{
+    width: 50%;
 }
 
 /*Media query*/
@@ -426,6 +428,20 @@ footer {
     }
     .menuContent ul{
         margin-top: -0.8%;
+    }
+    
+    .imageTag{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .slideMachine{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .imageText{
+        width: 100%;
+        font-size: 15px;
+        float: none;
     }
 
 }
@@ -536,7 +552,7 @@ footer {
     }
 
     .sideTitles {
-        font-size: 1.2em
+        font-size: 1.2em;
     }
 
     .menuContent {
@@ -579,6 +595,19 @@ footer {
     p {
         padding-top: 3%;
         font-size: 18px;
+    }
+    .imageTag{
+        width: 60%;
+        margin-left: 20%;                
+    }
+    .slideMachine{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .imageText, .slideMachineText{
+        width: 100%;
+        font-size: 15px;
+        
     }
 
     .dropDownMenu {
@@ -661,6 +690,8 @@ footer {
         z-index: 3;
 
     }
+    
+    
 }
 
 @media(max-width: 300px) {

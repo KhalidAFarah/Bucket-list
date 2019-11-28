@@ -21,17 +21,12 @@
             <ul>
                 <li><a style="margin-left: 12%;" tabindex="0" href="../HTML/index.html">Home</a></li>
                 <li><a tabindex="0" href="../HTML/problem.html">Problem</a></li>
-                <li><a tabindex="0" class="active" href="../HTML/solution.html">Solution</a></li>
-                <li><a tabindex="0" href="../HTML/app.html">Prototype</a></li>
+                <li><a tabindex="0" href="../HTML/solution.html" class="active">Solution</a></li>
                 <li><a tabindex="0" href="../HTML/aboutUs.html">About us</a></li>
+                <span class="line"></span>
+                <li><a class="active2" href="../HTML/solution.html">English</a></li>
+                <li><a href="../HTML/NOsolution.html">Norsk</a></li>
             </ul>
-
-            <div class="language">
-                <ul>
-                    <li><a class="active2" href="solution.html">English</a></li>
-                    <li><a href="NOsolution.html">Norsk</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="dropDown">
@@ -73,11 +68,11 @@
             <div class="textBelow">
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag" value="app">
-                    <p class="imageTekst"></p>
+                    <p class="imageText"></p>
                     <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
                         </div>
                 </div>
-                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="app.html">HERE</a></p>
+                <p class="paragrafBelow">You can see more of the app <a href="app.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">How does the machine work?</h2>
@@ -90,11 +85,11 @@
             <div class="textBelow">
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag slideMachine" value="Machine">
-                    <p class="imageTekst"></p>
+                    <p class="imageText slideMachineText"></p>
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                         </div>
                 </div>
-                <p class="paragrafBelow">text som forklarer hvor man  finner app skisser <a href="machine.html">HERE</a></p>
+                <p class="paragrafBelow">You can see more of the machine <a href="machine.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">Why use GreenRoutine:</h2>
@@ -138,7 +133,7 @@
         var teller2 = 0;
 
         var imageTag = document.getElementsByClassName('imageTag');
-        var imageText = document.getElementsByClassName('imageTekst');
+        var imageText = document.getElementsByClassName('imageText');
         var SlideShowBox = document.getElementsByClassName('SlideShowBox');
         var paragrafBelow = document.getElementsByClassName("paragrafBelow")
 
@@ -171,13 +166,12 @@
                 Image: "../Pictures/appHome.PNG",
                 info: HomeText2,
                 altTekst: "les navnet",
-                Title: "More info on the homepage of the app",
+                Title: "More information on the homepage of the app",
             },{
-
                 Image:"../Pictures/appPoints.PNG",
                 info: points,
                 altTekst: "les navnet",
-                Title: "A page for points, showing the highscore list",
+                Title: "A page for points, and a highscore list",
             },{
                 Image: "../Pictures/appChallenges.PNG",
                 info: Challenges,
@@ -197,7 +191,7 @@
                 Image: "../Pictures/appMyCoupons.PNG",
                 info: YourCoupons,
                 altTekst: "les navnet",
-                Title: "Through the categori tab you can choose and see your bought coupons",
+                Title: "Through the categori tab you can choose your coupons and see your bought coupons",
             },{
                 Image: "../Pictures/appMap.PNG",
                 info: Map,
@@ -236,12 +230,12 @@
                 Image: "../Pictures/Machine3.PNG",
                 info: first,
                 altTekst: "les navnet",
-                Title: "Image of what user will see of the machine",
+                Title: "Image of what users will see of the machine",
             },{
-                Image: "../Pictures/Machine3.PNG",
+                Image: "../Pictures/GreenRoutineMachine2.PNG",
                 info: first2,
                 altTekst: "les navnet",
-                Title: "Image of what user will see of the machine"
+                Title: "Image of the machine after the Qr code has been scanned",
             },{
 
                 Image: "../Pictures/Machine2.PNG",
