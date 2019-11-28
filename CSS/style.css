@@ -57,7 +57,7 @@ aside {
 
 .homeInfo {
     display: inline-block;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
 }
 
 .prototypeSites ul li {
@@ -195,12 +195,6 @@ p {
     font-size: 1.2em;
 }
 
-.homeText {
-    width: 40%;
-    height: auto;
-    float: left;
-}
-
 video {
     width: 50%;
     height: auto;
@@ -325,6 +319,20 @@ video {
     transform: rotate(90deg);
 }
 
+.TrashPic {
+    width: 25%;
+    float: right;
+    margin-left: 5%;
+    
+}
+
+.TrashPic2 {
+    width: 30%;
+    
+}
+
+
+
 /* footer */
 footer {
     width: 100%;
@@ -364,6 +372,8 @@ footer {
     .homeImg{
         height: 35em;
     }
+    
+    
 }
 @media(max-width: 1260px) {
 
