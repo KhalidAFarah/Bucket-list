@@ -469,13 +469,12 @@ footer {
     .dropDownMenu {
         width: 15%;
         margin-left: 90%;
-        margin-top: 3%;
+        margin-top: 0%;
         padding-bottom: 9%;
     }
 
     .dropDownMenuImg {
         width: 35%;
-        margin-top: -45%;
     }
 
     .dropDownContent a {
@@ -517,6 +516,7 @@ footer {
         position: absolute;
         left: 0;
         border-bottom: solid darkgreen 5px;
+        padding-top: 2%;
     }
     .dropDown,
     .dropDownMenu {
