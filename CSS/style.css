@@ -326,6 +326,18 @@ video {
     transform: rotate(90deg);
 }
 
+.TrashPic {
+    width: 25%;
+    float: right;
+    margin-left: 5%;
+    
+}
+
+.TrashPic2 {
+    width: 30%;
+    
+}
+
 /* footer */
 footer {
     width: 100%;
