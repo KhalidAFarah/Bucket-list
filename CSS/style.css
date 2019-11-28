@@ -329,13 +329,14 @@ video {
 /* footer */
 footer {
     width: 100%;
-    background-color: orange;
+    background-color: darkgreen;
     overflow: hidden;
     text-align: center;
     bottom: 0%;
-    border-top: 5px solid black;
+    border-top: 5px solid white;
     padding-bottom: 2%;
     margin-top: 0%;
+    color: white;
 }
 
 @-ms-viewport {
@@ -360,6 +361,11 @@ footer {
 }
 
 /*Media query*/
+@media(max-width: 1400px){
+    .homeImg{
+        height: 35em;
+    }
+}
 @media(max-width: 1260px) {
 
     .menuContent li a{
@@ -391,7 +397,7 @@ footer {
 
 @media(max-width: 1030px) {
     .logo {
-        width: 12%;
+        width: 16%;
     }
 
     .homeImg {
@@ -402,11 +408,14 @@ footer {
         font-size: 15px;
     }
     .menuContent ul{
-        margin-top: -0.7%;
+        margin-top: 0%;
     }
 
     .menuContent li {
         width: 14%;
+    }
+    .menuContent li a{
+        font-size: 20px;
     }
     .SponsorDiv p {
         font-size: 18px;
@@ -425,8 +434,11 @@ footer {
     .MachineImg{
         width: 70%;
     }
+    .menuContent li a{
+        font-size: 18px;
+    }
     .menuContent ul{
-        margin-top: -0.8%;
+        margin-top: -0.2%;
     }
     
     .imageTag{
@@ -449,20 +461,76 @@ footer {
     aside {
         font-size: 13px;
     }
+    .menuContent {
+        display: none;
+    }
     .logo{
-        width: 16%
+        width: 20%;
     }
-    .menuContent li{
+    .dropDownMenu {
         width: 15%;
-    }
-    .menuContent li a{
-        font-size: 13px;
-    }
-
-    .menuContent ul{
-        margin-top: -0.5%;
+        margin-left: 90%;
+        margin-top: 0%;
+        padding-bottom: 9%;
     }
 
+    .dropDownMenuImg {
+        width: 35%;
+    }
+
+    .dropDownContent a {
+
+        font-size: 23px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        padding: 1% 3%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    .dropDownContent .active {
+        border-style: none;
+        border-bottom: solid black 3px;
+    }
+
+    .dropDownLanguage a {
+        border: solid black 4px;
+        padding: 1% 10%;
+        margin-left: 18%;
+        margin-top: 2%;
+    }
+
+    .dropDownLanguage .active2 {
+        background-color: orange;
+    }
+
+    .dropDownLanguage {
+        border-top: solid black 5px;
+    }
+
+    .dropDownContent {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border-bottom: solid darkgreen 5px;
+        padding-top: 2%;
+    }
+    .dropDown,
+    .dropDownMenu {
+        display: block;
+    }
+
+    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
+        display: block;
+        background-color: white;
+        overflow: visible;
+        z-index: 3;
+
+    }  
 
 }
 
@@ -554,9 +622,7 @@ footer {
         font-size: 1.2em;
     }
 
-    .menuContent {
-        display: none;
-    }
+    
 
     .lastSponsor {
         margin: 0;
