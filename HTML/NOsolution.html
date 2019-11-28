@@ -20,16 +20,11 @@
                 <li><a style="margin-left: 12%;" tabindex="0" href="../HTML/NOindex.html">Hjem</a></li>
                 <li><a tabindex="0" href="../HTML/NOproblem.html">Problemet</a></li>
                 <li><a tabindex="0" class="active" href="../HTML/NOsolution.html">Løsningen</a></li>
-                <li><a tabindex="0" href="../HTML/NOapp.html">Prototype</a></li>
                 <li><a tabindex="0" href="../HTML/NOaboutUs.html">Om oss</a></li>
+                <span class="line"></span>
+                <li><a href="solution.html">English</a></li>
+                <li><a class="active2" href="NOsolution.html">Norsk</a></li>
             </ul>
-
-            <div class="language">
-                <ul>
-                    <li><a href="solution.html">English</a></li>
-                    <li><a class="active2" href="NOsolution.html">Norsk</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="dropDown">
@@ -65,12 +60,32 @@
             <h2 class="sideTitles">Hvordan fungerer applikasjonen?</h2>
             <p>Når du først logger deg inn i appen, får du opp en meny med din egen QR-kode. Dette er koden som også brukes for å kunne starte opp maskinen. Med andre ord, så er appen og maskinen koblet sammen. Appen har en oversikt over poenglisten din og antallet poeng du har samlet opp fra å resirkulere. Du har også statistikk over hvor mye av hver søppelsort du har kastet på en ukentlig basis, og nivåbaserte utfordringer slik at du kan gå opp i nivå og samle mer poeng. I tillegg har du en kuponskategori hvor du kan se hva slags type tilbud du får. Tilbudene varierer med tiden. </p>
             <br>
+            <div class="textBelow">
+                <div class="SlideShowBox" style="display: none;">
+                    <img class="imageTag" value="app">
+                    <p class="imageText"></p>
+                    <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
+                        </div>
+                </div>
+                <p class="paragrafBelow">Du kan se mer om appen <a href="NOapp.html">HER</a></p>
+            </div>
+            <br>
             <h2 class="sideTitles">Hvordan fungerer maskinen?</h2>
             <p>En luke åpnes når du holder QR-koden på din mobilskjerm mot maskinens hovedskjerm. Dette er åpningen hvor du sender ditt avfall til resirkulering. Maskinen aksepterer kun avfall inn i lukkede resirkuleringsposer: Blå poser for plast, grønne poser for matavfall og andre fargede poser for restavfall. Husk å lage en dobbeltknyte hver av posene! Maskinen har en fargesensor som skiller mellom hver pose ut i fra fargen. I tillegg veies søppelposen i hovedrøret vårt. Hver av disse prosessene skjer samtidig. Videre forgreines hovedrøret seg til tre mindre rør. Disse er koblet til hver sin forbeholdte avfallsbeholder basert på hva slags avfallssort det er i posen. Maskinen vår registrerer vekten på posene dine i gram, noe som resulterer et visst antall poeng som kan brukes på kuponger og rabatter.</p>
             <br>
             <p>Etter at du har skannet din personlige QR-kode, vil du merke deg at skjermen på maskinen vil muntlig og skriftlig fortelle deg om din personlige QR-kode er gyldig eller ei. Skjermen vil også vise deg en rød eller en grønn farge som indikerer denne gyldigheten. </p>
             <br>
             <p>Vi ønsker at alle brukerne våre skal ha et lett møte med gjenvinningsmaskinene våres. Derfor gir skjermen instruksjoner i form av animasjoner, ved muntlig forklaring eller med tekst om hvordan du kan resirkulere. Disse instruksjonene kan slås av dersom man ønsker det. Animasjonen vår kjøres i omtrent ett minutt. Etter at det har gått fem minutter, lukker maskinen automatisk luken. Du kan også velge å lukke luken manuelt ved å skanne QR-koden din på hoveddisplayet igjen.</p>
+            <br>
+            <div class="textBelow">
+                <div class="SlideShowBox" style="display: none;">
+                    <img class="imageTag slideMachine" value="Machine">
+                    <p class="imageText slideMachineText"></p>
+                    <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
+                        </div>
+                </div>
+                <p class="paragrafBelow">Du kan se mer om maskinen <a href="NOmachine.html">HER</a></p>
+            </div>
             <br>
             <h2 class="sideTitles">Hvorfor bruke GreenRoutine:</h2>
             <p>Toveisløsningen vår er å tilby en personlig, fleksibel og morsom måte å gjøre resirkulering til en del av din daglige rutine. Med vår løsning vil du få kraften til å gjøre skitt og søppel til gull. Vi er troende på at enhver handling teller. Ved å bruke appen vår, vil handlingene dine ha umiddelbare positive konsekvenser for lokalsamfunnet ditt. Vi skaper en bevegelse - en økokultur som dreier seg om å få livet i din kommune til å blomstre. Bli miljøborger i dag ved å implementere Green Routine i hverdagen din.</p>
@@ -103,6 +118,190 @@
             <p>Kontakt oss for tips om hvordan du kan forbedre din brukeropplevelse. <b>Send oss en mail </b><a tabindex="0" id="mail" href="mailto:s345873@oslomet.no">HER.</a></p>
         </section>
     </main>
+    
+    <script>//due to issues and complications we had to turn off the pathing to final.js because several elements
+    
+            var teller1 = 0;
+        var teller2 = 0;
+
+        var imageTag = document.getElementsByClassName('imageTag');
+        var imageText = document.getElementsByClassName('imageText');
+        var SlideShowBox = document.getElementsByClassName('SlideShowBox');
+        var paragrafBelow = document.getElementsByClassName("paragrafBelow")
+
+
+        function NewAppPictures() {
+        
+            var HomeText1 = "Denne siden er det første du ser når du har startet appen. Først og fremst viser siden QR koden til brukeren som er essensielt for bruk av maskinen og tre knapper som leder til kupongsiden, utfordringer og brukerens poeng og poengliste.";
+            
+            var HomeText2 ="Nederst på siden er det et hjelpeikon som forklarer alt om siden. Ved siden av hjelpeikonet er det også ikon for innstillinger dersom brukeren vil endre på noe info og profil hvor man også kan endre navn eller slette brukeren.";
+            
+            var points = "På toppen har brukeren en meny med logoen i hjørnet som bringer dem tilbake til hjemmesiden. Ved siden av logoen er det et hjelpeikon, profil og innstillinger som på hjemmesiden.<br><br>Under menyen vises det brukeren sin poeng og en poengliste som kan endres i innstillinger. Nederst er der en tilbake knapp som bringer dem tilbake hjemmesiden.";
+            
+            var Challenges = "På utfordringssiden har brukeren tre rangeringsutfordringer som er utfordringer som kan handle om for eksempel antall kilo søppel kastet.<br><br>Over finnes det knapper som lar brukeren navigere mellom \"statistikk\" og \"Utfordrings siden.\"";
+            
+            var Statistics = "På statistikk siden har brukeren en oversikt over sitt gjennomsnittlige poeng som kommer av resirkulering innenfor de tre kategoriene matavfall, restavfall og plastavfall.<br><br>Brukeren kan navigere til siden ved å trykke på knappen “statistics”. Tilbakeknappen nederst på appen vil lede brukeren tilbake hjemmesiden.";
+            
+            var Coupons = "På denne siden har brukeren tilgang til kuponger gjennom ulike kategorier som mat og drikke. Når kupongen er valgt kan kupongen brukes med engang eller spares til senere ved å kjøpe kupongen, med poeng.";
+            
+            var YourCoupons = "Kupongene kjøpt fra før kan ses ved å velge kategorien “Mine kuponger” som viser forhåndskjøpte kuponger som brukeren har valgt å spare til senere.";
+            
+            var Map = "Vår integrerte kartfunksjon kan nås via hovedmenyen. Denne siden viser deg hvor din nærmeste Green Routine-maskin ligger.<br><br>Denne funksjonen ble implementert på grunn av svarene på vår offentlige undersøkelse."
+            
+            
+            var images = [{
+                Image: "../Pictures/NOappHome.PNG",
+                info: HomeText1,
+                altTekst: "les navnet",
+                Title: "Hjemmesdien til appen Green Routine",
+            },{
+                Image: "../Pictures/NOappHome.PNG",
+                info: HomeText2,
+                altTekst: "les navnet",
+                Title: "Mer inforsmasjon om hjemmesiden til appen",
+            },{
+
+                Image:"../Pictures/NOappPoints.PNG",
+                info: points,
+                altTekst: "les navnet",
+                Title: "En side for dine poengene og poengliste av andres score",
+            },{
+                Image: "../Pictures/NOappChallenges.PNG",
+                info: Challenges,
+                altTekst: "les navnet",
+                Title: "En side med dine utfordringer som gir poeng for kuponger og rank opp poeng",
+            },{
+                Image: "../Pictures/NOappStatistics.PNG",
+                info: Statistics,
+                altTekst: "les navnet",
+                Title: "Statistikk siden inneholder den gjennomsnittlige søppelet fra de ulike kategorier som plast",
+            },{
+                Image: "../Pictures/NOappCoupons.PNG",
+                info: Coupons,
+                altTekst: "les navnet",
+                Title: "Her finner du kupongene gjennom kategorie indeksen",
+            },{
+                Image: "../Pictures/NOappMyCoupons.PNG",
+                info: YourCoupons,
+                altTekst: "les navnet",
+                Title: "Gjennom kategori baren kan du velge dine kuponger og se dine forhånds kjøpte kuponger",
+            },{
+                Image: "../Pictures/NOappMap.PNG",
+                info: Map,
+                altTekst: "les navnet",
+                Title: "Et kart over de nærmeste maskiner i forhold til deg",
+            }]; //app pictures
+            
+            if (teller1 >= images.length) { //makes the slideshow continuous
+                teller1 = 0;
+            }if(teller1 < 0){
+                teller1 = images.length-1;
+            }
+
+            imageTag[0].src = images[teller1].Image;
+            imageTag[0].tabIndex = "0";
+            imageText[0].tabIndex = "0";
+            imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
+            imageTag[0].title = images[teller1].Title;
+            imageText[0].innerHTML = images[teller1].info;
+            
+
+            teller1 += 1;
+        }
+
+        function NewMachinePictures() {
+            
+            var first = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            
+            var first2 = "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            
+            var second = "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage.<br><br>The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.";
+            
+            var third = "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance.<br><br>Above there are buttons which let the users navigate through statistics and the challenges-page.";
+
+            var images = [{
+                Image: "../Pictures/Machine3.PNG",
+                info: first,
+                altTekst: "les navnet",
+                Title: "Image of what users will see of the machine",
+            },{
+                Image: "../Pictures/GreenRoutineMachine2.PNG",
+                info: first2,
+                altTekst: "les navnet",
+                Title: "Image of the machine after the Qr code has been scanned",
+            },{
+
+                Image: "../Pictures/Machine2.PNG",
+                info: second,
+                altTekst: "les navnet",
+                Title: "Image of the color sensor and the weight plate on the inside of the machine",
+            },{
+                Image: "../Pictures/Machine1.PNG",
+                info: third,
+                altTekst: "les navnet",
+                Title: "An image of where waste ends and recycled",
+            }]; //machine pictures
+            
+            if (teller2 >= images.length) { //makes the slideshow continuous
+                teller2 = 0;
+            }if(teller2 < 0){
+                teller2 = images.length-1;
+            }
+            
+
+            imageTag[1].src = (images[teller2].Image);
+            imageTag[1].tabIndex = "0";
+            imageText[1].tabIndex = "0";
+            imageTag[1].alt = images[teller2].altTekst; //alt er kanskje     skrevet feil
+            imageTag[1].title = images[teller2].Title;
+            imageText[1].innerHTML = images[teller2].info;
+
+            teller2 += 1;
+        }
+
+
+        //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
+        paragrafBelow[0].style.display = "none";
+        paragrafBelow[1].style.display = "none";
+        SlideShowBox[0].style.display = "block";        
+        SlideShowBox[1].style.display = "block";
+
+        var interval1;
+        var interval2;
+ 
+            NewAppPictures();
+            interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            NewMachinePictures();
+            interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+
+
+        function back(boolean) {
+            if (boolean) {
+                teller1 -= 2;
+                clearInterval(interval1);
+                NewAppPictures();
+                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            } else{
+                teller2 -= 2;
+                clearInterval(interval2);
+                NewMachinePictures();
+                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+
+            }
+        }
+
+        function next(boolean) {
+            if (boolean) {
+                clearInterval(interval1);
+                NewAppPictures();
+                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+            }else {
+                clearInterval(interval2);
+                NewMachinePictures();
+                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+            }
+        }
+    </script>
 
     <footer>
         <br>
