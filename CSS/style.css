@@ -221,8 +221,7 @@ video {
 
 .homeImg {
     width: 100%;
-    height: 35em;
-    padding-top: 1%;
+    height: 40em;
 }
 
 .Stores {
@@ -751,21 +750,7 @@ footer {
         padding-left: 2%;
         margin-top: 5%;
         padding-bottom: 5%;
-    }
-
-    .dropDown,
-    .dropDownMenu {
-        display: block;
-    }
-
-    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
-        display: block;
-        background-color: white;
-        overflow: visible;
-        z-index: 3;
-
-    }
-    
+    }   
     
 }
 
