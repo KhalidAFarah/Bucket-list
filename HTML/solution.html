@@ -89,7 +89,7 @@
             <br>
             <div class="textBelow">
                 <div class="SlideShowBox" style="display: none;">
-                    <img class="imageTag" value="Machine">
+                    <img class="imageTag slideMachine" value="Machine">
                     <p class="imageTekst"></p>
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                         </div>
@@ -144,15 +144,51 @@
 
 
         function NewAppPictures() {
-
+        
+            var HomeText1 = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            
+            var HomeText2 ="At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            
+            
+            
             var images = [{
                 Image: "../Pictures/appHome.PNG",
+                info: HomeText1,
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+                Image: "../Pictures/appHome.PNG",
+                info: HomeText2,
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+
+                Image:"../Pictures/appPoints.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten",
-            }, {
-
-                Image:"../Pictures/appCoupons.PNG",
+            },{
+                Image: "../Pictures/appChallenges.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+                Image: "../Pictures/appStatistics.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+                Image: "../Pictures/appCoupons.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+                Image: "../Pictures/appMyCoupons.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
+            },{
+                Image: "../Pictures/appMap.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten",
@@ -178,16 +214,21 @@
         function NewMachinePictures() {
 
             var images = [{
-                Image: "../Pictures/appCoupons.PNG",
+                Image: "../Pictures/Machine3.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten"
             }, {
 
-                Image: "../Pictures/appHome.PNG",
+                Image: "../Pictures/Machine2.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten"
+            },{
+                Image: "../Pictures/Machine1.PNG",
+                info: "tekst som skal forklare bildet",
+                altTekst: "les navnet",
+                Title: "hover teksten",
             }]; //machine pictures
             
             if (teller2 >= images.length) { //makes the slideshow continuous
