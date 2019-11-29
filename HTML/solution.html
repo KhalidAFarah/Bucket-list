@@ -3,11 +3,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Solution - Green Routine</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="shortcut icon" href="../Pictures/favicon.png" type="image/png">
     <!--<script src="../Javascript/final.js"></script>-->
-
 </head>
 
 <body>
@@ -53,7 +53,6 @@
             <a href="NOsolution.html">Norsk</a>
         </div>
     </nav>
-    <style></style>
 
     <main class="main">
         <section>
@@ -144,14 +143,11 @@
             <p tabindex="0">Through an anonymous survey, we asked a total of 119 people: «How relevant is this problem today?». Most of the people we asked to complete the survey is of the younger generation, primarily of the age range 18-20. Of these people, a total of 58.8% told us that this is a very relevant problem today. We also had a total of 30.3% seeing this problem as «mostly relevant». This give us a good indication that the majority of the younger generation in Oslo believes that this is an important problem that needs a suitable solution.</p>
             <br><br><br>
             <p tabindex="0">Contact us for tips on how to better your user experience. <b>Send us an e-mail </b><a tabindex="0" id="mail" href="mailto:s345873@oslomet.no">HERE.</a></p>
-
-
-
         </section>
     </main>
 
     <script>
-        //due to issues and complications we had to turn off the pathing to final.js because several elements
+        //due to issues and complications we had to turn off the pathing to final.js because several elements did not appear 
 
         var teller1 = 0;
         var teller2 = 0;
@@ -219,7 +215,7 @@
             }, {
                 Image: "../Pictures/appMap.PNG",
                 info: Map,
-                altTekst: "Our integrated map function can be accessed through the main menu. This page will show you where your nearest Green Routine machine is located.<br><br>This function was implemented due to the responses on our public survey.",
+                altTekst: "Our integrated map function can be accessed through the main menu. This page will show you where your nearest Green Routine machine is located. This function was implemented due to the responses on our public survey.",
                 Title: "A map of the nearest machines",
             }]; //app pictures
 
@@ -233,7 +229,7 @@
             imageTag[0].src = images[teller1].Image;
             imageTag[0].tabIndex = "0";
             imageText[0].tabIndex = "0";
-            imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
+            imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
             imageText[0].innerHTML = images[teller1].info;
 
@@ -285,15 +281,13 @@
             imageTag[1].src = (images[teller2].Image);
             imageTag[1].tabIndex = "0";
             imageText[1].tabIndex = "0";
-            imageTag[1].alt = images[teller2].altTekst; //alt er kanskje     skrevet feil
+            imageTag[1].alt = images[teller2].altTekst;
             imageTag[1].title = images[teller2].Title;
             imageText[1].innerHTML = images[teller2].info;
 
             teller2 += 1;
         }
 
-
-        //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
         paragrafBelow[0].style.display = "none";
         paragrafBelow[1].style.display = "none";
         SlideShowBox[0].style.display = "block";
@@ -336,7 +330,6 @@
         }
     </script>
 
-
     <footer>
         <br>
         <h2><b tabindex="0">Green Routine</b></h2>
@@ -346,8 +339,6 @@
         <p tabindex="0">Norway</p>
         <p tabindex="0">Tel.: +47 67 23 50 00</p>
     </footer>
-
-
 
 
 </body>
