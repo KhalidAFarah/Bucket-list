@@ -15,16 +15,17 @@
                 Title: "hover teksten",
             }, {
 
-                Image:"appCoupons.PNG",
+                Image: "appCoupons.PNG",
                 info: "tekst som skal forklare bildet",
                 altTekst: "les navnet",
                 Title: "hover teksten",
             }]; //app pictures
-            
+
             if (teller1 >= images.length) { //makes the slideshow continuous
                 teller1 = 0;
-            }if(teller1 < 0){
-                teller1 = images.length-1;
+            }
+            if (teller1 < 0) {
+                teller1 = images.length - 1;
             }
 
             imageTag[0].src = images[teller1].Image;
@@ -32,7 +33,7 @@
             imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
             imageTag[0].title = images[teller1].Title;
             imageTekst[0].innerHTML = images[teller1].info;
-            
+
 
             teller1 += 1;
         }
@@ -51,13 +52,14 @@
                 altTekst: "les navnet",
                 Title: "hover teksten"
             }]; //machine pictures
-            
+
             if (teller2 >= images.length) { //makes the slideshow continuous
                 teller2 = 0;
-            }if(teller2 < 0){
-                teller2 = images.length-1;
             }
-            
+            if (teller2 < 0) {
+                teller2 = images.length - 1;
+            }
+
 
             imageTag[1].src = (images[teller2].Image);
             imageTag[1].tabIndex = "0";
@@ -70,17 +72,17 @@
 
 
         //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
-       
-       // SlideShowBox[0].style.display = "block";        
+
+        // SlideShowBox[0].style.display = "block";        
         SlideShowBox[1].style.display = "block";
 
         var interval1;
         var interval2;
- 
-            NewAppPictures();
-            interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-            NewMachinePictures();
-            interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+
+        NewAppPictures();
+        interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+        NewMachinePictures();
+        interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
 
 
         function back(boolean) {
@@ -89,7 +91,7 @@
                 clearInterval(interval1);
                 NewAppPictures();
                 interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-            } else{
+            } else {
                 teller2 -= 2;
                 clearInterval(interval2);
                 NewMachinePictures();
@@ -103,11 +105,9 @@
                 clearInterval(interval1);
                 NewAppPictures();
                 interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
-            }else {
+            } else {
                 clearInterval(interval2);
                 NewMachinePictures();
                 interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
             }
         }
-
-    

@@ -57,7 +57,7 @@ aside {
 
 .homeInfo {
     display: inline-block;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
 }
 
 .prototypeSites ul li {
@@ -88,6 +88,10 @@ aside {
     margin-top: 2%;
 }
 
+.dropDownLanguage {
+    display: none;
+}
+
 .logoImg {
     width: 100%;
 }
@@ -97,12 +101,14 @@ aside {
     padding-top: 1.35%;
     margin-left: 20%;
 }
-.line{
-    padding: 0.5%  0%;
+
+.line {
+    padding: 0.5% 0%;
     width: 1%;
     border: solid black;
     margin-right: 4%;
 }
+
 .menuContent li {
     display: inline-block;
     width: 15%;
@@ -195,16 +201,11 @@ p {
     font-size: 1.2em;
 }
 
-.homeText {
-    width: 40%;
-    height: auto;
-    float: left;
-}
-
 video {
     width: 50%;
     height: auto;
     float: right;
+    padding: 2%;
 }
 
 .downloadLinks {
@@ -266,33 +267,41 @@ video {
     background-color: darkorange;
     text-decoration: none;
 }
-.MachineImg{
+
+.MachineImg {
     width: 60%;
 }
-.MachineText{
+
+.MachineText {
     width: 100%;
 }
+
 /*SlideShow*/
-.imageTag{
+.imageTag {
     width: 25%;
-   
+
 }
-.textBelow{
+
+.textBelow {
     width: 100%;
     padding: 1%;
     border-bottom: solid black 3px;
     border-top: solid black 3px;
 }
-.imageText{
+
+.imageText {
     float: left;
-    width: 70%;    
+    width: 70%;
 }
-.choices{
+
+.choices {
     width: 100%;
     margin-left: 5%;
     margin-bottom: 1%;
 }
-.Next, .Back{
+
+.Next,
+.Back {
     font-size: 30px;
     padding: 1% 20%;
     cursor: pointer;
@@ -320,6 +329,27 @@ video {
 }
 
 .aboutUsPics {
+    width: 30%;
+    transform: rotate(90deg);
+}
+
+.TrashPic {
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-left: 3%;
+    margin-top: -5%;
+}
+
+.TrashPicNO {
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-left: 3%;
+    margin-top: -3%;
+}
+
+.TrashPic2 {
     width: 25%;
 }
 
@@ -330,13 +360,14 @@ box-shadow: none;
 /* footer */
 footer {
     width: 100%;
-    background-color: orange;
+    background-color: darkgreen;
     overflow: hidden;
     text-align: center;
     bottom: 0%;
-    border-top: 5px solid black;
+    border-top: 5px solid white;
     padding-bottom: 2%;
     margin-top: 0%;
+    color: white;
 }
 
 @-ms-viewport {
@@ -344,30 +375,53 @@ footer {
 }
 
 /*prototype*/
-.Machine{
+.Machine {
     width: 25%;
 }
-.prototypeBoxMachine{
+
+.prototypeBoxMachine {
     display: inline-block;
 }
-.sideImgMachine{
+
+.sideImgMachine {
     width: 25%;
 }
-.slideMachine{
+
+.slideMachine {
     width: 50%;
 }
-.slideMachineText{
+
+.slideMachineText {
     width: 50%;
 }
 
 /*Media query*/
+@media(max-width: 3000px) {
+    video {
+        margin-top: -5%;
+    }
+
+    .textBelow {
+        margin-top: 2%;
+    }
+}
+
+@media(max-width: 1400px) {
+    .homeImg {
+        height: 35em;
+    }
+
+
+}
+
 @media(max-width: 1260px) {
 
-    .menuContent li a{
+    .menuContent li a {
         font-size: 20px;
     }
+
     .menuContent ul {
-        margin-top: -0.2%;  
+        margin-top: -0.2%;
     }
 
     .SponsorDiv {
@@ -382,9 +436,11 @@ footer {
     .menuContent li a {
         font-size: 18px;
     }
-    .menuContent ul{
+
+    .menuContent ul {
         margin-top: -0.5%;
-    } 
+    }
+
     .homeText {
         font-size: 15px;
     }
@@ -392,7 +448,7 @@ footer {
 
 @media(max-width: 1030px) {
     .logo {
-        width: 12%;
+        width: 16%;
     }
 
     .homeImg {
@@ -402,13 +458,19 @@ footer {
     .menuContent li a {
         font-size: 15px;
     }
-    .menuContent ul{
-        margin-top: -0.7%;
+
+    .menuContent ul {
+        margin-top: 0%;
     }
 
     .menuContent li {
         width: 14%;
     }
+
+    .menuContent li a {
+        font-size: 20px;
+    }
+
     .SponsorDiv p {
         font-size: 18px;
     }
@@ -423,22 +485,30 @@ footer {
     aside {
         padding-top: 0%;
     }
-    .MachineImg{
+
+    .MachineImg {
         width: 70%;
     }
-    .menuContent ul{
-        margin-top: -0.8%;
+
+    .menuContent li a {
+        font-size: 18px;
     }
-    
-    .imageTag{
+
+    .menuContent ul {
+        margin-top: -0.2%;
+    }
+
+    .imageTag {
         width: 60%;
         margin-left: 20%;
     }
-    .slideMachine{
+
+    .slideMachine {
         width: 100%;
         margin-left: 0%;
     }
-    .imageText{
+
+    .imageText {
         width: 100%;
         font-size: 15px;
         float: none;
@@ -447,23 +517,93 @@ footer {
 }
 
 @media(max-width: 800px) {
+    .dropDownLanguage {
+        display: none;
+    }
+    .tablets{
+        display: block;
+    }
+
     aside {
         font-size: 13px;
     }
-    .logo{
-        width: 16%
+
+    .menuContent {
+        display: none;
     }
-    .menuContent li{
+
+    .logo {
+        width: 20%;
+    }
+
+    .dropDownMenu {
         width: 15%;
-    }
-    .menuContent li a{
-        font-size: 13px;
-    }
-
-    .menuContent ul{
-        margin-top: -0.5%;
+        margin-left: 50%;
+        margin-top: 0%;
+        padding-bottom: 9%;
     }
 
+    .dropDownMenuImg {
+        width: 35%;
+    }
+
+    .dropDownContent a {
+        font-size: 23px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        padding: 1% 3%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    .dropDownContent .active {
+        border-style: none;
+        border-bottom: solid black 3px;
+    }
+
+    .dropDownLanguage a {
+        border: solid black 5px;
+        border-radius: 5%;
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .dropDownLanguage {
+        margin-left: 70%;
+        margin-top: 1.3%;
+    }
+
+    .dropDownLanguage .active2 {
+        background-color: orange;
+    }
+
+    .dropDownContent {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border-bottom: solid darkgreen 5px;
+        padding-top: 2%;
+    }
+
+    .dropDown,
+    .dropDownMenu {
+        display: block;
+    }
+
+    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
+        display: block;
+        background-color: white;
+        overflow: visible;
+        z-index: 3;
+
+    }
 
 }
 
@@ -492,7 +632,7 @@ footer {
         width: 20%;
     }
 
-    .menuContent li a{
+    .menuContent li a {
         font-size: 13px;
     }
 
@@ -512,8 +652,9 @@ footer {
     }
 
     .menuContent ul {
-       margin-top: -0.4%;
+        margin-top: -0.4%;
     }
+
     header {
         text-align: center;
     }
@@ -525,10 +666,19 @@ footer {
     .prototypeSites ul li a {
         font-size: 15px;
     }
-    .MachineImg{
+
+    .MachineImg {
         width: 85%;
     }
-
+    .dropDownLanguage {
+        margin-left: 63%;
+        margin-top: 1%;
+        width: 36%;
+    }
+    .dropDownMenu{
+        margin-left: 45%;
+    }
+    
 }
 
 /*Mobile layout*/
@@ -555,9 +705,7 @@ footer {
         font-size: 1.2em;
     }
 
-    .menuContent {
-        display: none;
-    }
+
 
     .lastSponsor {
         margin: 0;
@@ -588,26 +736,32 @@ footer {
         padding-bottom: 0%;
         display: block;
     }
-    .MachineImg{
+
+    .MachineImg {
         margin-left: -60%;
         width: 110%;
     }
+
     p {
         padding-top: 3%;
         font-size: 18px;
     }
-    .imageTag{
+
+    .imageTag {
         width: 60%;
-        margin-left: 20%;                
+        margin-left: 20%;
     }
-    .slideMachine{
+
+    .slideMachine {
         width: 100%;
         margin-left: 0%;
     }
-    .imageText, .slideMachineText{
+
+    .imageText,
+    .slideMachineText {
         width: 100%;
         font-size: 15px;
-        
+
     }
 
     .dropDownMenu {
@@ -652,6 +806,12 @@ footer {
 
     .dropDownLanguage {
         border-top: solid black 5px;
+        width: 100%;
+        margin-left: 0%;
+        display: block;
+    }
+    .tablets{
+        display: none;
     }
 
     .dropDownContent {
@@ -678,20 +838,6 @@ footer {
         padding-bottom: 5%;
     }
 
-    .dropDown,
-    .dropDownMenu {
-        display: block;
-    }
-
-    .dropDownMenu .dropDownbtn:checked ~ .dropDownContent {
-        display: block;
-        background-color: white;
-        overflow: visible;
-        z-index: 3;
-
-    }
-    
-    
 }
 
 @media(max-width: 300px) {
