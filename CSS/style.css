@@ -200,9 +200,11 @@ h2 {
 p {
     font-size: 1.2em;
 }
-.homeVideo video{
-    width:  100%;
+
+.homeVideo video {
+    width: 100%;
 }
+
 .homeVideo {
     width: 75%;
     margin-top: 2%;
@@ -514,15 +516,16 @@ footer {
         display: none;
         z-index: 5;
     }
-    
-    .tablets{
+
+    .tablets {
         display: block;
     }
 
     aside {
         font-size: 13px;
     }
-    .aboutUsPics{
+
+    .aboutUsPics {
         width: 50%;
     }
 
@@ -561,7 +564,7 @@ footer {
         border-style: none;
         border-bottom: solid black 3px;
     }
-    
+
 
     .dropDownLanguage a {
         border: solid black 5px;
@@ -590,15 +593,16 @@ footer {
         border-bottom: solid darkgreen 5px;
         padding-top: 2%;
     }
+
     .dropDownMenu {
         display: block;
         z-index: 2;
         margin-top: -6%;
     }
-    
-    .dropDown{
+
+    .dropDown {
         margin-top: 6%;
-         display: block;
+        display: block;
         z-index: 2;
     }
 
@@ -675,18 +679,22 @@ footer {
     .MachineImg {
         width: 85%;
     }
+
     .dropDownLanguage {
         margin-left: 63%;
         margin-top: 1%;
         width: 36%;
     }
-    .dropDownMenu{
+
+    .dropDownMenu {
         margin-left: 45%;
     }
-    .imageTag{
+
+    .imageTag {
         width: 40%;
         margin-left: 30%;
     }
+
     .slideMachine {
         width: 100%;
         margin-left: 0%;
@@ -702,9 +710,11 @@ footer {
     .Names {
         font-size: 1.5em;
     }
-    .aboutUsPics{
+
+    .aboutUsPics {
         width: 80%;
     }
+
     .prototypeSites ul li a,
     prototypeSites {
         font-size: 12px;
@@ -777,18 +787,20 @@ footer {
         font-size: 15px;
 
     }
-    .dropDown{
+
+    .dropDown {
         margin-top: 25%;
     }
 
     .dropDownMenuImg {
         width: 100%;
     }
-    .dropDownMenu{
+
+    .dropDownMenu {
         margin-left: 80%;
         margin-top: -20%;
     }
-    
+
 
     .dropDownContent .active {
         border-style: none;
@@ -809,11 +821,12 @@ footer {
         margin-left: 0%;
         display: block;
     }
-    .tablets{
+
+    .tablets {
         display: none;
     }
 
-    
+
 
     .HomeTitle {
         font-size: 40%;
