@@ -509,6 +509,9 @@ footer {
     aside {
         padding-top: 0%;
     }
+    .headerMachine{
+        font-size: 25px;
+    }
 
     .MachineImg {
         width: 70%;
@@ -661,7 +664,9 @@ footer {
     .homeImg {
         height: 24em;
     }
-
+    .headerMachine{
+        font-size: 16px;
+    }
     .sideTitles {
         font-size: 1.7em;
     }
@@ -768,7 +773,9 @@ footer {
     .homeImg {
         height: 20em;
     }
-
+    .headerMachine{
+        font-size: 14px;
+    }
     .Names {
         font-size: 1.5em;
     }
@@ -788,7 +795,7 @@ footer {
     }
     .prototypeSites ul li a{
         margin: 0%;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .sideTitles {
@@ -800,7 +807,7 @@ footer {
         margin-left: 10%;
     }
     .backToSolution li a{
-        font-size: 20px;
+        font-size: 15px;
     }
     .lastSponsor {
         margin: 0;
