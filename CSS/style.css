@@ -60,6 +60,17 @@ aside {
     padding-bottom: 3%;
 }
 
+.homeText {
+    float: left;
+    width: 40%;
+}
+
+.homeMachine {
+    float: right;
+    width: 60%;
+    margin-top: -4%;
+}
+
 .prototypeSites ul li {
     display: inline-block;
 }
