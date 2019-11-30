@@ -405,6 +405,13 @@ footer {
     margin: 2% 0% 1% 48%;
 }
 
+.backToSolution{
+    margin-top: 5%;    
+}
+.backToSolution ul li{
+    width: 100%;
+}
+
 /*Media query*/
 @media(max-width: 3000px) {
     .textBelow {
@@ -493,6 +500,9 @@ footer {
     .main{
         padding-top: 2%; 
     }
+    .prototypeSites li a{
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 900px) {
@@ -527,6 +537,12 @@ footer {
         width: 100%;
         font-size: 15px;
         float: none;
+    }
+    .prototypeSites li a{
+        font-size: 14px;
+    }
+    .backToSolution{
+        margin-left: 12%
     }
 
 }
@@ -658,7 +674,25 @@ footer {
         margin-left: 0%;
         width: 100%;
     }
-
+    .prototypeSites li a{
+        font-size: 10px;
+    }
+    .prototypeSites li{
+        width: 39%;
+    }
+    .prototypeSites{
+        margin-left: 13%;
+    }
+    .backToSolution{
+        margin-left: 20%;
+    }
+    .backToSolution li a{
+        font-size: 15px;
+    }
+    .backToSolution{
+        margin-left: 13%;
+    }
+    
 }
 
 @media(max-width: 690px) {
@@ -699,6 +733,9 @@ footer {
 
     .prototypeSites ul li a {
         font-size: 15px;
+    }
+    .prototypeSites{
+        margin-left: 8%;
     }
 
     .MachineImg {
@@ -741,24 +778,30 @@ footer {
         margin-bottom: 13%;
         margin-top: 13%;
     }
-
-    .prototypeSites ul li a,
-    prototypeSites {
-        font-size: 12px;
-        margin-left: -25%;
-    }
     
 
-    .prototypeSites li {
-        width: 40%;
+    .prototypeSites ul li {
+        display: block;
+        text-align: center;
+        margin: 5% -10%;
+        width: 100%;
+    }
+    .prototypeSites ul li a{
+        margin: 0%;
+        font-size: 15px;
     }
 
     .sideTitles {
         font-size: 1.2em;
     }
-
-
-
+    .backToSolution{
+        margin: 0;
+        margin-top: 7%;
+        margin-left: 10%;
+    }
+    .backToSolution li a{
+        font-size: 20px;
+    }
     .lastSponsor {
         margin: 0;
     }
@@ -870,6 +913,9 @@ footer {
         padding-left: 2%;
         margin-top: 2%;
         padding-bottom: 2%;
+    }
+    .MachineText{
+        margin-left: 49%;
     }
 
 }
