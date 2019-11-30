@@ -358,6 +358,10 @@ p {
 .TrashPic2 {
     width: 25%;
 }
+.slideHeader{
+    text-align: center;
+    font-size: 25px;
+}
 
 /* footer */
 footer {
@@ -664,6 +668,9 @@ footer {
     .homeImg {
         height: 24em;
     }
+    .slideHeader{
+        font-size: 20px;
+    }
     .headerMachine{
         font-size: 16px;
     }
@@ -772,6 +779,9 @@ footer {
 @media(max-width: 500px) {
     .homeImg {
         height: 20em;
+    }
+    .slideHeader{
+        font-size: 18px;
     }
     .headerMachine{
         font-size: 14px;
