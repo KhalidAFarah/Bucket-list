@@ -295,11 +295,12 @@ p {
 .imageText {
     float: left;
     width: 70%;
+    margin-top: 5%;
 }
 
 .choices {
     width: 100%;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-bottom: 1%;
 }
 
@@ -390,10 +391,18 @@ footer {
 
 .slideMachine {
     width: 50%;
+    margin-top: 5%;
 }
 
 .slideMachineText {
     width: 50%;
+}
+.slideNumber{
+    font-size: 25px;
+    margin: 1% 0% 2% 48%;
+}
+.slideNumberMachine{
+    margin: 2% 0% 1% 48%;
 }
 
 /*Media query*/
@@ -451,11 +460,6 @@ footer {
     .homeImg {
         height: 35em;
     }
-
-    .menuContent li a {
-        font-size: 15px;
-    }
-
     .menuContent ul {
         margin-top: 0%;
     }
@@ -465,7 +469,7 @@ footer {
     }
 
     .menuContent li a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .SponsorDiv p {
@@ -475,6 +479,16 @@ footer {
     aside {
         font-size: 13px;
 
+    }
+    
+    .imageText{
+        font-size: 20px;
+    }
+    .slideMachineText{
+        font-size: 16px;
+    }
+    .slideNumberMachine{
+        margin: 0% 0% 1% 48%;
     }
 }
 
@@ -488,7 +502,7 @@ footer {
     }
 
     .menuContent li a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .menuContent ul {
@@ -726,6 +740,7 @@ footer {
         font-size: 12px;
         margin-left: -25%;
     }
+    
 
     .prototypeSites li {
         width: 40%;

@@ -79,6 +79,7 @@
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag" value="app">
                     <p class="imageText"></p>
+                    <p class="slideNumber"></p>
                     <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
                     </div>
                 </div>
@@ -96,6 +97,7 @@
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag slideMachine" value="Machine">
                     <p class="imageText slideMachineText"></p>
+                    <p class="slideNumber slideNumberMachine"></p>
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                     </div>
                 </div>
@@ -149,7 +151,7 @@
     </main>
 
     <script>
-        //på grunn av problemer og komplikasjoner måtte vi slå av pathing til final.js fordi flere elementer ikke dukket opp
+        //på grunn av problemer og komplikasjoner måtte vi slå av pathing til final.js fordi flere elementer ikke dukket opp.  denne er nå også kanskje utdatert
 
         var teller1 = 0;
         var teller2 = 0;
@@ -158,6 +160,7 @@
         var imageText = document.getElementsByClassName('imageText');
         var SlideShowBox = document.getElementsByClassName('SlideShowBox');
         var paragrafBelow = document.getElementsByClassName("paragrafBelow")
+        var slideNumber = document.getElementsByClassName("slideNumber")
 
 
         function NewAppPictures() {
@@ -184,41 +187,49 @@
                 info: HomeText1,
                 altTekst: "En bildeskisse som viser hjemmesiden til appen Green Routine. Siden viser QR-koden til brukeren som er avgjørende for bruken av maskinen og fire knapper, som fører til kupongsiden, utfordringer, nærmeste maskiner og brukerens poeng med en toppliste.",
                 Title: "Hjemmesdien til appen Green Routine",
+                Slide: "1/8",
             }, {
                 Image: "../Pictures/NOappHome.PNG",
                 info: HomeText2,
                 altTekst: "Nederst på siden er det en hjelper som forklarer alt om siden. Ved siden av hjelpikonet er det også et ikon for innstillinger som brukeren vil endre på noe info og profil der du kan endre navn, språk eller slette brukerkontoen.",
                 Title: "Mer inforsmasjon om hjemmesiden til appen",
+                Slide: "2/8",
             }, {
                 Image: "../Pictures/NOappPoints.PNG",
                 info: points,
                 altTekst: "Øverst har brukeren en meny med logoen i hjørnet som bringer dem tilbake til hjemmesiden. Ved siden av logoen er det et hjelpikon, profil og innstillinger som på hjemmesiden. Menyen viser brukerens poeng og en liste over punkter som kan endres i innstillingene. Nederst er det en tilbake-knapp som bringer dem tilbake til hjemmesiden.",
                 Title: "En side for dine poengene og poengliste av andres score",
+                Slide: "3/8",
             }, {
                 Image: "../Pictures/NOappChallenges.PNG",
                 info: Challenges,
                 altTekst: "På siden med utfordringer har brukerne tre rangeringsutfordringer som for eksempel kan dreie seg om en mengde søppel som kastes. Over er det knapper som lar brukerne navigere gjennom statistikk og utfordringssiden.",
                 Title: "En side med dine utfordringer som gir poeng for kuponger og rank opp poeng",
+                 Slide: "4/8",
             }, {
                 Image: "../Pictures/NOappStatistics.PNG",
                 info: Statistics,
                 altTekst: "Brukerne har oversikt over gjennomsnittlig poengsum. Poengbeløpet er avhengig av hvordan du resirkulerer innen de tre kategoriene matavfall, ikke-resirkulerbart avfall og plastemballasje. Brukerne kan navigere til siden ved å klikke på knappen “Statistikk” på utfordringssiden. Knappen “Tilbake” fører deg tilbake til hjemmesiden.",
                 Title: "Statistikk siden inneholder den gjennomsnittlige søppelet fra de ulike kategorier som plast",
+                Slide: "5/8",
             }, {
                 Image: "../Pictures/NOappCoupons.PNG",
                 info: Coupons,
                 altTekst: "På denne siden har brukeren tilgang til kuponger gjennom forskjellige kategorier som for eksempel mat og drikke. Kupongene kan brukes med en gang med QR eller lagres for senere ved å kjøpe kupongen med poengene du har samlet.",
                 Title: "Her finner du kupongene gjennom kategorie indeksen",
+                Slide: "6/8",
             }, {
                 Image: "../Pictures/NOappMyCoupons.PNG",
                 info: YourCoupons,
                 altTekst: "Kupongene du allerede har kjøpt, kan vises ved å klikke på kategorien “Dine kuponger”. Kategorien viser alle forhåndsinnkjøp brukerne har valgt å lagre for senere.",
                 Title: "Gjennom kategori baren kan du velge dine kuponger og se dine forhånds kjøpte kuponger",
+                Slide: "7/8",
             }, {
                 Image: "../Pictures/NOappMap.PNG",
                 info: Map,
                 altTekst: "Vår integrerte kartfunksjon kan nås via hovedmenyen. Denne siden viser deg hvor din nærmeste Green Routine-maskin ligger. Denne funksjonen ble implementert på grunn av svarene på vår offentlige undersøkelse.",
                 Title: "Et kart over de nærmeste maskiner i forhold til deg",
+                Slide: "8/8",
             }]; //app bilder
 
             if (teller1 >= images.length) { //gjør lysbildefremvisningen kontinuerlig
@@ -234,6 +245,7 @@
             imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
             imageText[0].innerHTML = images[teller1].info;
+            slideNumber[0].innerHTML = images[teller2].Slide;
 
 
             teller1 += 1;
@@ -241,35 +253,39 @@
 
         function NewMachinePictures() {
 
-            var first = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            var first = "1. Illustrasjonen ovenfor avbilder hva du først vil imøtekomme når du går til en av våre maskiner.";
 
-            var first2 = "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            var first2 = "Maskinen vår har en innebygd skjerm. Under den ligger en skanner som registrerer din personlige QR-kode. Ved å skanne QR-koden vil luken til venstre for deg åpne, og du vil ha muligheten til å putte posene dine inni.";
 
-            var second = "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage.<br><br>The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.";
+            var second = "Inni maskinen er en luke, en fargeskanningaenhet og en vekt. Et transportbånd flyttee søppelsekkene dine til vekten. Den vil registrere vekten på søppelposene dine og gjøre det om til en viss mengde poeng.";
 
-            var third = "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance.<br><br>Above there are buttons which let the users navigate through statistics and the challenges-page.";
+            var third = "3 avbildet ovenfor er baksiden av maskinen vår. Tre rør sorterer søppelsekkene dine til hver sin avfallsbeholder.";
 
             var images = [{
                 Image: "../Pictures/Machine3.PNG",
                 info: first,
                 altTekst: "les navnet",
                 Title: "Image of what users will see of the machine",
+                Slide: "1/4",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.PNG",
                 info: first2,
                 altTekst: "les navnet",
                 Title: "Image of the machine after the Qr code has been scanned",
+                Slide: "2/4",
             }, {
 
                 Image: "../Pictures/Machine2.PNG",
                 info: second,
                 altTekst: "les navnet",
                 Title: "Image of the color sensor and the weight plate on the inside of the machine",
+                Slide: "3/4",
             }, {
                 Image: "../Pictures/Machine1.PNG",
                 info: third,
                 altTekst: "les navnet",
                 Title: "An image of where waste ends and recycled",
+                Slide: "4/4",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //gjør lysbildefremvisningen kontinuerlig
@@ -286,6 +302,7 @@
             imageTag[1].alt = images[teller2].altTekst;
             imageTag[1].title = images[teller2].Title;
             imageText[1].innerHTML = images[teller2].info;
+            slideNumber[1].innerHTML = images[teller2].Slide;
 
             teller2 += 1;
         }
@@ -299,9 +316,9 @@
         var interval2;
 
         NewAppPictures();
-        interval1 = setInterval(NewAppPictures, 10000); // kjører appens lysbildefremvisning hvert 10. sekund
+        interval1 = setInterval(NewAppPictures, 20000); // kjører appens lysbildefremvisning hvert 10. sekund
         NewMachinePictures();
-        interval2 = setInterval(NewMachinePictures, 10000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
+        interval2 = setInterval(NewMachinePictures, 20000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
 
 
         function back(boolean) {
@@ -309,12 +326,12 @@
                 teller1 -= 2;
                 clearInterval(interval1);
                 NewAppPictures();
-                interval1 = setInterval(NewAppPictures, 10000); // kjører appens lysbildefremvisning hvert 10. sekund
+                interval1 = setInterval(NewAppPictures, 20000); // kjører appens lysbildefremvisning hvert 10. sekund
             } else {
                 teller2 -= 2;
                 clearInterval(interval2);
                 NewMachinePictures();
-                interval2 = setInterval(NewMachinePictures, 10000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
+                interval2 = setInterval(NewMachinePictures, 20000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
 
             }
         }
@@ -323,11 +340,11 @@
             if (boolean) {
                 clearInterval(interval1);
                 NewAppPictures();
-                interval1 = setInterval(NewAppPictures, 10000); // kjører appens lysbildefremvisning hvert 10. sekund
+                interval1 = setInterval(NewAppPictures, 20000); // kjører appens lysbildefremvisning hvert 10. sekund
             } else {
                 clearInterval(interval2);
                 NewMachinePictures();
-                interval2 = setInterval(NewMachinePictures, 10000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
+                interval2 = setInterval(NewMachinePictures, 20000); // kjører lysbildefremvisning av maskinen hvert 10. sekund
             }
         }
     </script>

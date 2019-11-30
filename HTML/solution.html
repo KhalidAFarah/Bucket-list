@@ -79,6 +79,7 @@
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag" value="app">
                     <p class="imageText"></p>
+                    <p class="slideNumber"></p>
                     <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
                     </div>
                 </div>
@@ -96,6 +97,7 @@
                 <div class="SlideShowBox" style="display: none;">
                     <img class="imageTag slideMachine" value="Machine">
                     <p class="imageText slideMachineText"></p>
+                    <p class="slideNumber slideNumberMachine"></p>
                     <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
                     </div>
                 </div>
@@ -157,7 +159,8 @@
         var imageTag = document.getElementsByClassName('imageTag');
         var imageText = document.getElementsByClassName('imageText');
         var SlideShowBox = document.getElementsByClassName('SlideShowBox');
-        var paragrafBelow = document.getElementsByClassName("paragrafBelow")
+        var paragrafBelow = document.getElementsByClassName("paragrafBelow");
+        var slideNumber = document.getElementsByClassName("slideNumber");
 
 
         function NewAppPictures() {
@@ -184,41 +187,49 @@
                 info: HomeText1,
                 altTekst: "An image sketch showing the home page of the Green Routine app. The page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.",
                 Title: "Homepage of the app Green Routine",
+                Slide: "1/8",
             }, {
                 Image: "../Pictures/appHome.PNG",
                 info: HomeText2,
                 altTekst: "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.",
                 Title: "More information on the homepage of the app",
+                Slide: "2/8",
             }, {
                 Image: "../Pictures/appPoints.PNG",
                 info: points,
                 altTekst: "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage. The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.",
                 Title: "A page for points, and a highscore list",
+                Slide: "3/8",
             }, {
                 Image: "../Pictures/appChallenges.PNG",
                 info: Challenges,
                 altTekst: "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance. Above there are buttons which let the users navigate through statistics and the challenges-page.",
                 Title: "A page with rank-up challenges, and current task",
+                Slide: "4/8",
             }, {
                 Image: "../Pictures/appStatistics.PNG",
                 info: Statistics,
                 altTekst: "The users have an overview of their average score. The score amount is dependent on how you recycle within the three categories food waste, non-recyclable waste and plastic packaging. The users can navigate to the page by clicking on the button “Statistics” on the challenge page. The button named “Back” will lead you back to the home page.",
                 Title: "Statistics page with the average per week recycled waste",
+                Slide: "5/8",
             }, {
                 Image: "../Pictures/appCoupons.PNG",
                 info: Coupons,
                 altTekst: "On this page, the user has access to coupons through different categories such as food and drinks for instance. The coupons can be used right away with the QR or be saved for later by buying the coupon with the points you have collected.",
                 Title: "A page with coupons selectable through the categories",
+                Slide: "6/8",
             }, {
                 Image: "../Pictures/appMyCoupons.PNG",
                 info: YourCoupons,
                 altTekst: "The coupons you have already bought can be shown by clicking on the category “Your coupons”. The category shows all the advance purchases the users have chosen to save for later.",
                 Title: "Through the category tab you can choose your coupons and see your bought coupons",
+                Slide: "7/8",
             }, {
                 Image: "../Pictures/appMap.PNG",
                 info: Map,
                 altTekst: "Our integrated map function can be accessed through the main menu. This page will show you where your nearest Green Routine machine is located. This function was implemented due to the responses on our public survey.",
                 Title: "A map of the nearest machines",
+                Slide: "8/8",
             }]; //app pictures
 
             if (teller1 >= images.length) { //makes the slideshow continuous
@@ -234,6 +245,7 @@
             imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
             imageText[0].innerHTML = images[teller1].info;
+            slideNumber[0].innerHTML = images[teller1].Slide;
 
 
             teller1 += 1;
@@ -241,35 +253,39 @@
 
         function NewMachinePictures() {
 
-            var first = "This page is the first thing you see when you launch the app. First and foremost, the page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.";
+            var first = "The illustration above shows what you will first encounter when you go to one of our machines.";
 
-            var first2 = "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.";
+            var first2 = "Our machine has a built-in screen. Under it is a scanner which will scan your personal QR-code provided on our app. By scanning the QR-code,the harch on your left will open for you to out your trash bags inside";
 
-            var second = "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage.<br><br>The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.";
+            var second = " Inside of the machine is a hatch, a color-scanning device and a weight. A conveyor belt moves your trash bags to the weight, which will registrate the weight of your bags into a certain amount of points on your app.";
 
-            var third = "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance.<br><br>Above there are buttons which let the users navigate through statistics and the challenges-page.";
+            var third = "Depicted above is the back-end of our machine. Theee tubes sortyour trash bags into their respective waste container.";
 
             var images = [{
                 Image: "../Pictures/Machine3.PNG",
                 info: first,
                 altTekst: "les navnet",
                 Title: "Image of what users will see of the machine",
+                Slide: "1/4",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.PNG",
                 info: first2,
                 altTekst: "les navnet",
                 Title: "Image of the machine after the Qr code has been scanned",
+                Slide: "2/4",
             }, {
 
                 Image: "../Pictures/Machine2.PNG",
                 info: second,
                 altTekst: "les navnet",
                 Title: "Image of the color sensor and the weight plate on the inside of the machine",
+                Slide: "3/4",
             }, {
                 Image: "../Pictures/Machine1.PNG",
                 info: third,
                 altTekst: "les navnet",
                 Title: "An image of where waste ends and recycled",
+                Slide: "4/4",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //makes the slideshow continuous
@@ -286,6 +302,7 @@
             imageTag[1].alt = images[teller2].altTekst;
             imageTag[1].title = images[teller2].Title;
             imageText[1].innerHTML = images[teller2].info;
+            slideNumber[1].innerHTML = images[teller2].Slide;
 
             teller2 += 1;
         }
@@ -299,9 +316,9 @@
         var interval2;
 
         NewAppPictures();
-        interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+        interval1 = setInterval(NewAppPictures, 20000); // runs the app slideshow every 10 seconds
         NewMachinePictures();
-        interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+        interval2 = setInterval(NewMachinePictures, 20000); // runs the machine slideshow every 10 seconds
 
 
         function back(boolean) {
@@ -309,12 +326,12 @@
                 teller1 -= 2;
                 clearInterval(interval1);
                 NewAppPictures();
-                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+                interval1 = setInterval(NewAppPictures, 20000); // runs the app slideshow every 10 seconds
             } else {
                 teller2 -= 2;
                 clearInterval(interval2);
                 NewMachinePictures();
-                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+                interval2 = setInterval(NewMachinePictures, 20000); // runs the machine slideshow every 10 seconds
 
             }
         }
@@ -323,11 +340,11 @@
             if (boolean) {
                 clearInterval(interval1);
                 NewAppPictures();
-                interval1 = setInterval(NewAppPictures, 10000); // runs the app slideshow every 10 seconds
+                interval1 = setInterval(NewAppPictures, 20000); // runs the app slideshow every 10 seconds
             } else {
                 clearInterval(interval2);
                 NewMachinePictures();
-                interval2 = setInterval(NewMachinePictures, 10000); // runs the machine slideshow every 10 seconds
+                interval2 = setInterval(NewMachinePictures, 20000); // runs the machine slideshow every 10 seconds
             }
         }
     </script>
