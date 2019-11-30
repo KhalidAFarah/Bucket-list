@@ -1,3 +1,5 @@
+        //due to issues and complications we had to turn off the pathing between final.js and solution.html because several elements did not appear, so this javascript code is just here to show you what we began with 
+        
         var teller1 = 0;
         var teller2 = 0;
 
@@ -30,7 +32,7 @@
 
             imageTag[0].src = images[teller1].Image;
             imageTag[0].tabIndex = "0";
-            imageTag[0].alt = images[teller1].altTekst; //alt er kanskje skrevet feil
+            imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
             imageTekst[0].innerHTML = images[teller1].info;
 
@@ -63,7 +65,7 @@
 
             imageTag[1].src = (images[teller2].Image);
             imageTag[1].tabIndex = "0";
-            imageTag[1].alt = images[teller2].altTekst; //alt er kanskje     skrevet feil
+            imageTag[1].alt = images[teller2].altTekst;
             imageTag[1].title = images[teller2].Title;
             imageTekst[1].innerHTML = images[teller2].info;
 
@@ -71,7 +73,7 @@
         }
 
 
-        //nå siden åpnes starter slideshowet vis javascript er på skal dette starte
+        //when the page opens, the slideshow starts, if javascript is on, it should start
 
         // SlideShowBox[0].style.display = "block";        
         SlideShowBox[1].style.display = "block";

@@ -369,7 +369,8 @@ p {
 .TrashPic2 {
     width: 25%;
 }
-.slideHeader{
+
+.slideHeader {
     text-align: center;
     font-size: 25px;
 }
@@ -412,18 +413,21 @@ footer {
 .slideMachineText {
     width: 50%;
 }
-.slideNumber{
+
+.slideNumber {
     font-size: 25px;
     margin: 1% 0% 2% 48%;
 }
-.slideNumberMachine{
+
+.slideNumberMachine {
     margin: 2% 0% 1% 48%;
 }
 
-.backToSolution{
-    margin-top: 5%;    
+.backToSolution {
+    margin-top: 5%;
 }
-.backToSolution ul li{
+
+.backToSolution ul li {
     width: 100%;
 }
 
@@ -482,6 +486,7 @@ footer {
     .homeImg {
         height: 35em;
     }
+
     .menuContent ul {
         margin-top: 0%;
     }
@@ -502,20 +507,24 @@ footer {
         font-size: 13px;
 
     }
-    
-    .imageText{
+
+    .imageText {
         font-size: 20px;
     }
-    .slideMachineText{
+
+    .slideMachineText {
         font-size: 16px;
     }
-    .slideNumberMachine{
+
+    .slideNumberMachine {
         margin: 0% 0% 1% 48%;
     }
-    .main{
-        padding-top: 2%; 
+
+    .main {
+        padding-top: 2%;
     }
-    .prototypeSites li a{
+
+    .prototypeSites li a {
         font-size: 16px;
     }
 }
@@ -524,7 +533,8 @@ footer {
     aside {
         padding-top: 0%;
     }
-    .headerMachine{
+
+    .headerMachine {
         font-size: 25px;
     }
 
@@ -556,10 +566,12 @@ footer {
         font-size: 15px;
         float: none;
     }
-    .prototypeSites li a{
+
+    .prototypeSites li a {
         font-size: 14px;
     }
-    .backToSolution{
+
+    .backToSolution {
         margin-left: 12%
     }
 
@@ -669,8 +681,9 @@ footer {
         z-index: 3;
 
     }
-    .main{
-        padding-top: 5%; 
+
+    .main {
+        padding-top: 5%;
     }
 
 }
@@ -679,12 +692,15 @@ footer {
     .homeImg {
         height: 24em;
     }
-    .slideHeader{
+
+    .slideHeader {
         font-size: 20px;
     }
-    .headerMachine{
+
+    .headerMachine {
         font-size: 16px;
     }
+
     .sideTitles {
         font-size: 1.7em;
     }
@@ -697,25 +713,31 @@ footer {
         margin-left: 0%;
         width: 100%;
     }
-    .prototypeSites li a{
+
+    .prototypeSites li a {
         font-size: 10px;
     }
-    .prototypeSites li{
+
+    .prototypeSites li {
         width: 39%;
     }
-    .prototypeSites{
+
+    .prototypeSites {
         margin-left: 13%;
     }
-    .backToSolution{
+
+    .backToSolution {
         margin-left: 20%;
     }
-    .backToSolution li a{
+
+    .backToSolution li a {
         font-size: 15px;
     }
-    .backToSolution{
+
+    .backToSolution {
         margin-left: 13%;
     }
-    
+
 }
 
 @media(max-width: 690px) {
@@ -757,7 +779,8 @@ footer {
     .prototypeSites ul li a {
         font-size: 15px;
     }
-    .prototypeSites{
+
+    .prototypeSites {
         margin-left: 8%;
     }
 
@@ -791,12 +814,15 @@ footer {
     .homeImg {
         height: 20em;
     }
-    .slideHeader{
+
+    .slideHeader {
         font-size: 18px;
     }
-    .headerMachine{
+
+    .headerMachine {
         font-size: 14px;
     }
+
     .Names {
         font-size: 1.5em;
     }
@@ -806,7 +832,7 @@ footer {
         margin-bottom: 13%;
         margin-top: 13%;
     }
-    
+
 
     .prototypeSites ul li {
         display: block;
@@ -814,7 +840,8 @@ footer {
         margin: 5% -10%;
         width: 100%;
     }
-    .prototypeSites ul li a{
+
+    .prototypeSites ul li a {
         margin: 0%;
         font-size: 10px;
     }
@@ -822,14 +849,17 @@ footer {
     .sideTitles {
         font-size: 1.2em;
     }
-    .backToSolution{
+
+    .backToSolution {
         margin: 0;
         margin-top: 7%;
         margin-left: 10%;
     }
-    .backToSolution li a{
+
+    .backToSolution li a {
         font-size: 15px;
     }
+
     .lastSponsor {
         margin: 0;
     }
@@ -942,7 +972,8 @@ footer {
         margin-top: 2%;
         padding-bottom: 2%;
     }
-    .MachineText{
+
+    .MachineText {
         margin-left: 49%;
     }
 
