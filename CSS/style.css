@@ -490,6 +490,9 @@ footer {
     .slideNumberMachine{
         margin: 0% 0% 1% 48%;
     }
+    .main{
+        padding-top: 2%; 
+    }
 }
 
 @media(max-width: 900px) {
@@ -510,8 +513,9 @@ footer {
     }
 
     .imageTag {
+        padding-top: 3%;
         width: 30%;
-        margin-left: 34%;
+        margin-left: 36%;
     }
 
     .slideMachine {
@@ -630,6 +634,9 @@ footer {
         overflow: visible;
         z-index: 3;
 
+    }
+    .main{
+        padding-top: 5%; 
     }
 
 }
@@ -814,12 +821,12 @@ footer {
     }
 
     .dropDownMenuImg {
-        width: 100%;
+        width: 75%;
     }
 
     .dropDownMenu {
         margin-left: 80%;
-        margin-top: -20%;
+        margin-top: -23%;
     }
 
 
@@ -855,14 +862,14 @@ footer {
     }
 
     .main {
-        margin-top: 25%;
+        margin-top: 8%;
     }
 
     .logo {
-        width: 59%;
+        width: 40%;
         padding-left: 2%;
-        margin-top: 5%;
-        padding-bottom: 5%;
+        margin-top: 2%;
+        padding-bottom: 2%;
     }
 
 }
