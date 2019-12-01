@@ -288,6 +288,7 @@
                 headers: "The machine",
                 wid: "42%",
                 wid2: "100%",
+                lefte: "30%",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.png",
                 info: first2,
@@ -297,6 +298,7 @@
                 headers: "The machine",
                 wid: "34%",
                 wid2: "100%",
+                lefte: "30%",
             }, {
 
                 Image: "../Pictures/Machine2.png",
@@ -307,6 +309,7 @@
                 headers: "The color sensor and the weighting plate",
                 wid: "44%",
                 wid2: "100%",
+                lefte: "30%",
             }, {
                 Image: "../Pictures/Machine1.png",
                 info: third,
@@ -316,6 +319,7 @@
                 headers: "Where the waste get sorted",
                 wid: "50%",
                 wid2: "100%",
+                lefte: "30%",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //makes the slideshow continuous
@@ -342,6 +346,7 @@
                 imageTag[1].style.width = images[teller2].wid;
             }if(window.innerWidth <= 900){
                 imageTag[1].style.width = images[teller2].wid2;
+                imageTag[1].style.marginLeft = images[teller2].lefte;
             }
                 
 
