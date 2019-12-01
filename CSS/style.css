@@ -326,7 +326,6 @@ p {
 
 .aboutUsPics {
     width: 30%;
-    transform: rotate(90deg);
     margin-top: 7%;
     margin-bottom: 7%;
 }
@@ -459,8 +458,6 @@ footer {
         margin-right: 5%;
     }
 }
-
-@media(max-width: 1160px) {}
 
 @media(max-width: 1100px) {
     .menuContent li a {
@@ -689,6 +686,14 @@ footer {
 @media(max-width: 790px) {
     .homeImg {
         height: 24em;
+    }
+    
+    .homeMachine {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        position: relative;
+        margin-top: 5%;
     }
 
     .slideHeader {
