@@ -188,6 +188,7 @@
                 Slide: "1 out of 8",
                 headers: "Home page",
                 wid: "25%",
+                wid2: "30%",
             }, {
                 Image: "../Pictures/appHome.png",
                 info: HomeText2,
@@ -196,6 +197,7 @@
                 Slide: "2 out of 8",
                 headers: "Home page",
                 wid: "25%",
+                wid2: "30%",
             }, {
                 Image: "../Pictures/appPoints.png",
                 info: points,
@@ -204,6 +206,7 @@
                 Slide: "3 out of 8",
                 headers: "Point & highscore page",
                 wid: "26%",
+                wid2: "29%",
             }, {
                 Image: "../Pictures/appChallenges.png",
                 info: Challenges,
@@ -212,6 +215,7 @@
                 Slide: "4 out of 8",
                 headers: "Challenge page",
                 wid: "25%",
+                wid2: "31%",
             }, {
                 Image: "../Pictures/appStatistics.png",
                 info: Statistics,
@@ -220,6 +224,7 @@
                 Slide: "5 out of 8",
                 headers: "Statistics page",
                 wid: "26%",
+                wid2: "31%",
             }, {
                 Image: "../Pictures/appCoupons.png",
                 info: Coupons,
@@ -228,6 +233,7 @@
                 Slide: "6 out of 8",
                 headers: "Coupon page",
                 wid: "27.5%",
+                wid2: "32%",
             }, {
                 Image: "../Pictures/appMyCoupons.png",
                 info: YourCoupons,
@@ -236,6 +242,7 @@
                 Slide: "7 out of 8",
                 headers: "Your coupons",
                 wid: "27%",
+                wid2: "32%",
             }, {
                 Image: "../Pictures/appMap.png",
                 info: Map,
@@ -244,6 +251,7 @@
                 Slide: "8 out of 8",
                 headers: "A map of your nearest machine",
                 wid: "26%",
+                wid2: "32%",
             }]; //app pictures
 
             if (teller1 >= images.length) { //makes the slideshow continuous
@@ -255,16 +263,20 @@
 
             imageTag[0].src = images[teller1].Image;
             imageTag[0].tabIndex = "0";
-            imageText[0].tabIndex = "0";
+            //imageText[0].tabIndex = "0";
             imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
-            imageText[0].innerHTML = images[teller1].info;
-            slideNumber[0].innerHTML = images[teller1].Slide;
-            slideNumber[0].tabIndex = "0";
+            //imageText[0].innerHTML = images[teller1].info;
+            //slideNumber[0].innerHTML = images[teller1].Slide;
+           // slideNumber[0].tabIndex = "0";
             slideHeaders[0].innerHTML = images[teller1].headers;
             slideHeaders[0].tabIndex = "0";
-
-            imageTag[0].style.width = images[teller1].wid;
+            if(window.innerWidth > 900){
+                imageTag[0].style.width = images[teller1].wid;
+            }if(window.innerWidth <= 900){
+                imageTag[0].style.width = images[teller1].wid2;
+             //   imageTag[0].style.marginLeft = images[teller1].lefte;
+            }
             
             teller1 += 1;
         }
