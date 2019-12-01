@@ -16,7 +16,7 @@
 
     <nav class="menu">
         <div class="logo">
-            <a href="../HTML/mainPage.html"><img class="logoImg" src="../Pictures/LOGO2.png" title="Green Routine" alt="Logo"></a>
+            <a href="../HTML/mainPage.html"><img class="logoImg" src="../Pictures/LOGO2.png" title="Green Routine" alt="Logo, Green Routine"></a>
         </div>
         <div class="menuContent">
             <ul>
@@ -64,9 +64,9 @@
             <p tabindex="0">To answer this problem, we introduce our solution, <b>GreenRoutine</b>. GreenRoutine is both an app and machine that works towards giving people a purpose as to why they should recycle. Our solution works like this: When you recycle into the machines, you will get points. These points can later be used in the app towards getting discounts and prizes. GreenRoutine is the solution towards making more and more people be actively engaged in recycling garbage.</p>
 
             <div class="homeVideo">
-                <video controls poster="../Pictures/thumbnail.png">
-                    <source src="../Pictures/GreenRoutineFinal.mp4" type="video/mp4" title="Green Routine - video" alt="A video showing our solution to the mentioned problem - Green Routine">
-                    Your browser does not support HTML5 video.
+                <video controls poster="../Pictures/thumbnail.png" title="Green Routine - video" aria-label="A video showing our solution to the mentioned problem - Green Routine" tabindex="0">
+                    <source src="../Pictures/GreenRoutineFinal.mp4" type="video/mp4">
+                    <p tabindex="0">Your browser does not support HTML5 video.</p>
                 </video>
             </div>
 
@@ -81,10 +81,10 @@
                     <img class="imageTag">
                     <p class="imageText"></p>
                     <p class="slideNumber"></p>
-                    <div class="choices"><a tabindex="0" onclick="back(true)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(true)"><span class="Next">&#10095</span></a>
+                    <div class="choices"><a tabindex="0" aria-label="to the previous slide" onclick="back(true)"><span class="Back">&#10094</span></a><a  tabindex="0" onclick="next(true)"  aria-label="to the next slide"><span  class="Next">&#10095</span></a>
                     </div>
                 </div>
-                <p class="paragrafBelow">You can see more of the app <a href="app.html">HERE</a></p>
+                <p class="paragrafBelow" tabindex="0">You can see more of the app <a href="app.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">How does the machine work?</h2>
@@ -100,10 +100,10 @@
                     <img class="imageTag slideMachine">
                     <p class="imageText slideMachineText"></p>
                     <p class="slideNumber slideNumberMachine"></p>
-                    <div class="choices"><a tabindex="0" onclick="back(false)"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next">&#10095</span></a>
+                    <div class="choices"><a tabindex="0" onclick="back(false)"  aria-label="to the previous slide"><span class="Back">&#10094</span></a><a tabindex="0" onclick="next(false)"><span class="Next"  aria-label="to the next slide">&#10095</span></a>
                     </div>
                 </div>
-                <p class="paragrafBelow">You can see more of the machine <a href="machine.html">HERE</a></p>
+                <p tabindex="0" class="paragrafBelow">You can see more of the machine <a href="machine.html">HERE</a></p>
             </div>
             <br>
             <h2 class="sideTitles" tabindex="0">Why use GreenRoutine:</h2>
@@ -140,7 +140,7 @@
                 <li>We primarily use the colors green, blue and white in our solution. We have chosen these colors to match people that are green/red colorblind.</li>
             </a>
             <br><br>
-            <img class="statProblem" src="../Pictures/relevancySolutionEnglish.png" tabindex="0" title="How relevant is this problem today?" alt="Statistic">
+            <img class="statProblem" src="../Pictures/relevancySolutionEnglish.png" tabindex="0" title="How relevant is this problem today?" alt="Statistics over how many from a scale from 1 to 6 how relevant the problem is. 0 point 8 percent said it was totally irelevant today. 0 point 8 percent said it was irelevant. 9 point 2 percent said it was in between. 30 point 3 percent said the problem was relevant today and 58 point 8 said it was very relevant.">
             <p tabindex="0">Through an anonymous survey, we asked a total of 119 people: «How relevant is this problem today?». Most of the people we asked to complete the survey is of the younger generation, primarily of the age range 18-20. Of these people, a total of 58.8% told us that this is a very relevant problem today. We also had a total of 30.3% seeing this problem as «mostly relevant». This give us a good indication that the majority of the younger generation in Oslo believes that this is an important problem that needs a suitable solution.</p>
             <br><br><br>
             <p tabindex="0">Contact us for tips on how to better your user experience. <b>Send us an e-mail </b><a tabindex="0" id="mail" href="mailto:s345873@oslomet.no">HERE.</a></p>
@@ -185,56 +185,56 @@
                 info: HomeText1,
                 altTekst: "An image sketch showing the home page of the Green Routine app. The page displays the QR code of the user that is essential to the use of the machine and four buttons, that lead to the coupon page, challenges, nearest machines and the user's points with a leaderboard.",
                 Title: "Homepage of the app Green Routine",
-                Slide: "1/8",
+                Slide: "1 out of 8",
                 headers: "Home page",
             }, {
                 Image: "../Pictures/appHome.png",
                 info: HomeText2,
                 altTekst: "At the bottom of the page, there is a helper who explains everything about the page. Next to the help icon, there is also an icon for settings that the user will change on some info and profile where you can change the name, language or delete the user account.",
                 Title: "More information on the homepage of the app",
-                Slide: "2/8",
+                Slide: "2 out of 8",
                 headers: "Home page",
             }, {
                 Image: "../Pictures/appPoints.png",
                 info: points,
                 altTekst: "At the top, the user has a menu with the logo in the corner which brings them back to the home page. Next to the logo there is a help icon, profile and settings as on the homepage. The menu shows the user's points and a list of points that can be changed in settings. At the bottom there is a back button that brings them back to the home page.",
                 Title: "A page for points, and a highscore list",
-                Slide: "3/8",
+                Slide: "3 out of 8",
                 headers: "Point & highscore page",
             }, {
                 Image: "../Pictures/appChallenges.png",
                 info: Challenges,
                 altTekst: "On the page of challenges, the users have three ranking challenges which can be about an amount of garbage thrown for instance. Above there are buttons which let the users navigate through statistics and the challenges-page.",
                 Title: "A page with rank-up challenges, and current task",
-                Slide: "4/8",
+                Slide: "4 out of 8",
                 headers: "Challenge page",
             }, {
                 Image: "../Pictures/appStatistics.png",
                 info: Statistics,
                 altTekst: "The users have an overview of their average score. The score amount is dependent on how you recycle within the three categories food waste, non-recyclable waste and plastic packaging. The users can navigate to the page by clicking on the button “Statistics” on the challenge page. The button named “Back” will lead you back to the home page.",
                 Title: "Statistics page with the average per week recycled waste",
-                Slide: "5/8",
+                Slide: "5 out of 8",
                 headers: "Statistics page",
             }, {
                 Image: "../Pictures/appCoupons.png",
                 info: Coupons,
                 altTekst: "On this page, the user has access to coupons through different categories such as food and drinks for instance. The coupons can be used right away with the QR or be saved for later by buying the coupon with the points you have collected.",
                 Title: "A page with coupons selectable through the categories",
-                Slide: "6/8",
+                Slide: "6 out of 8",
                 headers: "Coupon page",
             }, {
                 Image: "../Pictures/appMyCoupons.png",
                 info: YourCoupons,
                 altTekst: "The coupons you have already bought can be shown by clicking on the category “Your coupons”. The category shows all the advance purchases the users have chosen to save for later.",
                 Title: "Through the category tab you can choose your coupons and see your bought coupons",
-                Slide: "7/8",
+                Slide: "7 out of 8",
                 headers: "Your coupons",
             }, {
                 Image: "../Pictures/appMap.png",
                 info: Map,
                 altTekst: "Our integrated map function can be accessed through the main menu. This page will show you where your nearest Green Routine machine is located. This function was implemented due to the responses on our public survey.",
                 Title: "A map of the nearest machines",
-                Slide: "8/8",
+                Slide: "8 out of 8",
                 headers: "A map of your nearest machine",
             }]; //app pictures
 
@@ -252,6 +252,7 @@
             imageTag[0].title = images[teller1].Title;
             imageText[0].innerHTML = images[teller1].info;
             slideNumber[0].innerHTML = images[teller1].Slide;
+            slideNumber[0].tabIndex = "0";
             slideHeaders[0].innerHTML = images[teller1].headers;
             slideHeaders[0].tabIndex = "0";
 
@@ -274,14 +275,14 @@
                 info: first,
                 altTekst: "The illustration above depicts what you will first meet when you visit one of our machines. It has a built-in screen and a QR code scanner.",
                 Title: "Sketch of our machine with a built-in screen and QR code scanner",
-                Slide: "1/4",
+                Slide: "1 out of 4",
                 headers: "The machine",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.png",
                 info: first2,
                 altTekst: "A sketch of the machine after being activated by the QR-code where the hatch has been opened and the bag may be placed in the machine.",
                 Title: "The machine after the QR-code has been scanned",
-                Slide: "2/4",
+                Slide: "2 out of 4",
                 headers: "The machine",
 
             }, {
@@ -290,14 +291,14 @@
                 info: second,
                 altTekst: "Inside the machine there is a hatch, a color scanning unit and a weight. A conveyor belt moves your garbage bags to the weight. It will record the weight of your garbage bags and turn it into a certain amount of points.",
                 Title: "Sketch of our machine. This sketch shows that the machine contains a hatch, a color scanning unit and a weight",
-                Slide: "3/4",
+                Slide: "3 out of 4",
                 headers: "The color sensor and the weighting plate",
             }, {
                 Image: "../Pictures/Machine1.png",
                 info: third,
                 altTekst: "In the sketch, there are three pipes sorting your garbage bags to each separate bin.",
                 Title: "The sketch shows the back of our machine. There are three pipes going from the machine to various waste wells.",
-                Slide: "4/4",
+                Slide: "4 out of 4",
                 headers: "Where the waste get sorted",
             }]; //machine pictures
 
@@ -315,7 +316,10 @@
             imageTag[1].alt = images[teller2].altTekst;
             imageTag[1].title = images[teller2].Title;
             imageText[1].innerHTML = images[teller2].info;
+            
             slideNumber[1].innerHTML = images[teller2].Slide;
+            slideNumber[1].tabIndex = "0";
+            
             slideHeaders[1].innerHTML = images[teller2].headers;
             slideHeaders[1].tabIndex = "0";
 
