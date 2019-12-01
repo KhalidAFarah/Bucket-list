@@ -263,19 +263,18 @@
 
             imageTag[0].src = images[teller1].Image;
             imageTag[0].tabIndex = "0";
-            //imageText[0].tabIndex = "0";
+            imageText[0].tabIndex = "0";
             imageTag[0].alt = images[teller1].altTekst;
             imageTag[0].title = images[teller1].Title;
-            //imageText[0].innerHTML = images[teller1].info;
-            //slideNumber[0].innerHTML = images[teller1].Slide;
-           // slideNumber[0].tabIndex = "0";
+            imageText[0].innerHTML = images[teller1].info;
+            slideNumber[0].innerHTML = images[teller1].Slide;
+            slideNumber[0].tabIndex = "0";
             slideHeaders[0].innerHTML = images[teller1].headers;
             slideHeaders[0].tabIndex = "0";
             if(window.innerWidth > 900){
                 imageTag[0].style.width = images[teller1].wid;
             }if(window.innerWidth <= 900){
                 imageTag[0].style.width = images[teller1].wid2;
-             //   imageTag[0].style.marginLeft = images[teller1].lefte;
             }
             
             teller1 += 1;
