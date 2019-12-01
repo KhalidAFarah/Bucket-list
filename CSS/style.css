@@ -324,25 +324,6 @@ p {
     border: solid black 1px;
 }
 
-
-
-/* Sponsor */
-.SponsorDiv {
-    width: 31%;
-    display: inline-block;
-    text-align: center;
-    float: none;
-    margin-left: 2%;
-    margin-bottom: 5%;
-}
-
-.sponsorDivText {
-    width: 96%;
-    padding: 2%;
-    font-size: 13px;
-    text-align: center;
-}
-
 .aboutUsPics {
     width: 30%;
     transform: rotate(90deg);
@@ -373,6 +354,23 @@ p {
 .slideHeader {
     text-align: center;
     font-size: 25px;
+}
+
+/* Sponsor */
+.SponsorDiv {
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    float: none;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.sponsorDivText {
+    width: 96%;
+    padding: 2%;
+    font-size: 13px;
+    text-align: center;
 }
 
 /* footer */
