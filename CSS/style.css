@@ -414,7 +414,7 @@ footer {
 
 .slideNumber {
     font-size: 25px;
-    margin: 1% 0% 2% 48%;
+    margin: 1% 0% 2% 45%;
 }
 
 .slideNumberMachine {
@@ -529,6 +529,11 @@ footer {
     aside {
         padding-top: 0%;
     }
+    .slideNumber {
+        font-size: 23px;
+        margin: 1% 0% 2% 43%;
+    }
+
 
     .headerMachine {
         font-size: 25px;
@@ -589,6 +594,7 @@ footer {
     aside {
         font-size: 13px;
     }
+    
 
     .aboutUsPics {
         width: 50%;
@@ -799,7 +805,7 @@ footer {
     .dropDownLanguage {
         margin-left: 63%;
         margin-top: 1%;
-        width: 36%;
+        width: 38%;
     }
 
     .dropDownMenu {
@@ -815,6 +821,19 @@ footer {
         width: 100%;
         margin-left: 0%;
     }
+}
+@media(max-width: 550px){
+    .sponsorDivText p{
+        font-size: 16px;
+    }
+    .slideNumber {
+        font-size: 20px;
+        margin: 1% 0% 2% 38%;
+    }
+    .choices{
+        margin-left: 4%;
+    }
+
 }
 
 /*Mobile layout*/
@@ -990,7 +1009,15 @@ footer {
     }
 
 }
+@media(max-width: 350px){
+    .slideNumber {
+        margin: 1% 0% 2% 30%;
+    }
 
+    .choices{
+        margin-left: 0%;
+    }
+}
 @media(max-width: 300px) {
     .dropDownContent li a {
         font-size: 13px;
