@@ -286,6 +286,7 @@
                 Title: "Skisse av maskinen vår med en innebygd skjerm og QR-kodeskanner",
                 Slide: "1 ut av 4",
                 headers: "Maskinen",
+                wid: "42%",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.png",
                 info: first2,
@@ -293,6 +294,7 @@
                 Title: "Maskinen etter at QR-koden er skannet",
                 Slide: "2 ut av 4",
                 headers: "Maskinen",
+                wid: "34%",
             }, {
 
                 Image: "../Pictures/Machine2.png",
@@ -301,6 +303,7 @@
                 Title: "Skisse av maskinen vår. Denne skissen viser at maskinen inneholder en luke, en fargeskanningsenhet og en vekt",
                 Slide: "3 ut av 4",
                 headers: "Fargesensoren og vektmåleren",
+                wid: "44%",
             }, {
                 Image: "../Pictures/Machine1.png",
                 info: third,
@@ -308,6 +311,7 @@
                 Title: "Skissen viser baksiden av maskinen vår. Det går tre rør fra maskinen til forskjellige avfallsbrønner.",
                 Slide: "4 ut av 4",
                 headers: "Hvor søppelet blir sortert",
+                wid: "50%",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //gjør lysbildefremvisningen kontinuerlig
@@ -328,6 +332,8 @@
             slideNumber[1].tabIndex = "0";
             slideHeaders[1].innerHTML = images[teller2].headers;
             slideHeaders[1].tabIndex = "0";
+            
+            imageTag[1].style.width = images[teller2].wid;
 
             teller2 += 1;
         }
