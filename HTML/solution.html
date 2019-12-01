@@ -287,6 +287,7 @@
                 Slide: "1 out of 4",
                 headers: "The machine",
                 wid: "42%",
+                wid2: "100%",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.png",
                 info: first2,
@@ -295,6 +296,7 @@
                 Slide: "2 out of 4",
                 headers: "The machine",
                 wid: "34%",
+                wid2: "100%",
             }, {
 
                 Image: "../Pictures/Machine2.png",
@@ -304,6 +306,7 @@
                 Slide: "3 out of 4",
                 headers: "The color sensor and the weighting plate",
                 wid: "44%",
+                wid2: "100%",
             }, {
                 Image: "../Pictures/Machine1.png",
                 info: third,
@@ -312,6 +315,7 @@
                 Slide: "4 out of 4",
                 headers: "Where the waste get sorted",
                 wid: "50%",
+                wid2: "100%",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //makes the slideshow continuous
@@ -334,8 +338,12 @@
             
             slideHeaders[1].innerHTML = images[teller2].headers;
             slideHeaders[1].tabIndex = "0";
-            
-            imageTag[1].style.width = images[teller2].wid;
+            if(window.innerWidth > 900){
+                imageTag[1].style.width = images[teller2].wid;
+            }if(window.innerWidth <= 900){
+                imageTag[1].style.width = images[teller2].wid2;
+            }
+                
 
             teller2 += 1;
         }
