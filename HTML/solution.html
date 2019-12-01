@@ -187,6 +187,7 @@
                 Title: "Homepage of the app Green Routine",
                 Slide: "1 out of 8",
                 headers: "Home page",
+                wid: "25%",
             }, {
                 Image: "../Pictures/appHome.png",
                 info: HomeText2,
@@ -194,6 +195,7 @@
                 Title: "More information on the homepage of the app",
                 Slide: "2 out of 8",
                 headers: "Home page",
+                wid: "25%",
             }, {
                 Image: "../Pictures/appPoints.png",
                 info: points,
@@ -201,6 +203,7 @@
                 Title: "A page for points, and a highscore list",
                 Slide: "3 out of 8",
                 headers: "Point & highscore page",
+                wid: "26%",
             }, {
                 Image: "../Pictures/appChallenges.png",
                 info: Challenges,
@@ -208,6 +211,7 @@
                 Title: "A page with rank-up challenges, and current task",
                 Slide: "4 out of 8",
                 headers: "Challenge page",
+                wid: "25%",
             }, {
                 Image: "../Pictures/appStatistics.png",
                 info: Statistics,
@@ -215,6 +219,7 @@
                 Title: "Statistics page with the average per week recycled waste",
                 Slide: "5 out of 8",
                 headers: "Statistics page",
+                wid: "26%",
             }, {
                 Image: "../Pictures/appCoupons.png",
                 info: Coupons,
@@ -222,6 +227,7 @@
                 Title: "A page with coupons selectable through the categories",
                 Slide: "6 out of 8",
                 headers: "Coupon page",
+                wid: "27.5%",
             }, {
                 Image: "../Pictures/appMyCoupons.png",
                 info: YourCoupons,
@@ -229,6 +235,7 @@
                 Title: "Through the category tab you can choose your coupons and see your bought coupons",
                 Slide: "7 out of 8",
                 headers: "Your coupons",
+                wid: "27%",
             }, {
                 Image: "../Pictures/appMap.png",
                 info: Map,
@@ -236,6 +243,7 @@
                 Title: "A map of the nearest machines",
                 Slide: "8 out of 8",
                 headers: "A map of your nearest machine",
+                wid: "26%",
             }]; //app pictures
 
             if (teller1 >= images.length) { //makes the slideshow continuous
@@ -256,7 +264,8 @@
             slideHeaders[0].innerHTML = images[teller1].headers;
             slideHeaders[0].tabIndex = "0";
 
-
+            imageTag[0].style.width = images[teller1].wid;
+            
             teller1 += 1;
         }
 
@@ -277,6 +286,7 @@
                 Title: "Sketch of our machine with a built-in screen and QR code scanner",
                 Slide: "1 out of 4",
                 headers: "The machine",
+                wid: "42%",
             }, {
                 Image: "../Pictures/GreenRoutineMachine2.png",
                 info: first2,
@@ -284,7 +294,7 @@
                 Title: "The machine after the QR-code has been scanned",
                 Slide: "2 out of 4",
                 headers: "The machine",
-
+                wid: "34%",
             }, {
 
                 Image: "../Pictures/Machine2.png",
@@ -293,6 +303,7 @@
                 Title: "Sketch of our machine. This sketch shows that the machine contains a hatch, a color scanning unit and a weight",
                 Slide: "3 out of 4",
                 headers: "The color sensor and the weighting plate",
+                wid: "44%",
             }, {
                 Image: "../Pictures/Machine1.png",
                 info: third,
@@ -300,6 +311,7 @@
                 Title: "The sketch shows the back of our machine. There are three pipes going from the machine to various waste wells.",
                 Slide: "4 out of 4",
                 headers: "Where the waste get sorted",
+                wid: "50%",
             }]; //machine pictures
 
             if (teller2 >= images.length) { //makes the slideshow continuous
@@ -322,6 +334,8 @@
             
             slideHeaders[1].innerHTML = images[teller2].headers;
             slideHeaders[1].tabIndex = "0";
+            
+            imageTag[0].style.width = images[teller2].wid;
 
             teller2 += 1;
         }
