@@ -189,6 +189,7 @@
                 headers: "Home page",
                 wid: "25%",
                 wid2: "30%",
+                down: "9%",
             }, {
                 Image: "../Pictures/appHome.png",
                 info: HomeText2,
@@ -198,6 +199,7 @@
                 headers: "Home page",
                 wid: "25%",
                 wid2: "30%",
+                down: "12%",
             }, {
                 Image: "../Pictures/appPoints.png",
                 info: points,
@@ -207,6 +209,7 @@
                 headers: "Point & highscore page",
                 wid: "26%",
                 wid2: "29%",
+                down: "5%",
             }, {
                 Image: "../Pictures/appChallenges.png",
                 info: Challenges,
@@ -216,6 +219,7 @@
                 headers: "Challenge page",
                 wid: "25%",
                 wid2: "31%",
+                down: "5%",
             }, {
                 Image: "../Pictures/appStatistics.png",
                 info: Statistics,
@@ -225,6 +229,7 @@
                 headers: "Statistics page",
                 wid: "26%",
                 wid2: "31%",
+                down: "0%",
             }, {
                 Image: "../Pictures/appCoupons.png",
                 info: Coupons,
@@ -234,6 +239,7 @@
                 headers: "Coupon page",
                 wid: "27.5%",
                 wid2: "32%",
+                down: "12%",
             }, {
                 Image: "../Pictures/appMyCoupons.png",
                 info: YourCoupons,
@@ -243,6 +249,7 @@
                 headers: "Your coupons",
                 wid: "27%",
                 wid2: "32%",
+                down: "12%",
             }, {
                 Image: "../Pictures/appMap.png",
                 info: Map,
@@ -252,6 +259,7 @@
                 headers: "A map of your nearest machine",
                 wid: "26%",
                 wid2: "32%",
+                down: "8%",
             }]; //app pictures
 
             if (teller1 >= images.length) { //makes the slideshow continuous
@@ -275,6 +283,7 @@
                 imageTag[0].style.width = images[teller1].wid;
             }if(window.innerWidth <= 900){
                 imageTag[0].style.width = images[teller1].wid2;
+                imageText[0].style.paddingBottom = images[teller1].down;
             }
             
             teller1 += 1;
