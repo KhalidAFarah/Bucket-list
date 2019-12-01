@@ -62,14 +62,16 @@ aside {
 
 .homeText {
     float: left;
+    margin-left: 7%;
     width: 40%;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .homeMachine {
     float: right;
-    width: 60%;
+    width: 40%;
     margin-top: -4%;
+    margin-right: 9%;
 }
 
 .prototypeSites ul li {
@@ -458,6 +460,10 @@ footer {
         width: 25%;
         margin-right: 5%;
     }
+    .homeText {
+        margin-left: 7%;
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 1100px) {
@@ -721,8 +727,14 @@ footer {
     .homeText {
         width: 100%;
         font-size: 15px;
+        margin: 0%;
     }
-
+   
+.homeMachine {
+    width: 55%;
+    margin: 0%;
+    margin-left: 24%;
+}
     .homeVideo {
         margin-left: 0%;
         width: 100%;
