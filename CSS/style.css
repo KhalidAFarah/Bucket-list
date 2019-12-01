@@ -63,6 +63,7 @@ aside {
 .homeText {
     float: left;
     width: 40%;
+    font-size: 15px;
 }
 
 .homeMachine {
@@ -469,7 +470,7 @@ footer {
     }
 
     .homeText {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
@@ -531,6 +532,9 @@ footer {
 
     .headerMachine {
         font-size: 25px;
+    }
+    .homeText {
+        font-size: 10px;
     }
 
     .MachineImg {
@@ -710,6 +714,7 @@ footer {
 
     .homeText {
         width: 100%;
+        font-size: 15px;
     }
 
     .homeVideo {
