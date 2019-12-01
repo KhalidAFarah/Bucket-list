@@ -29,7 +29,7 @@ section {
     padding-bottom: 5%;
     padding-top: 1%;
     box-shadow: -9px 10px 23px 2px rgba(0, 0, 0, 0.46);
-    margin: 0 auto;
+    margin: 0 10%;
     margin-top: 5%;
     background-color: white;
     border-radius: 25px;
@@ -809,8 +809,12 @@ footer {
 
 /*Mobile layout*/
 @media(max-width: 500px) {
+    section{
+        padding-top: 10%;
+    }
     .homeImg {
-        height: 20em;
+        height: 22em;
+        margin-top: -5%;
     }
 
     .slideHeader {
@@ -961,7 +965,7 @@ footer {
     }
 
     .main {
-        margin-top: 8%;
+        margin-top: 15%;
     }
 
     .logo {
